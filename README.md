@@ -7,7 +7,7 @@ This is a [yeoman](http://yeoman.io/) [generator](http://yeoman.io/generators/) 
 To generate a new documentation repository:
 
 ``` bash
-sudo npm install generator-canonical-documentation  # Install the generator
+sudo npm install -g generator-canonical-documentation  # Install the generator
 
 mkdir my-documentation  # Create your new folder
 cd my-documentation     # Change to the directory

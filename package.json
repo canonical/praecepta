@@ -1,6 +1,6 @@
 {
   "name": "generator-canonical-documentation",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A skeleton example of Markdown documentation in the recommended structure to be build with documentation-builder",
   "homepage": "https://docs.ubuntu.com/documentation-builder",
   "author": {
