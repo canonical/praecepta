@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Canonical Webteam",
+      "authorEmail": "webteam@canonical.com",
+      "authorUrl": "https://design.canonical.com/team"
+    }
+  }
+}
