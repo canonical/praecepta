@@ -1,4 +1,0 @@
-# If you want to publish multiple versions of your documentation
-# (The --builder-version-branches option for documentation-builder)
-# you can put the names of version branches in here, one per line
-master
