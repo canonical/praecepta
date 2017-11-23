@@ -13,4 +13,7 @@
 navigation:
   - title: Introduction
     location: index.md
-
+  - title: Code examples
+    location: code.md
+  - title: Contractions
+    location: contraction.md
