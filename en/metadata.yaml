@@ -16,4 +16,5 @@ navigation:
   - title: Code examples
     location: code.md
   - title: Contractions
-    location: contraction.md
+    location: contractions.md
+
