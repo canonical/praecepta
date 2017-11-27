@@ -17,22 +17,22 @@ navigation:
     children:
 
     - title: Spelling
-      location: index.md#spelling
+      location: #spelling
     - title: Contractions
-      location: index.md#contractions
+      location: #contractions
     - title: Headings and capitalisation
-      location: index.md#headings-and-capitalisation
+      location: #headings-and-capitalisation
     - title: Dates
-      location: index.md#dates
+      location: #dates
     - title: Numbers
-      location: index.md#numbers
+      location: #numbers
     - title: Code examples in documentation
-      location: index.md#code-examples-in-documentation
+      location: #code-examples-in-documentation
     - title: Hyperlinks
-      location: index.md#hyperlinks
+      location: #hyperlinks
     - title: Images
-      location: index.md#images
+      location: #images
     - title: Words and phrases to avoid
-      location: index.md#words-and-phrases-to-avoid
+      location: #words-and-phrases-to-avoid
  
 
