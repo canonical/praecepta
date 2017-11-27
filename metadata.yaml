@@ -2,9 +2,9 @@
 
 # The site_title will be displayed in the header of the page at the top left next to the logo
 # and used as the meta title for the page 
-site_title: "Praecepta"
+site_title: "Style Guide"
 
 # The logo will be displayed in header in the top left
 # and used as the favicon in the browser
-site_logo: "media/praecepta.png"
+site_logo: "media/logo.svg"
 
