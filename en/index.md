@@ -31,7 +31,7 @@ Some common differences are:
 |   -or                             |  -our                               |
 
 In the most part this can be mitigated by simply enabling spell checking
-on your editing software and chosing an **en-gb** dictionary. The minor 
+on your editing software and choosing an **en-gb** dictionary. The minor 
 differences in grammar will (hopefully) be picked up in review by the 
 documentation team.
 
@@ -215,7 +215,7 @@ code is an example intended to be used rather than read, offer it as a
 download instead.
 
 
-**DO** seperate commands and output where appropriate. For example, instead of:
+**DO** separate commands and output where appropriate. For example, instead of:
 
 ```bash
 juju status
