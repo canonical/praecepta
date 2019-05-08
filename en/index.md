@@ -50,6 +50,8 @@ technology terms:
  - internet
  - systems management
  - virtualisation
+ - space-separated, comma-delimited
+ - load balancer (only upper case as part of proper name e.g. Elastic Load Balancer)
 
 # Contractions
 
