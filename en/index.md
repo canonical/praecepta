@@ -250,20 +250,27 @@ rather than plain English. Try to keep it simple.
 There are some grammatical issues that can cause confusion. Here are some of the main offenders.
 
 ## What is the difference between fewer and less?
+
 Fewer means “not as many,” less means “not as much.”
+
 A commonly-quoted example used to highlight the distinction is: “There are fewer cars on the road, which means there is less traffic.”
+
 Also compare: “The fewer people know about this the better” and “The less people know about this the better”.
+
 Note: The rule does not work if the number is counted as a quantity or as a unit. For example: “She paid less than ten pounds for it” or “His last jump was less than fifteen feet”.
 
 ## What is the difference between that and which?
 This can, and has, caused many arguments, so it's probably best not to get too worried about it. A useful guide is: that defines, which informs.
+
 This is not a cast-iron rule but it can help: “This is the house that Jack built, but I think the one next door, which Jack also built, is more attractive.”
-“Which” is often clausal, so is predominantly preceded by a comma.
-Compare “The police stopped the second car that was driven by a woman” and “The police stopped the second car, which was driven by a woman.”
+
+“Which” is often clausal, so is predominantly preceded by a comma - compare “The police stopped the second car that was driven by a woman.” and “The police stopped the second car, which was driven by a woman.”
 
 ## Is it OK to split an infinitive?
 There is no grammatical rule that says you can't split an infinitive. Sometimes, it is definitely better to split:
+
 _"Can dot.com companies ever hope to fully recover their share values?"_
+
 This sounds much better than moving “fully” in front of “to recover” or behind it. The key is not to write anything that is ambiguous or inelegant.
 
 
