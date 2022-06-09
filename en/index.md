@@ -151,49 +151,6 @@ When writing out numbers over the 100s, remember to include commas.
 
 # Code examples in documentation
 
-This details how to present code samples in documentation, and how to 
-work around some of the limitations there are in static media when
-trying to show an interactive behaviour.
-
-In general *ALL* code samples should be marked as code via whatever
-markup system is in use. In the case of most output, this will normally
-result in the code:
-
- - being slightly indented
- - being highlighted in some way
- - appearing in a monospace font
-
-There are some types of final output which cannot easily reproduce all these
-elements, but in such cases the best approximation will be made. 
-
-## Markdown styles
-
-Most of our documentation is generated from Markdown sources. There are 
-two relevant conventions to follow:
-
-### Code blocks
-
-A code block is enclosed by three backticks and includes the type of code:
-
-
-      ```bash
-      maas command do something
-      maas command do something else
-      ```
-
-The most common types used are: `bash`, `yaml`, `json`, and `no-highlight`. 
-The last is like a miscellaneous type. It is often used to display
-command output.
-
-### Inline code
-
-Use a backtick to `inline filenames and other literals` like this:
-
-      Use a backtick to `inline filenames and other literals` like this:
-
-
-## General notes
-
 **DO NOT** use prompt marks (e.g. `$` or `#`) in code samples. These cause problems
 for users who sometimes mistakenly type them in, or who want to copy and paste
 sections of code. They also encourage poor explanation of the code. 
@@ -254,67 +211,12 @@ state of each unit and service:
 ...
 ```
 
-# Hyperlinks
-
-Links to internal files or external URLs use the following format:
-
-```no-highlight
-[visible text][label]
-```
-
-The `visible text` is what will appear on the web page. The `label` is used to
-refer to the destination, which is placed at the bottom of the file:
-
-```
-<!-- LINKS -->
-
-[label]: destination
-```
-
-For example:
-
-```no-highlight
-- For more on this topic see [DHCP][dhcp].
-- To understand haproxy, see the [upstream configuration manual][upstream-haproxy-manual].
-
-...
-
-[dhcp]: installconfig-networking-dhcp.md
-[upstream-haproxy-manual]: http://cbonte.github.io/haproxy-dconv/1.6/configuration.html
-```
-
-The visible text should use an active style as opposed to a passive style. For
-instance, try to avoid:
-
-```no-highlight
-A [proxy][maas-proxy] can optionally be configured.
-```
-
-Notes:
-
-- An internal page is referred to by its source filename (i.e. `.md` not
-  `.html`).
-- Try to use the same `label:destination` pair throughout the documentation.
-
-
 # Images
 
 An image should not be overly cropped - allow for context. 
 
-In terms of linking, they are managed very similarly to hyperlinks. However,
-they are placed on their own line; are preceded by an exclamation point; and
-both the label and destination have a specific naming convention:
-
-```no-highlight
-![alt attribute][img_filename]
-```
-
-The bottom of the file will look like:
-
-```no-highlight
-[img_filename]: ./path/to/image.png
-```
-
+**DO NOT LINK IMAGES FROM A GOOGLE DRIVE** 
+This will work, until such a time as whoever owns the image closes their account (or leaves Canonical).
 
 # Words and phrases to avoid
 
@@ -344,6 +246,25 @@ permitting users or customers to conduct certain activities.
 It can be tempting to use flowery, official-sounding words
 rather than plain English. Try to keep it simple.
 
+# FAQs
+There are some grammatical issues that can cause confusion. Here are some of the main offenders.
+
+## What is the difference between fewer and less?
+Fewer means “not as many,” less means “not as much.”
+A commonly-quoted example used to highlight the distinction is: “There are fewer cars on the road, which means there is less traffic.”
+Also compare: “The fewer people know about this the better” and “The less people know about this the better”.
+Note: The rule does not work if the number is counted as a quantity or as a unit. For example: “She paid less than ten pounds for it” or “His last jump was less than fifteen feet”.
+
+## What is the difference between that and which?
+This can, and has, caused many arguments, so it's probably best not to get too worried about it. A useful guide is: that defines, which informs.
+This is not a cast-iron rule but it can help: “This is the house that Jack built, but I think the one next door, which Jack also built, is more attractive.”
+“Which” is often clausal, so is predominantly preceded by a comma.
+Compare “The police stopped the second car that was driven by a woman” and “The police stopped the second car, which was driven by a woman.”
+
+## Is it OK to split an infinitive?
+There is no grammatical rule that says you can't split an infinitive. Sometimes, it is definitely better to split:
+_"Can dot.com companies ever hope to fully recover their share values?"_
+This sounds much better than moving “fully” in front of “to recover” or behind it. The key is not to write anything that is ambiguous or inelegant.
 
 
 
