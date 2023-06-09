@@ -137,7 +137,7 @@ If it is not the actual product name, it should not be capitalised. Never capita
  - Avoid overusing punctuation in headings. Headings should not end with a period/full point/full stop
  - Avoid links in headings
  - Avoid 'code' styling in headings - if it is really needed, it is preferred to at least sbegin the title by adding normal styled word
- - Imperatives should be used for 'How to...' style docs instead of gerunds (i.e. "Create and instance" rather than "Creating an instance")
+ - Imperatives should be used for 'How to...' style docs instead of gerunds (i.e. "Create an instance" rather than "Creating an instance")
  - Do not skip levels of heading hierarchy (e.g. following an h1/# with an h3/###)
  - Headings require content and should not be followed directly by a subheading
 
