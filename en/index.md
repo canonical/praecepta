@@ -7,7 +7,7 @@ for Canonical documentation projects. Topics are listed in the navigation
 to the left, and presented here as a single page to aid searching.
 
 
-# Spelling
+## Spelling
 
 Canonical is a UK based company, and uses British English throughout. There
 are many small differences between that and US English, but for the most 
@@ -35,7 +35,7 @@ on your editing software and choosing an **en-gb** dictionary. The minor
 differences in grammar will (hopefully) be picked up in review by the 
 documentation team.
 
-## Other common terms
+### Other common terms
 
 We would like to standardise on the following spellings for common 
 technology terms: 
@@ -53,7 +53,7 @@ technology terms:
  - space-separated, comma-delimited
  - load balancer (only upper case as part of proper name e.g. Elastic Load Balancer)
 
-# Contractions
+## Contractions
 
 Contractions are very common in spoken English and in many types of writing.
 Avoiding the use of them entirely makes it difficult to achieve a friendly,
@@ -61,7 +61,7 @@ conversational tone. However, we should keep to contractions that are commonly
 understood and not part of some regional dialect, and only use them in
 "conversational" parts of the documentation (i.e. explanatory text).
 
-## Contractions you can use
+### Contractions you can use
 
 | contraction | meaning           | notes                         |
 |-------------|-------------------|-------------------------------|
@@ -92,7 +92,7 @@ understood and not part of some regional dialect, and only use them in
 |you've       |you have           |                               |
 
 
-## Don't use these!
+### Don't use these!
 
 | contraction | meaning       | notes
 |-------------|---------------|-----------------------------------|
@@ -109,15 +109,16 @@ understood and not part of some regional dialect, and only use them in
 |gonna 	      |going to       |                                   |
 |gotta 	      |got to         |                                   |
 
-# Headings and capitalisation
+## Headings
+
+Headings are important for navigation, for setting tone and for search indexing. Please bear
+in mind the following:
+
+### Sentence Case 
 
 All headings and headlines should be sentence case. This means that you
-should only capitalise the first word.
-
-**Use:** Ubuntu reaches new heights
-**Don't use:** Ubuntu Reaches New Heights
-
-You should only capitalise:
+should only capitalise the first word unless it falls into one of the categories
+outlined below:
 
  - product names 
  - personal names
@@ -126,9 +127,21 @@ You should only capitalise:
  - places
  - Ubuntu Server, not Ubuntu server
 
+**Use:** Do more with Ubuntu
+**Don't use:** Do More With Ubuntu
+
 If it is not the actual product name, it should not be capitalised. Never capitalise keywords, technical terms and jargon.
 
-# Dates
+### Other considerations
+
+ - Avoid overusing punctuation in headings. Headings should not end with a period/full point/full stop
+ - Avoid links in headings
+ - Avoid 'code' styling in headings - if it is really needed, it is preferred to at least sbegin the title by adding normal styled word
+ - Imperatives should be used for 'How to...' style docs instead of gerunds (i.e. "Create an instance" rather than "Creating an instance")
+ - Do not skip levels of heading hierarchy (e.g. following an h1/# with an h3/###)
+ - Headings require content and should not be followed directly by a subheading
+
+## Dates
 
 For consistency, we will use the following date format:
 
@@ -136,7 +149,7 @@ For consistency, we will use the following date format:
  - Date range within same month: 1-2 January 2013
  - Date range across two or more months: 1 January - 2 February 2013
 
-# Numbers
+## Numbers
 
 Numbers in single figures should be spelled out in most cases. From
 10 onwards, numbers should be written in digits.
@@ -211,14 +224,14 @@ state of each unit and service:
 ...
 ```
 
-# Images
+## Images
 
 An image should not be overly cropped - allow for context. 
 
 **DO NOT LINK IMAGES FROM A GOOGLE DRIVE** 
 This will work, until such a time as whoever owns the image closes their account (or leaves Canonical).
 
-# Words and phrases to avoid
+## Words and phrases to avoid
 
 Try to avoid jargon, long-winded phrases and words with negative
 connotations. Steer clear of the following:
@@ -246,10 +259,10 @@ permitting users or customers to conduct certain activities.
 It can be tempting to use flowery, official-sounding words
 rather than plain English. Try to keep it simple.
 
-# FAQs
+## FAQs
 There are some grammatical issues that can cause confusion. Here are some of the main offenders.
 
-## What is the difference between fewer and less?
+### What is the difference between fewer and less?
 
 Fewer means “not as many,” less means “not as much.”
 
@@ -259,14 +272,14 @@ Also compare: “The fewer people know about this the better” and “The less 
 
 Note: The rule does not work if the number is counted as a quantity or as a unit. For example: “She paid less than ten pounds for it” or “His last jump was less than fifteen feet”.
 
-## What is the difference between that and which?
+### What is the difference between that and which?
 This can, and has, caused many arguments, so it's probably best not to get too worried about it. A useful guide is: that defines, which informs.
 
 This is not a cast-iron rule but it can help: “This is the house that Jack built, but I think the one next door, which Jack also built, is more attractive.”
 
 “Which” is often clausal, so is predominantly preceded by a comma - compare “The police stopped the second car that was driven by a woman.” and “The police stopped the second car, which was driven by a woman.”
 
-## Is it OK to split an infinitive?
+### Is it OK to split an infinitive?
 There is no grammatical rule that says you can't split an infinitive. Sometimes, it is definitely better to split:
 
 _"Can dot.com companies ever hope to fully recover their share values?"_
