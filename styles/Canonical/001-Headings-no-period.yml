@@ -1,0 +1,15 @@
+# 01 - Heading - Do not end with '.'
+
+extends: existence
+message: "Don't use end punctuation in headings."
+link: https://docs.ubuntu.com/styleguide/en#headings
+nonword: true
+level: warning
+scope: heading
+action:
+  name: edit
+  params:
+    - remove
+    - '.'
+tokens:
+  - '[a-z0-9][.](?:\s|$)'
