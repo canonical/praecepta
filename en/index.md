@@ -53,6 +53,59 @@ technology terms:
  - space-separated, comma-delimited
  - load balancer (only upper case as part of proper name e.g. Elastic Load Balancer)
 
+## Branding
+
+Consistency in branding is important for a number of reasons, including the protection of trademarks where they apply. 
+
+### Ubuntu
+
+When we refer to Ubuntu, we usually refer to the shipped version of the OS, rather than the Ubuntu project itself. These versions should be referred to consistently.
+Our convention is to use the name, followed by the release number and, if relevant 'LTS' to denote that the version is in Long Term Support. Optionally, you may also further identify the release by it's codname (the first or both parts of the release name) if this is likely to be useful (e.g. some of our products also use the release names to identify versions).
+
+Some examples of correct usage:
+
+**Ubuntu 22.04 LTS**
+**Ubuntu 22.10**
+**Ubuntu 23.04 (Lunar Lobster)** (note case)
+**Ubuntu 23.10 (Mantic)**
+
+This also follows on to more specific products, e.g.
+
+**Ubuntu Server 22.04 LTS**
+
+In cases where the release may be mentioned many times in a single document, it is up to the author's judgement whether this could be reworded or replaced by simply 'Ubuntu' on subsequent mentions. 
+
+### Other Canonical products
+
+| Product           |  Notes                        |
+|-------------------|-------------------------------|
+| Anbox Cloud       |                               |
+| Charmed Kubeflow  |                               |
+| COS               | Canonical Observability Stack |
+| Juju              |                               |
+| Launchpad         |                               |
+| LXD               |                               |
+| MAAS              | Metal As A Service            |
+| MicroCeph         |                               |
+| MicroK8s          |                               |
+| MicroOVN          |                               |
+| MicroStack        |                               |
+| Mir               |                               |
+| Multipass         |                               |
+| Snapcraft         |                               |
+| Ubuntu Core       |                               |
+| Ubuntu Pro        |                               |
+| Ubuntu Server     |                               |
+
+### Other commonly referenced products/projects
+
+| Product           | Notes                         |
+|-------------------|-------------------------------|
+| NVIDIA            |                               |
+| OpenStack         |                               |
+| PostgreSQL        |                               |
+| Kubernetes        |                               |
+
 ## Contractions
 
 Contractions are very common in spoken English and in many types of writing.
