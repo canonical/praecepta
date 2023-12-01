@@ -59,8 +59,9 @@ Consistency in branding is important for a number of reasons, including the prot
 
 ### Ubuntu
 
-When we refer to Ubuntu, we usually refer to the shipped version of the OS, rather than the Ubuntu project itself. These versions should be referred to consistently.
-Our convention is to use the name, followed by the release number and, if relevant 'LTS' to denote that the version is in Long Term Support. Optionally, you may also further identify the release by it's codname (the first or both parts of the release name) if this is likely to be useful (e.g. some of our products also use the release names to identify versions).
+When we refer to Ubuntu, we are usually referring to the distribution, rather than the Ubuntu project itself.
+
+Our convention is to use the name, followed by the release number and, if applicable, 'LTS' to denote that the version is in Long Term Support. Optionally, you may also further identify the release by it's codename (the first or both parts of the release name) if this is likely to be useful (e.g. some of our products also use the release names to identify versions).
 
 Some examples of correct usage:
 
@@ -93,6 +94,7 @@ In cases where the release may be mentioned many times in a single document, it 
 | Mir               |                               |
 | Multipass         |                               |
 | Snapcraft         |                               |
+| snapd             |                               |
 | Ubuntu Core       |                               |
 | Ubuntu Pro        |                               |
 | Ubuntu Server     |                               |
@@ -167,7 +169,7 @@ understood and not part of some regional dialect, and only use them in
 Headings are important for navigation, for setting tone and for search indexing. Please bear
 in mind the following:
 
-### Sentence Case 
+### Sentence case 
 
 All headings and headlines should be sentence case. This means that you
 should only capitalise the first word unless it falls into one of the categories
@@ -338,6 +340,4 @@ There is no grammatical rule that says you can't split an infinitive. Sometimes,
 _"Can dot.com companies ever hope to fully recover their share values?"_
 
 This sounds much better than moving “fully” in front of “to recover” or behind it. The key is not to write anything that is ambiguous or inelegant.
-
-
 
