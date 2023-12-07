@@ -95,6 +95,7 @@ Note also that when referring to releases in the general sense, it is "_**an**_ 
 | LXD               |                               |
 | MAAS              | Metal As A Service            |
 | MicroCeph         |                               |
+| MicroCloud        |                               |
 | MicroK8s          |                               |
 | MicroOVN          |                               |
 | MicroStack        |                               |
