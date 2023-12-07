@@ -56,25 +56,32 @@ technology terms:
 ## Branding
 
 Consistency in branding is important for a number of reasons, including the protection of trademarks where they apply. 
+For our own products, and those of others we mention frequently, the following guidance applies.
 
 ### Ubuntu
 
-When we refer to Ubuntu, we are usually referring to the distribution, rather than the Ubuntu project itself.
+When we refer to Ubuntu |oǒ'boǒntoō|, we are usually referring to the distribution, rather than the Ubuntu project itself. 
 
-Our convention is to use the name, followed by the release number and, if applicable, 'LTS' to denote that the version is in Long Term Support. Optionally, you may also further identify the release by it's codename (the first or both parts of the release name) if this is likely to be useful (e.g. some of our products also use the release names to identify versions).
+Our convention is to use the name, followed by the release number and, if applicable, 'LTS' to denote that the version
+is in Long Term Support. Optionally, you may also further identify the release by its codename (the first or both parts
+of the release name) if this is likely to be useful (e.g. some of our products also use the release names to identify
+versions).
 
 Some examples of correct usage:
 
-**Ubuntu 22.04 LTS**
-**Ubuntu 22.10**
-**Ubuntu 23.04 (Lunar Lobster)** (note case)
-**Ubuntu 23.10 (Mantic)**
+- **Ubuntu 22.04 LTS**
+- **Ubuntu 22.10**
+- **Ubuntu 23.04 (Lunar Lobster)** _(note case!)_
+- **Ubuntu 23.10 (Mantic)**
 
 This also follows on to more specific products, e.g.
 
 **Ubuntu Server 22.04 LTS**
 
-In cases where the release may be mentioned many times in a single document, it is up to the author's judgement whether this could be reworded or replaced by simply 'Ubuntu' on subsequent mentions. 
+In cases where the release may be mentioned many times in a single document, it is up to the author's judgement whether this
+could be reworded or replaced by simply 'Ubuntu' on subsequent mentions. 
+
+Note also that when referring to releases in the general sense, it is "_**an**_ Ubuntu release".
 
 ### Other Canonical products
 
