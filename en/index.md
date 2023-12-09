@@ -53,6 +53,69 @@ technology terms:
  - space-separated, comma-delimited
  - load balancer (only upper case as part of proper name e.g. Elastic Load Balancer)
 
+## Branding
+
+Consistency in branding is important for a number of reasons, including the protection of trademarks where they apply. 
+For our own products, and those of others we mention frequently, the following guidance applies.
+
+### Ubuntu
+
+When we refer to Ubuntu |oǒ'boǒntoō|, we are usually referring to the distribution, rather than the Ubuntu project itself. 
+
+Our convention is to use the name, followed by the release number and, if applicable, 'LTS' to denote that the version
+is in Long Term Support. Optionally, you may also further identify the release by its codename (the first or both parts
+of the release name) if this is likely to be useful (e.g. some of our products also use the release names to identify
+versions).
+
+Some examples of correct usage:
+
+- **Ubuntu 22.04 LTS**
+- **Ubuntu 22.10**
+- **Ubuntu 23.04 (Lunar Lobster)** _(note case!)_
+- **Ubuntu 23.10 (Mantic)**
+
+This also follows on to more specific products, e.g.
+
+**Ubuntu Server 22.04 LTS**
+
+In cases where the release may be mentioned many times in a single document, it is up to the author's judgement whether this
+could be reworded or replaced by simply 'Ubuntu' on subsequent mentions. 
+
+Note also that when referring to releases in the general sense, it is "_**an**_ Ubuntu release".
+
+### Other Canonical products
+
+| Product           |  Notes                        |
+|-------------------|-------------------------------|
+| Anbox Cloud       |                               |
+| Charmed Kubeflow  |                               |
+| COS               | Canonical Observability Stack |
+| Juju              |                               |
+| Launchpad         |                               |
+| LXD               |                               |
+| MAAS              | Metal As A Service            |
+| MicroCeph         |                               |
+| MicroCloud        |                               |
+| MicroK8s          |                               |
+| MicroOVN          |                               |
+| MicroStack        |                               |
+| Mir               |                               |
+| Multipass         |                               |
+| Snapcraft         |                               |
+| snapd             |                               |
+| Ubuntu Core       |                               |
+| Ubuntu Pro        |                               |
+| Ubuntu Server     |                               |
+
+### Other commonly referenced products/projects
+
+| Product           | Notes                         |
+|-------------------|-------------------------------|
+| NVIDIA            |                               |
+| OpenStack         |                               |
+| PostgreSQL        |                               |
+| Kubernetes        |                               |
+
 ## Contractions
 
 Contractions are very common in spoken English and in many types of writing.
@@ -114,7 +177,7 @@ understood and not part of some regional dialect, and only use them in
 Headings are important for navigation, for setting tone and for search indexing. Please bear
 in mind the following:
 
-### Sentence Case 
+### Sentence case 
 
 All headings and headlines should be sentence case. This means that you
 should only capitalise the first word unless it falls into one of the categories
@@ -285,6 +348,4 @@ There is no grammatical rule that says you can't split an infinitive. Sometimes,
 _"Can dot.com companies ever hope to fully recover their share values?"_
 
 This sounds much better than moving “fully” in front of “to recover” or behind it. The key is not to write anything that is ambiguous or inelegant.
-
-
 
