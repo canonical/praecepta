@@ -53,7 +53,7 @@ jobs:
 ```
 
 In the example above, the workflow is organised as a single job. This is important as the actions rely on persistence through the run.
-There are three job steps
+There are three job steps:
  - The github/checkout action: this fetches the code from the repo calling the workflow
  - The style guide action: this fetches the styles and, if not present, a default config for Vale
  - The vale/reviewdog action: this runs Vale using reviewdog, to insert comments into a pull-request
