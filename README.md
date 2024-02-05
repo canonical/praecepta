@@ -2,7 +2,7 @@
 
 This repository contains the documentation and the Vale rules for the documentation style guide.
 
-The style guide itself is written in Markdown and contained in the `en` directory
+The style guide itself is written in Markdown and contained in the `en` directory.
 
 It is published online at: [docs.ubuntu.com/en/styleguide](https://docs.ubuntu.com/styleguide/en)
 
