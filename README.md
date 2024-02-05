@@ -4,6 +4,8 @@ This repository contains the documentation and the Vale rules for the documentat
 
 The style guide itself is written in Markdown and contained in the `en` directory
 
+It is published online at: [docs.ubuntu.com/en/styleguide](https://docs.ubuntu.com/styleguide/en)
+
 ## The Vale rules
 
 The Vale linter operates from a series of rules. These are defined in individual YAML files, grouped into 'Styles'.
@@ -21,11 +23,11 @@ The Vale rules are published here so that they can be used in any workflow anywh
 
 ## The Canonical Style GitHub action
 
-This repository also includes a file, `action.yml`, which is the basis of a GitHub action to be used to automatically run Vale checks on incoming pull requests. 
+This repository also includes a file, `action.yml`, which is the basis of a GitHub action to automatically run Vale checks on incoming pull requests. 
 
-### Using the Github action in a workflow
+### Using the GitHub action in a workflow
 
-Your repository can make use of the action in a workflow. An example workflow is included in this repository and is demonstrated here. Note that the stle guide action is merely part of a functioning workflow.
+Your repository can make use of the action in a workflow. An example workflow is included in this repository and is demonstrated here. Note that the style guide action is merely part of a functioning workflow.
 
 ```yaml
 on: [pull_request]
@@ -50,7 +52,7 @@ jobs:
             fail_on_error: true
 ```
 
-In the example above, the worklow is organised as a single job. This is important as the actions rely on persistence through the run.
+In the example above, the workflow is organised as a single job. This is important as the actions rely on persistence through the run.
 There are three job steps
  - The github/checkout action: this fetches the code from the repo calling the workflow
  - This style guide action: this fetches the styles and, if not present, a default config for Vale
