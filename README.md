@@ -44,7 +44,7 @@ jobs:
         - name: Checkout repo to runner
           uses: actions/checkout@v3
         - name: Install styles
-          uses: evilnick/test-action@v0
+          uses: canonical/praecepta/style-action@v0
         - name: Run Vale tests
           uses: errata-ai/vale-action@reviewdog
           with:
