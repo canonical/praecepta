@@ -91,6 +91,7 @@ Note also that when referring to releases in the general sense, it is "_**an**_ 
 | Charmed Kubeflow  |                               |
 | COS               | Canonical Observability Stack |
 | Juju              |                               |
+| Landscape         |                               |
 | Launchpad         |                               |
 | LXD               |                               |
 | MAAS              | Metal As A Service            |
@@ -321,6 +322,118 @@ permitting users or customers to conduct certain activities.
 
 It can be tempting to use flowery, official-sounding words
 rather than plain English. Try to keep it simple.
+
+## Interacting with UI elements
+
+### **Screenshots**
+
+**Screenshots should be used sparingly**
+
+A screenshot is not a replacement for clear descriptions in documentation. If an image is well described, a screenshot shouldn’t be necessary in many situations, and including many screenshots can clutter the documentation.
+
+Screenshots also can’t be translated, so they aren’t as accessible to non-native English users or those using translated documentation. Additionally, those using screen-readers won’t be able to access the screenshots without alt-text.
+
+### **Using UI elements as the English words**
+
+**Don’t use UI elements like they’re English words**
+
+For example:
+
+- **Use**: When you’re finished, click **Save** to save your settings.
+- **Don’t use**: When you’re finished, **Save** your settings.
+
+Using the UI text as English words is less clear and may not transfer well to certain translated versions.
+
+### **Click vs. Tap vs. Select**
+
+**Use “Click” for buttons that you click on (or “Tap” if the product is primarily for mobile devices)**
+
+**Use “Select” for selecting from multiple options (e.g., a dropdown menu, multiple menu items, etc.)**
+
+**Use “Select” when there’s multiple instructions separated by > (e.g., Select Preferences > Languages)**
+
+For example:
+
+- **Use**: Click **Settings** to open your user settings.
+- **Use**: Select the machines you want to register, then click **Save**.
+- **Use**: Tap the application to open it.
+- **Don’t use**: Select **Add bookmark** to save your bookmark.
+
+“Click”/”Tap” is preferred over “Select” for UI elements that are definitive. This is because “Select” has an open-ended connotation, while “Click”/”Tap” is direct and definitive. Although “Click”/”Tap” may technically be wrong in certain situations (e.g., if a user is using the mobile version of a web page on their desktop computer), it’s important to consider accessibility and the primary audience of the documentation over these edge cases. Differentiating when users may have to *select* from options or *select* more than one option can be useful for them, especially when following a longer how-to guide (e.g., Click **X**, Click **Y**, Click **Z**, Select the settings you want to apply, Click **Save**). This extra level of precision can also be helpful for non-native English users and those using translated documentation.
+
+### **Bold vs. Italics**
+
+**Use bold for UI elements the user clicks/selects, and quotes or quotes with italics when drawing attention to a specific word or phrase, or using the name of a word as a word**
+
+For example:
+
+- **Use**: Click **Save**
+- **Use**: In the Computers column, click **Register a new computer**.
+- **Use**: Click the link in the text *“You can register new computers by following these instructions”*.
+- **Use**: Use the word “and” instead of “or”*.*
+- **Use**: Use the word *“and”* instead of *“or”*.
+- **Don’t use**: Once you’ve made your selections, click *Save*.
+
+Bolding UI elements can help make the documentation easier to scan for critical information. This is especially good for users who aren’t reading the documentation for the first time and just want key information without having to sift through extraneous documentation.
+
+### **Angled brackets**
+
+**You can use a right angled bracket > for navigating menu items with multiple steps**
+
+For example:
+
+- **Use**: Select **Preferences > Languages > English**
+- **Use**: You can navigate to **File** > **Documents** and select one of your saved documents.
+- **Use**: Select **Blank Document** from the **File >** **New** menu.
+- **Don’t use**: Navigate to the home page > Click **Packages** > Select each package you want to export > Click **Export**
+
+Using the right angled bracket (**>**) is at the author’s discretion; however, you’re encouraged to use this format where possible to keep things concise.
+
+### **Checkboxes**
+
+**Use “Select” and ”Clear” or “Check” and ”Uncheck” together at the author’s discretion, depending on what is most natural in context.**
+
+For example:
+
+- **Use**: Select the **Enable firewall** checkbox.
+- **Use**: Clear the **Add bookmark** checkbox.
+- **Use**: “Check the computer(s) you want to register” with “Uncheck any computer(s) you don’t want registered”
+- **Don’t use**: Check the computer(s) you want to register, or clear any computer(s) you don’t want registered
+
+This helps establish consistency in how we refer to checkboxes in the UI.
+
+### **Keyboard shortcuts and keyboard keys**
+
+**Use “Press” when instructing the user to use a specific keyboard shortcut or keyboard key, and “Use” when instructing them to use collective or ambiguous keys**
+
+For example:
+
+- **Use**: Press `Ctrl + C`
+- **Use**: “To save, press `Enter`.” or “To save, press the `Enter` key”.
+- **Use**: Use the arrow keys to navigate the menu.
+- **Don’t use**: Click the `Enter` key.
+
+This ensures they don’t get confused with our use of “Click”/”Tap”/”Select”.
+
+### **“Icon” vs. “Button”**
+
+**“Icon” is for a symbol/image that represents an object or function, and “button” is for UI elements that initiate action when clicked. Icons typically don’t include explanatory text, and are sometimes buttons or included on a button.**
+
+**If using the image of an icon or button, write the name of the icon/button directly after it or add alt-text. Avoid using the terms “icon” or “button” unless they’re needed for clarity.**
+
+For example:
+
+- A search icon (also may be a button): ![search icon](../media/magnifying_glass.png)
+    
+- A save button: ![save button](../media/save_button.png)
+    
+- A reply button with an icon: ![reply button](../media/reply_button.png)
+    
+- **Use**: Click ![menu](../media/menu_icon.svg) for more options. (Alt-text: “the menu”)
+    
+- **Use**: Click the ![gear](../media/gear.png) gear to open the user settings.
+
+- **Don’t use:** Click the ![pencil](../media/pencil.png) pencil icon to edit the post.
 
 ## FAQs
 There are some grammatical issues that can cause confusion. Here are some of the main offenders.
