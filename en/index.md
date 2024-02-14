@@ -348,7 +348,7 @@ Using the UI text as English words is less clear and may not transfer well to ce
 
  - Use “Click” for buttons that you click on (or “Tap” if the product is primarily for mobile devices)
 - Use “Select” for selecting from multiple options (e.g., a dropdown menu, multiple menu items, etc.)
-**Use “Select” when there’s multiple instructions separated by > (e.g., Select Preferences > Languages)**
+- Use “Select” when there are multiple instructions separated by > (e.g., Select Preferences > Languages)
 
 For example:
 
