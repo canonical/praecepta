@@ -374,7 +374,7 @@ For example:
 
 Bolding UI elements can help make the documentation easier to scan for critical information. This is especially good for users who aren’t reading the documentation for the first time and just want key information without having to sift through extraneous documentation.
 
-### **Angled brackets**
+### Angled brackets
 
 **You can use a right angled bracket > for navigating menu items with multiple steps**
 
