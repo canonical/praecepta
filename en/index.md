@@ -329,7 +329,9 @@ rather than plain English. Try to keep it simple.
 
 **Screenshots should be used sparingly**
 
-A screenshot is not a replacement for clear descriptions in documentation. If an image is well described, a screenshot shouldn’t be necessary in many situations, and including many screenshots can clutter the documentation.
+A screenshot is not a replacement for clear descriptions in documentation. If an image is well described,
+a screenshot shouldn’t be necessary in many situations, and including many screenshots can clutter the
+documentation.
 
 Screenshots also can’t be translated, so they aren’t as accessible to non-native English users or those using translated documentation. Additionally, those using screen-readers won’t be able to access the screenshots without alt-text.
 
