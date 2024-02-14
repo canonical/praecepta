@@ -325,9 +325,9 @@ rather than plain English. Try to keep it simple.
 
 ## Interacting with UI elements
 
-### **Screenshots**
+### Screenshots
 
-**Screenshots should be used sparingly**
+Screenshots should be used sparingly.
 
 A screenshot is not a replacement for clear descriptions in documentation. If an image is well described,
 a screenshot shouldn’t be necessary in many situations, and including many screenshots can clutter the
@@ -335,9 +335,9 @@ documentation.
 
 Screenshots also can’t be translated, so they aren’t as accessible to non-native English users or those using translated documentation. Additionally, those using screen-readers won’t be able to access the screenshots without alt-text.
 
-### **Using UI elements as the English words**
+### Using UI elements as the English words
 
-**Don’t use UI elements as though they are English words**
+Don’t use UI elements as though they are English words.
 
 For example:
 
@@ -370,7 +370,7 @@ those using translated documentation.
 
 ### Bold vs. Italics
 
-**Use bold for UI elements the user clicks/selects, and quotes or quotes with italics when drawing attention to a specific word or phrase, or using the name of a word as a word**
+Use bold for UI elements the user clicks/selects, and quotes or quotes with italics when drawing attention to a specific word or phrase, or using the name of a word as a word.
 
 For example:
 
@@ -385,7 +385,7 @@ Bolding UI elements can help make the documentation easier to scan for critical 
 
 ### Angled brackets
 
-**You can use a right angled bracket > for navigating menu items with multiple steps**
+You can use a right angled bracket > for navigating menu items with multiple steps.
 
 For example:
 
@@ -396,9 +396,9 @@ For example:
 
 Using the right angled bracket (**>**) is at the author’s discretion; however, you’re encouraged to use this format where possible to keep things concise.
 
-### **Checkboxes**
+### Checkboxes
 
-**Use “Select” and ”Clear” or “Check” and ”Uncheck” together at the author’s discretion, depending on what is most natural in context.**
+Use “Select” and ”Clear” or “Check” and ”Uncheck” together at the author’s discretion, depending on what is most natural in context.
 
 For example:
 
@@ -409,9 +409,9 @@ For example:
 
 This helps establish consistency in how we refer to checkboxes in the UI.
 
-### **Keyboard shortcuts and keyboard keys**
+### Keyboard shortcuts and keyboard keys
 
-**Use “Press” when instructing the user to use a specific keyboard shortcut or keyboard key, and “Use” when instructing them to use collective or ambiguous keys**
+Use “Press” when instructing the user to use a specific keyboard shortcut or keyboard key, and “Use” when instructing them to use collective or ambiguous keys.
 
 For example:
 
@@ -422,25 +422,25 @@ For example:
 
 This ensures they don’t get confused with our use of “Click”/”Tap”/”Select”.
 
-### **“Icon” vs. “Button”**
+### “Icon” vs. “Button”
 
-**“Icon” is for a symbol/image that represents an object or function, and “button” is for UI elements that initiate action when clicked. Icons typically don’t include explanatory text, and are sometimes buttons or included on a button.**
+“Icon” is for a symbol/image that represents an object or function, and “button” is for UI elements that initiate action when clicked. Icons typically don’t include explanatory text, and are sometimes buttons or included on a button.
 
-**If using the image of an icon or button, write the name of the icon/button directly after it or add alt-text. Avoid using the terms “icon” or “button” unless they’re needed for clarity.**
+If using the image of an icon or button, write the name of the icon/button directly after it or add alt-text. Avoid using the terms “icon” or “button” unless they’re needed for clarity.
 
 For example:
 
-- A search icon (also may be a button): ![search icon](../media/magnifying_glass.png)
+- A search icon (also may be a button): ![search icon](https://assets.ubuntu.com/v1/46244ff9-magnifying_glass.png)
     
-- A save button: ![save button](../media/save_button.png)
+- A save button: ![save button](https://assets.ubuntu.com/v1/46eccbaa-Screenshot%20from%202024-02-14%2012-25-36.png)
     
-- A reply button with an icon: ![reply button](../media/reply_button.png)
+- A reply button with an icon: ![reply button](https://assets.ubuntu.com/v1/1370f4e1-reply_button.png)
     
-- **Use**: Click ![menu](../media/menu_icon.svg) for more options. (Alt-text: “the menu”)
+- **Use**: Click ![menu](https://assets.ubuntu.com/v1/9526cf28-menu_icon.svg) for more options. (Alt-text: “the menu”)
     
-- **Use**: Click the ![gear](../media/gear.png) gear to open the user settings.
+- **Use**: Click the ![star](https://assets.ubuntu.com/v1/821178e7-icon-orange-resources.png) star to add the page to your favorites.
 
-- **Don’t use:** Click the ![pencil](../media/pencil.png) pencil icon to edit the post.
+- **Don’t use:** Click the ![pencil](https://assets.ubuntu.com/v1/633aab2b-pencil.png) pencil icon to edit the post.
 
 ## FAQs
 There are some grammatical issues that can cause confusion. Here are some of the main offenders.
