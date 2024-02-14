@@ -335,7 +335,7 @@ Screenshots also can’t be translated, so they aren’t as accessible to non-na
 
 ### **Using UI elements as the English words**
 
-**Don’t use UI elements like they’re English words**
+**Don’t use UI elements as though they are English words**
 
 For example:
 
