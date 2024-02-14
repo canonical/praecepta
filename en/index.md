@@ -357,7 +357,14 @@ For example:
 - **Use**: Tap the application to open it.
 - **Don’t use**: Select **Add bookmark** to save your bookmark.
 
-“Click”/”Tap” is preferred over “Select” for UI elements that are definitive. This is because “Select” has an open-ended connotation, while “Click”/”Tap” is direct and definitive. Although “Click”/”Tap” may technically be wrong in certain situations (e.g., if a user is using the mobile version of a web page on their desktop computer), it’s important to consider accessibility and the primary audience of the documentation over these edge cases. Differentiating when users may have to *select* from options or *select* more than one option can be useful for them, especially when following a longer how-to guide (e.g., Click **X**, Click **Y**, Click **Z**, Select the settings you want to apply, Click **Save**). This extra level of precision can also be helpful for non-native English users and those using translated documentation.
+“Click”/”Tap” is preferred over “Select” for UI elements that are definitive. This is because “Select” has an
+open-ended connotation, while “Click”/”Tap” is direct and definitive. Although “Click”/”Tap” may
+technically be wrong in certain situations (e.g., if a user is using the mobile version of a web page on
+their desktop computer), it’s important to consider accessibility and the primary audience of the documentation over these edge cases. Differentiating when users may have to *select* from 
+options or *select* more than one option can be useful for them, especially when following a longer
+how-to guide (e.g., Click **X**, Click **Y**, Click **Z**, Select the settings you want to apply, 
+Click **Save**). This extra level of precision can also be helpful for non-native English users and
+those using translated documentation.
 
 ### Bold vs. Italics
 
