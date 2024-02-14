@@ -344,7 +344,7 @@ For example:
 
 Using the UI text as English words is less clear and may not transfer well to certain translated versions.
 
-### **Click vs. Tap vs. Select**
+### Click vs. Tap vs. Select
 
 **Use “Click” for buttons that you click on (or “Tap” if the product is primarily for mobile devices)**
 
