@@ -399,9 +399,16 @@ A screenshot is not a replacement for clear descriptions in documentation. If an
 a screenshot shouldn’t be necessary in many situations, and including many screenshots can clutter the
 documentation.
 
+<!-- Rule#22
+Images must have Alt text
+-->
 Screenshots also can’t be translated, so they aren’t as accessible to non-native English users or those using translated documentation. Additionally, those using screen-readers won’t be able to access the screenshots without alt-text.
 
 ### Using UI elements as the English words
+
+<!-- Rule
+#23 Don’t use UI elements as though they are English words
+-->
 
 Don’t use UI elements as though they are English words.
 
@@ -428,7 +435,8 @@ For example:
 “Click”/”Tap” is preferred over “Select” for UI elements that are definitive. This is because “Select” has an
 open-ended connotation, while “Click”/”Tap” is direct and definitive. Although “Click”/”Tap” may
 technically be wrong in certain situations (e.g., if a user is using the mobile version of a web page on
-their desktop computer), it’s important to consider accessibility and the primary audience of the documentation over these edge cases. Differentiating when users may have to *select* from 
+their desktop computer), it’s important to consider accessibility and the primary audience of the documentation
+over these edge cases. Differentiating when users may have to *select* from 
 options or *select* more than one option can be useful for them, especially when following a longer
 how-to guide (e.g., Click **X**, Click **Y**, Click **Z**, Select the settings you want to apply, 
 Click **Save**). This extra level of precision can also be helpful for non-native English users and
@@ -436,7 +444,8 @@ those using translated documentation.
 
 ### Bold vs. Italics
 
-Use bold for UI elements the user clicks/selects, and quotes or quotes with italics when drawing attention to a specific word or phrase, or using the name of a word as a word.
+Use bold for UI elements the user clicks/selects, and quotes or quotes with italics when drawing attention to a 
+specific word or phrase, or using the name of a word as a word.
 
 For example:
 
@@ -478,6 +487,11 @@ This helps establish consistency in how we refer to checkboxes in the UI.
 ### Keyboard shortcuts and keyboard keys
 
 Use “Press” when instructing the user to use a specific keyboard shortcut or keyboard key, and “Use” when instructing them to use collective or ambiguous keys.
+
+<!-- Rule
+#24 Don’t use "Click the 'Enter' Key" or derivations 
+-->
+
 
 For example:
 
