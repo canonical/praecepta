@@ -144,21 +144,21 @@ understood and not part of some regional dialect, and only use them in
 |couldn't     |could not          |                               |
 |didn't       |did not            |                               |
 |doesn't      |does not           |                               |
-|don't        |do not             |                               |                              
-|hadn't       |had not            |                               |          
-|hasn't       |has not            |                               |          
-|haven't      |have not           |                               |   
-|it's         |it has / it is     |                               |           
-|isn't        |is not             |                               |           
-|mustn't      |must not           |                               |             
-|o'clock      |of the clock       |                               |                   
-|wasn't       | was not           |                               |                          
-|we'll 	      |we will            |                               |               
-|we're 	      |we are             |                               |              
-|we've 	      |we have            |                               |                          
-|won't 	      |will not           |                               |                   
-|would've     |would have         |                               |           
-|wouldn't     |would not          |                               |             
+|don't        |do not             |                               |
+|hadn't       |had not            |                               |
+|hasn't       |has not            |                               |
+|haven't      |have not           |                               |
+|it's         |it has / it is     |                               |
+|isn't        |is not             |                               |
+|mustn't      |must not           |                               |
+|o'clock      |of the clock       |                               |
+|wasn't       | was not           |                               |
+|we'll 	      |we will            |                               |
+|we're 	      |we are             |                               |
+|we've 	      |we have            |                               |
+|won't 	      |will not           |                               |
+|would've     |would have         |                               |
+|wouldn't     |would not          |                               |
 |you'd        |you had /you would |                               |  
 |you'll       |you shall /you will|                               |
 |you're       |you are            |                               |
@@ -376,7 +376,9 @@ permitting users or customers to conduct certain activities.
 
 It can be tempting to use flowery, official-sounding words
 rather than plain English. Try to keep it simple.
-
+<!-- RULE
+#21 No double space after a period/full stop
+-->
 ## FAQs
 There are some grammatical issues that can cause confusion. Here are some of the main offenders.
 
