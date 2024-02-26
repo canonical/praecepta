@@ -13,6 +13,9 @@ Canonical is a UK based company, and uses British English throughout. There
 are many small differences between that and US English, but for the most 
 part it comes down to spelling.
 
+<!-- RULE
+#01 Spelling suggestions for English words
+-->
 Some common differences are:
 
 |    US English                     |            UK English               |
@@ -36,6 +39,10 @@ differences in grammar will (hopefully) be picked up in review by the
 documentation team.
 
 ### Other common terms
+
+<!-- RULE
+#02 Spelling suggestions for common terms
+-->
 
 We would like to standardise on the following spellings for common 
 technology terms: 
@@ -67,6 +74,9 @@ is in Long Term Support. Optionally, you may also further identify the release b
 of the release name) if this is likely to be useful (e.g. some of our products also use the release names to identify
 versions).
 
+<!-- RULE
+#03 Correct use of Ubuntu versions
+-->
 Some examples of correct usage:
 
 - **Ubuntu 22.04 LTS**
@@ -82,6 +92,10 @@ In cases where the release may be mentioned many times in a single document, it 
 could be reworded or replaced by simply 'Ubuntu' on subsequent mentions. 
 
 Note also that when referring to releases in the general sense, it is "_**an**_ Ubuntu release".
+
+<!-- RULE
+#04 Correct use of Canonical product names
+-->
 
 ### Other Canonical products
 
@@ -107,6 +121,10 @@ Note also that when referring to releases in the general sense, it is "_**an**_ 
 | Ubuntu Core       |                               |
 | Ubuntu Pro        |                               |
 | Ubuntu Server     |                               |
+
+<!-- RULE
+#05 Correct use of external product names
+-->
 
 ### Other commonly referenced products/projects
 
@@ -135,27 +153,29 @@ understood and not part of some regional dialect, and only use them in
 |couldn't     |could not          |                               |
 |didn't       |did not            |                               |
 |doesn't      |does not           |                               |
-|don't        |do not             |                               |                              
-|hadn't       |had not            |                               |          
-|hasn't       |has not            |                               |          
-|haven't      |have not           |                               |   
-|it's         |it has / it is     |                               |           
-|isn't        |is not             |                               |           
-|mustn't      |must not           |                               |             
-|o'clock      |of the clock       |                               |                   
-|wasn't       | was not           |                               |                          
-|we'll 	      |we will            |                               |               
-|we're 	      |we are             |                               |              
-|we've 	      |we have            |                               |                          
-|won't 	      |will not           |                               |                   
-|would've     |would have         |                               |           
-|wouldn't     |would not          |                               |             
+|don't        |do not             |                               |
+|hadn't       |had not            |                               |
+|hasn't       |has not            |                               |
+|haven't      |have not           |                               |
+|it's         |it has / it is     |                               |
+|isn't        |is not             |                               |
+|mustn't      |must not           |                               |
+|o'clock      |of the clock       |                               |
+|wasn't       | was not           |                               |
+|we'll 	      |we will            |                               |
+|we're 	      |we are             |                               |
+|we've 	      |we have            |                               |
+|won't 	      |will not           |                               |
+|would've     |would have         |                               |
+|wouldn't     |would not          |                               |
 |you'd        |you had /you would |                               |  
 |you'll       |you shall /you will|                               |
 |you're       |you are            |                               |
 |you've       |you have           |                               |
 
-
+<!-- RULE
+#06 Forbidden contractions
+-->
 ### Don't use these!
 
 | contraction | meaning       | notes
@@ -178,6 +198,9 @@ understood and not part of some regional dialect, and only use them in
 Headings are important for navigation, for setting tone and for search indexing. Please bear
 in mind the following:
 
+<!-- RULE
+#07 Use sentence case in headings
+-->
 ### Sentence case 
 
 All headings and headlines should be sentence case. This means that you
@@ -196,6 +219,18 @@ outlined below:
 
 If it is not the actual product name, it should not be capitalised. Never capitalise keywords, technical terms and jargon.
 
+<!-- RULE
+#08 Headings must not end in '.'
+-->
+<!-- RULE
+#09 Headings should not contain links 
+-->
+<!-- RULE
+#10 Headings should not contain code
+-->
+<!-- RULE
+#11 Headings should not be followed by a subheading
+-->
 ### Other considerations
 
  - Avoid overusing punctuation in headings. Headings should not end with a period/full point/full stop
@@ -205,6 +240,10 @@ If it is not the actual product name, it should not be capitalised. Never capita
  - Do not skip levels of heading hierarchy (e.g. following an h1/# with an h3/###)
  - Headings require content and should not be followed directly by a subheading
 
+
+<!-- RULE
+#12 Dates should follow '1 January 1970' format
+-->
 ## Dates
 
 For consistency, we will use the following date format:
@@ -213,6 +252,12 @@ For consistency, we will use the following date format:
  - Date range within same month: 1-2 January 2013
  - Date range across two or more months: 1 January - 2 February 2013
 
+<!-- RULE
+#13 Numbers below 10 should be spelled out
+-->
+<!-- RULE
+#14 Numbers above 9 should be written in the '1,970' format
+-->
 ## Numbers
 
 Numbers in single figures should be spelled out in most cases. From
@@ -226,6 +271,18 @@ When writing out numbers over the 100s, remember to include commas.
 
 **Don't use:** 7000
 
+<!-- RULE
+#15 Do not use $/# prompts in code blocks
+-->
+<!-- RULE
+#16 Avoid inlining comments in code blocks
+-->
+<!-- RULE
+#17 Avoid cade blocks more than 40 lines long
+-->
+<!-- RULE
+#18 Separate input and output code blocks
+-->
 # Code examples in documentation
 
 **DO NOT** use prompt marks (e.g. `$` or `#`) in code samples. These cause problems
@@ -292,9 +349,15 @@ state of each unit and service:
 
 An image should not be overly cropped - allow for context. 
 
+<!-- RULE
+#19 No images linked to Google drive
+-->
 **DO NOT LINK IMAGES FROM A GOOGLE DRIVE** 
 This will work, until such a time as whoever owns the image closes their account (or leaves Canonical).
 
+<!-- RULE
+#20 Cliché words and phrases to avoid
+-->
 ## Words and phrases to avoid
 
 Try to avoid jargon, long-winded phrases and words with negative
@@ -322,6 +385,9 @@ permitting users or customers to conduct certain activities.
 
 It can be tempting to use flowery, official-sounding words
 rather than plain English. Try to keep it simple.
+<!-- RULE
+#21 No double space after a period/full stop
+-->
 
 ## Interacting with UI elements
 
