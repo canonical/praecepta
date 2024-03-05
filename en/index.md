@@ -10,7 +10,7 @@ to the left, and presented here as a single page to aid searching.
 ## Spelling
 
 Canonical is a UK based company, and uses British English throughout. There
-are many small differences between that and US English, but for the most 
+are many small differences between that and US English, but for the most
 part it comes down to spelling.
 
 <!-- RULE
@@ -34,8 +34,8 @@ Some common differences are:
 |   -or                             |  -our                               |
 
 In the most part this can be mitigated by simply enabling spell checking
-on your editing software and choosing an **en-gb** dictionary. The minor 
-differences in grammar will (hopefully) be picked up in review by the 
+on your editing software and choosing an **en-gb** dictionary. The minor
+differences in grammar will (hopefully) be picked up in review by the
 documentation team.
 
 ### Other common terms
@@ -44,8 +44,8 @@ documentation team.
 #02 Spelling suggestions for common terms
 -->
 
-We would like to standardise on the following spellings for common 
-technology terms: 
+We would like to standardise on the following spellings for common
+technology terms:
 
  - email
  - online
@@ -62,12 +62,12 @@ technology terms:
 
 ## Branding
 
-Consistency in branding is important for a number of reasons, including the protection of trademarks where they apply. 
+Consistency in branding is important for a number of reasons, including the protection of trademarks where they apply.
 For our own products, and those of others we mention frequently, the following guidance applies.
 
 ### Ubuntu
 
-When we refer to Ubuntu |oǒ'boǒntoō|, we are usually referring to the distribution, rather than the Ubuntu project itself. 
+When we refer to Ubuntu |oǒ'boǒntoō|, we are usually referring to the distribution, rather than the Ubuntu project itself.
 
 Our convention is to use the name, followed by the release number and, if applicable, 'LTS' to denote that the version
 is in Long Term Support. Optionally, you may also further identify the release by its codename (the first or both parts
@@ -89,7 +89,7 @@ This also follows on to more specific products, e.g.
 **Ubuntu Server 22.04 LTS**
 
 In cases where the release may be mentioned many times in a single document, it is up to the author's judgement whether this
-could be reworded or replaced by simply 'Ubuntu' on subsequent mentions. 
+could be reworded or replaced by simply 'Ubuntu' on subsequent mentions.
 
 Note also that when referring to releases in the general sense, it is "_**an**_ Ubuntu release".
 
@@ -168,7 +168,7 @@ understood and not part of some regional dialect, and only use them in
 |won't 	      |will not           |                               |
 |would've     |would have         |                               |
 |wouldn't     |would not          |                               |
-|you'd        |you had /you would |                               |  
+|you'd        |you had /you would |                               |
 |you'll       |you shall /you will|                               |
 |you're       |you are            |                               |
 |you've       |you have           |                               |
@@ -201,13 +201,13 @@ in mind the following:
 <!-- RULE
 #07 Use sentence case in headings
 -->
-### Sentence case 
+### Sentence case
 
 All headings and headlines should be sentence case. This means that you
 should only capitalise the first word unless it falls into one of the categories
 outlined below:
 
- - product names 
+ - product names
  - personal names
  - company names
  - brands
@@ -223,7 +223,7 @@ If it is not the actual product name, it should not be capitalised. Never capita
 #08 Headings must not end in '.'
 -->
 <!-- RULE
-#09 Headings should not contain links 
+#09 Headings should not contain links
 -->
 <!-- RULE
 #10 Headings should not contain code
@@ -235,7 +235,7 @@ If it is not the actual product name, it should not be capitalised. Never capita
 
  - Avoid overusing punctuation in headings. Headings should not end with a period/full point/full stop
  - Avoid links in headings
- - Avoid 'code' styling in headings - if it is really needed, it is preferred to at least sbegin the title by adding normal styled word
+ - Don't overuse `code` styling in headings - it can be useful to document command references, for example, but you should always consider if it is really needed
  - Imperatives should be used for 'How to...' style docs instead of gerunds (i.e. "Create an instance" rather than "Creating an instance")
  - Do not skip levels of heading hierarchy (e.g. following an h1/# with an h3/###)
  - Headings require content and should not be followed directly by a subheading
@@ -287,12 +287,12 @@ When writing out numbers over the 100s, remember to include commas.
 
 **DO NOT** use prompt marks (e.g. `$` or `#`) in code samples. These cause problems
 for users who sometimes mistakenly type them in, or who want to copy and paste
-sections of code. They also encourage poor explanation of the code. 
+sections of code. They also encourage poor explanation of the code.
 
 **DO NOT** use comments in normal bash code. E.g.:
 
 ```bash
-juju deploy wordpress 
+juju deploy wordpress
 juju deploy ntp-master --to 2   #colocates with wordpress
 juju add-relation mysql wordpress
 ```
@@ -304,7 +304,7 @@ to simply explain, before after or during the code.
 **DO NOT** use long blocks of code. Anything which doesn't comfortably fit
 on a screen is too long. Consider *why* you are showing it. Can it be broken
 up into parts? Long sections of code are rarely read in documentation. If the
-code is an example intended to be used rather than read, offer it as a 
+code is an example intended to be used rather than read, offer it as a
 download instead.
 
 
@@ -347,12 +347,12 @@ state of each unit and service:
 
 ## Images
 
-An image should not be overly cropped - allow for context. 
+An image should not be overly cropped - allow for context.
 
 <!-- RULE
 #19 No images linked to Google drive
 -->
-**DO NOT LINK IMAGES FROM A GOOGLE DRIVE** 
+**DO NOT LINK IMAGES FROM A GOOGLE DRIVE**
 This will work, until such a time as whoever owns the image closes their account (or leaves Canonical).
 
 <!-- RULE
@@ -436,15 +436,15 @@ For example:
 open-ended connotation, while “Click”/”Tap” is direct and definitive. Although “Click”/”Tap” may
 technically be wrong in certain situations (e.g., if a user is using the mobile version of a web page on
 their desktop computer), it’s important to consider accessibility and the primary audience of the documentation
-over these edge cases. Differentiating when users may have to *select* from 
+over these edge cases. Differentiating when users may have to *select* from
 options or *select* more than one option can be useful for them, especially when following a longer
-how-to guide (e.g., Click **X**, Click **Y**, Click **Z**, Select the settings you want to apply, 
+how-to guide (e.g., Click **X**, Click **Y**, Click **Z**, Select the settings you want to apply,
 Click **Save**). This extra level of precision can also be helpful for non-native English users and
 those using translated documentation.
 
 ### Bold vs. Italics
 
-Use bold for UI elements the user clicks/selects, and quotes or quotes with italics when drawing attention to a 
+Use bold for UI elements the user clicks/selects, and quotes or quotes with italics when drawing attention to a
 specific word or phrase, or using the name of a word as a word.
 
 For example:
@@ -489,7 +489,7 @@ This helps establish consistency in how we refer to checkboxes in the UI.
 Use “Press” when instructing the user to use a specific keyboard shortcut or keyboard key, and “Use” when instructing them to use collective or ambiguous keys.
 
 <!-- Rule
-#24 Don’t use "Click the 'Enter' Key" or derivations 
+#24 Don’t use "Click the 'Enter' Key" or derivations
 -->
 
 
@@ -511,13 +511,13 @@ If using the image of an icon or button, write the name of the icon/button direc
 For example:
 
 - A search icon (also may be a button): ![search icon](https://assets.ubuntu.com/v1/46244ff9-magnifying_glass.png)
-    
+
 - A save button: ![save button](https://assets.ubuntu.com/v1/46eccbaa-Screenshot%20from%202024-02-14%2012-25-36.png)
-    
+
 - A reply button with an icon: ![reply button](https://assets.ubuntu.com/v1/1370f4e1-reply_button.png)
-    
+
 - **Use**: Click ![menu](https://assets.ubuntu.com/v1/9526cf28-menu_icon.svg) for more options. (Alt-text: “the menu”)
-    
+
 - **Use**: Click the ![star](https://assets.ubuntu.com/v1/821178e7-icon-orange-resources.png) star to add the page to your favorites.
 
 - **Don’t use:** Click the ![pencil](https://assets.ubuntu.com/v1/633aab2b-pencil.png) pencil icon to edit the post.
@@ -548,4 +548,3 @@ There is no grammatical rule that says you can't split an infinitive. Sometimes,
 _"Can dot.com companies ever hope to fully recover their share values?"_
 
 This sounds much better than moving “fully” in front of “to recover” or behind it. The key is not to write anything that is ambiguous or inelegant.
-
