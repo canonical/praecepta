@@ -283,7 +283,7 @@ When writing out numbers over the 100s, remember to include commas.
 <!-- RULE
 #18 Separate input and output code blocks
 -->
-# Code examples in documentation
+## Code examples in documentation
 
 **DO NOT** use prompt marks (e.g. `$` or `#`) in code samples. These cause problems
 for users who sometimes mistakenly type them in, or who want to copy and paste
