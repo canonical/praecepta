@@ -10,7 +10,7 @@ To build documentation, you first need to install the documentation-builder:
 snap install documentation-builder
 ```
 
-Now simply run it inside this folder:
+Then, navigate to the folder containing this repository and run the command
 
 ``` bash
 documentation-builder
