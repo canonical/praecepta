@@ -1,7 +1,7 @@
 # 06 - Contractions - Do not use these
 
 extends: existence
-message: "Consider rewording this contraction"
+message: "Consider rewording the contraction '%s'"
 link: https://docs.ubuntu.com/styleguide/en#don't-use-these!
 level: warning
 ignorecase: true
@@ -10,7 +10,6 @@ tokens:
   - how'd
   - how'll
   - I'd
-  - 'twas
   - something's
   - mayn't
   - may've
