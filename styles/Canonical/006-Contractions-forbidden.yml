@@ -1,19 +1,19 @@
 # 06 - Contractions - Do not use these
 
-extends: existence
-message: "Consider rewording the contraction '%s'"
+extends: substitution
+message: "Consider using '%s' instead of '%s'"
 link: https://docs.ubuntu.com/styleguide/en#don't-use-these!
 level: warning
 ignorecase: true
-tokens:
-  - ain't
-  - how'd
-  - how'll
-  - I'd
-  - something's
-  - mayn't
-  - may've
-  - mightn't
-  - might've
-  - gonna
-  - gotta
+swap:
+  ain't: isn't
+  how'd: how did
+  how'll: how will
+  I'd: one would
+  something's: something is
+  mayn't: may not
+  may've: may have
+  mightn't: might not
+  might've: might have
+  gonna: will
+  gotta: must
