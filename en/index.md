@@ -385,6 +385,7 @@ permitting users or customers to conduct certain activities.
 
 It can be tempting to use flowery, official-sounding words
 rather than plain English. Try to keep it simple.
+
 <!-- RULE
 #21 No double space after a period/full stop
 -->
