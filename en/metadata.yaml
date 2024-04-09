@@ -18,21 +18,23 @@ navigation:
 
     - title: Spelling
       location: '#spelling'
+    - title: Branding
+      location: '#branding'
     - title: Contractions
       location: '#contractions'
-    - title: Headings and capitalisation
-      location: '#headings-and-capitalisation'
+    - title: Headings
+      location: '#headings'
     - title: Dates
       location: '#dates'
     - title: Numbers
       location: '#numbers'
     - title: Code examples in documentation
       location: '#code-examples-in-documentation'
-    - title: Hyperlinks
-      location: '#hyperlinks'
     - title: Images
       location: '#images'
     - title: Words and phrases to avoid
       location: '#words-and-phrases-to-avoid'
- 
-
+    - title: Interacting with UI elements
+      location: '#interacting-with-ui-elements'
+    - title: FAQs
+      location: '#faqs'
