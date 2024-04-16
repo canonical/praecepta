@@ -1,13 +1,19 @@
-# Heading with [a link](docs.ubuntu.com)
+# Heading with [a link](docs.ubuntu.com) 
 
 Paragraph with [a link](docs.ubuntu.com).
+
+Second heading with [a link](docs.ubuntu.com) not at end of line
+================================================================
 
 ## Heading with a link for <https://docs.ubuntu.com>
 
 Paragraph with a link for <https://wdocs.ubuntu.com>
 
-RST Heading with `a link<docs.ubuntu.com>`_
-===========================================
+Second heading with a link for <https://docs.ubuntu.com>
+---------------------------------------------------------
+
+RST Heading with `a link<docs.ubuntu.com>`_ not at end of line
+==============================================================
 
 RST paragraph with `a link<docs.ubuntu.com>`_
 
@@ -17,7 +23,7 @@ RST Heading with a doc ref :doc:`some document`
 RST paragraph with a doc ref :doc:`some document`
 
 
-RST Heading with a ref ref :ref:`some document`
------------------------------------------------
+RST Heading with a ref ref :ref:`some document` not at end of line
+------------------------------------------------------------------
 
 RST paragraph with a ref ref :ref:`some document`
