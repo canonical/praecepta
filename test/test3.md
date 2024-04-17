@@ -12,18 +12,35 @@ Paragraph with a link for <https://wdocs.ubuntu.com>
 Second heading with a link for <https://docs.ubuntu.com>
 ---------------------------------------------------------
 
-RST Heading with `a link<docs.ubuntu.com>`_ not at end of line
+RST heading with `a link<docs.ubuntu.com>`_ not at end of line
 ==============================================================
 
 RST paragraph with `a link<docs.ubuntu.com>`_
 
-RST Heading with a doc ref :doc:`some document`
+RST heading with a doc ref :doc:`some document`
 -----------------------------------------------
 
 RST paragraph with a doc ref :doc:`some document`
 
 
-RST Heading with a ref ref :ref:`some document` not at end of line
+RST heading with a ref ref :ref:`some document` not at end of line
 ------------------------------------------------------------------
 
 RST paragraph with a ref ref :ref:`some document`
+
+RST heading with a doc ref {doc}`some document`
+-----------------------------------------------
+
+RST paragraph with a doc ref {doc}`some document`
+
+
+RST heading with a ref ref {ref}`some document` not at end of line
+------------------------------------------------------------------
+
+RST paragraph with a ref ref {ref}`some document`
+
+
+RST heading with a ref <project:../README.md> not at end of line
+------------------------------------------------------------------
+
+RST paragraph with a ref ref <project:../README.md> 
