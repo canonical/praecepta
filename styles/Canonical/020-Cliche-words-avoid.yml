@@ -1,0 +1,29 @@
+# 20 - Cliché words and phrases - avoid these.
+
+extends: existence
+message: "'%s' is cliché"
+link: https://docs.ubuntu.com/styleguide/en#words-and-phrases-to-avoid
+level: warning
+ignorecase: true
+tokens:
+  - 'allow.*?' # This suggests that we are in a position of power, permitting users or customers to conduct certain activities.
+  - the ability to # Use 'We can' instead of 'We have the ability to'
+  - able to # Use 'Ubuntu can' instead of 'Ubuntu is able to'
+  - 'not only.*?but also'
+  - eliminate
+  - execute
+  - terminate
+  - kill
+  - 'disruptive.*?'
+  - 'explosive.*?'
+  - 'leverag.*?'
+  - 'ecosystem.*?'
+  - '(go).*?(forward)'
+  - in order to
+  - form factor
+  - 'use case.*?'
+  - end user # Use 'user' instead
+  - 'linux.*?for human beings'
+  - 'thing.*?'
+  - next level
+  - space
