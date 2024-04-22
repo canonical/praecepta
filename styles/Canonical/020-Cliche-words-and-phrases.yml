@@ -14,7 +14,7 @@ tokens:
   - 'execute.*?'
   - 'terminate.*?'
   - 'kill.*?'
-  - 'disrupt.*?'
+  - 'disruptive.*?'
   - 'explosive.*?'
   - 'leverag.*?'
   - 'ecosystem.*?'
