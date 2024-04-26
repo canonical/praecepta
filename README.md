@@ -15,7 +15,9 @@ This repository contains the Canonical set of rules, or the Canonical Style.
 
 Anyone is welcome to submit a PR to add additional rules. However, no additions will be considered unless they are part of the Canonical Style Guide as found at the website above.
 
-For information on how to create rules, see the Vale [documentation on Styles][Vale styles].
+For a reference on rule syntax, see the Vale [documentation on Styles][Vale styles].
+
+If you are completely new to developing Vale rules, see this [introductory guide](https://github.com/canonical/praecepta/blob/8c7fee862b2258c692439ef430198e393bdc30c4/getting-started.md). 
 
 ### Using the rules
 
