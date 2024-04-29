@@ -1,4 +1,4 @@
-# 10 - Punctuation - No double space after '.', `?`, or `!`
+# 21 - Punctuation - No double space after '.', `?`, or `!`
 
 extends: existence
 message: "'%s' should have one space."
