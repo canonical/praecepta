@@ -1,6 +1,6 @@
 # Introduction to Vale rule development
 
-The goal of this guide is to provide pointers and distil existing resources for anyone who is new to Vale rules. While it is not an in-depth tutorial, it aims to accompany you through installing and understanding Vale enough to create your first rules.
+The goal of this guide is to curate existing resources and provide pointers for anyone who is new to Vale rules. While it is not an in-depth tutorial, it aims to help you through installing and understanding Vale enough to create your first rules.
 
 ## Overview
 * [Install the Vale CLI tool](#install-the-vale-cli-tool)
@@ -21,7 +21,7 @@ To install the Vale CLI tool, see the [installation guide](https://vale.sh/docs/
 
 - **For Windows and MacOS**, the easiest option is through the [package managers](https://vale.sh/docs/vale-cli/installation/#package-managers).
 
-- **For Linux**, the easiest option depends on whether or not you have Docker. (Check with `docker -v`)
+- **For Linux**, the easiest option depends on whether or not you have Docker (run `docker -v` to check if Docker is installed).
   * If you do, then you just have to [pull the container](https://vale.sh/docs/vale-cli/installation/#docker).
   * If you **don't**, the best option is to download the binaries from [Vale's GitHub releases](https://vale.sh/docs/vale-cli/installation/#github-releases). Installing Docker just for Vale is not worth the hassle.
 
@@ -143,6 +143,7 @@ in the root directory `praecepta/`.
 * Run `vale -h` to see optional parameters like output style and config path.
 
 ## Troubleshooting
+
 **My rule isn't getting applied to the text**
 * Make sure the rule file uses the extension `.yml` instead of `.yaml`
 * There might be a hidden syntax issue - consider using a local YAML linter or [online tool](https://jsonformatter.org/yaml-validator) to validate your rule.
