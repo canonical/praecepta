@@ -15,7 +15,9 @@ This repository contains the Canonical set of rules, or the Canonical Style.
 
 Anyone is welcome to submit a PR to add additional rules. However, no additions will be considered unless they are part of the Canonical Style Guide as found at the website above.
 
-For information on how to create rules, see the Vale [documentation on Styles][Vale styles].
+For a reference on rule syntax, see the Vale [documentation on Styles][Vale styles].
+
+If you are completely new to developing Vale rules, see this [introductory guide](https://github.com/canonical/praecepta/blob/8c7fee862b2258c692439ef430198e393bdc30c4/getting-started.md). 
 
 ### Using the rules
 
@@ -44,7 +46,7 @@ jobs:
         - name: Checkout repo to runner
           uses: actions/checkout@v3
         - name: Install styles
-          uses: canonical/praecepta@v0
+          uses: canonical/praecepta@main
         - name: Run Vale tests
           uses: errata-ai/vale-action@reviewdog
           with:
@@ -55,7 +57,7 @@ jobs:
 In the example above, the workflow is organised as a single job. This is important as the actions rely on persistence through the run.
 There are three job steps:
  - The github/checkout action: this fetches the code from the repo calling the workflow
- - The style guide action: this fetches the styles and, if not present, a default config for Vale
+ - The style guide action: this fetches the styles and, if not present, a default config for Vale. The example fetches from the main branch since rules are currently under active development.
  - The vale/reviewdog action: this runs Vale using reviewdog, to insert comments into a pull-request
 
  This workflow uses reviewdog to insert output into review comments on any changes. The advantage of this method is:
