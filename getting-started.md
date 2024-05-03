@@ -94,7 +94,7 @@ The single quotes indicate the beginning and end of the regex, and the `.*?` qua
 
 - [Interactive regex tutorial](https://regexone.com/): Great for beginners
 - [Regex editor](https://regex101.com/): Online tool that helps you compose and test your expressions. I like how it highlights capture groups in different colors.
-- Before composing a complicated regex, remember to check for [existing rules](#more-rule-examples) that might have done this already. 
+- Before composing a complicated regex, remember to check for [existing rules](#resources) that might have done this already. 
 
 ## Test rules
 
