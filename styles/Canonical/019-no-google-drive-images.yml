@@ -12,3 +12,4 @@ tokens:
   - '{figure}[\w\.:\/\-=? "]+(drive.google|drive.usercontent.google)[\w\.:\/\-=? "]+'
   - '.. image::[\w\.:\/\-=? "]+(drive.google|drive.usercontent.google)[\w\.:\/\-=? "]+'
   - '.. figure::[\w\.:\/\-=? "]+(drive.google|drive.usercontent.google)[\w\.:\/\-=? "]+'
+  
