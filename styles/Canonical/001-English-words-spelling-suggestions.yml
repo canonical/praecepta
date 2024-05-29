@@ -1,0 +1,99 @@
+extends: substitution
+message: "Use British English spelling, '%s' instead of '%s'."
+link: https://docs.ubuntu.com/styleguide/en/#spelling
+ignorecase: true
+level: suggestion
+action:
+  name: replace
+swap:
+  'acknowledgment': acknowledgement
+  'airplane': aeroplane
+  'aluminum': aluminium
+  'analog': analogue
+  'analyze': analyse
+  'annex': annexe
+  'apologize': apologise
+  'armor': armour
+  'authorization': authorisation
+  'authorize': authorise
+  'authorizer': authoriser
+  'behavior': behaviour
+  'canceled': cancelled
+  'capitalize': 'capitalise'
+  'catalog': catalogue
+  'center': centre
+  'checker': chequer
+  'cipher': cypher
+  'color': colour
+  'counseling': counselling
+  'counselor': counsellor
+  'defense': defence
+  'dialed': dialled
+  'dialer': dialler
+  'dialog': dialogue
+  'emphasize': emphasise
+  'encyclopedia': encyclopaedia
+  'endeavor': endeavour
+  'enrollment': enrolment
+  'equaling': equalling
+  'favor': favour
+  'favorite': favourite
+  'fiber': fibre
+  'flakey': flaky
+  'flavor': flavour
+  'fulfill': fulfil
+  'furor': furore
+  'generalize': generalise
+  'glycerin': glycerine
+  'gray': grey
+  'harbor': harbour
+  'harmonization': harmonisation
+  'harmonize': harmonise
+  'honor': honour
+  'humor': humour
+  'in side': inside
+  'industrialize': industrialise
+  'installment': instalment
+  'italicize': italicise
+  'judgment': judgement
+  'kilometer': kilometre
+  'labeled': labelled
+  'labor': labour
+  'license': licence
+  'liter': litre
+  'lodgement': lodgment
+  'maneuver': manoeuvre
+  'modeling': modelling
+  'mold': mould
+  'monolog': monologue
+  'offense': offence
+  'organization': organisation
+  'oriented': orientated
+  'parlor': parlour
+  'percent': per cent
+  'plow': plough
+  'practice': practise
+  'pretense': pretence
+  'quarreled': quarrelled
+  'quarreling': quarrelling
+  'realization': realisation
+  'realize': realise
+  'recognize': recognise
+  'rumor': rumour
+  'sausages, beans, and mash': sausages, beans and mash
+  'signaling': signalling
+  'skeptic': sceptic
+  'skeptical': sceptical
+  'skillful': skilful
+  'specialty': speciality
+  'theater': theatre
+  'tranquility': tranquillity
+  'traveled': travelled
+  'traveler': traveller
+  'traveling': travelling
+  'urbanization': urbanisation
+  'virtualize': virtualise
+  'virtualization': virtualisation
+  'whiskey': whisky
+  'woolen': woollen
+  'yogurt': yoghurt
