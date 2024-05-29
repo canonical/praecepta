@@ -1,6 +1,5 @@
 # 09 - Heading - Headings should not contain links
 
-name: 009
 extends: existence
 message: "Headings should not contain links"
 link: https://docs.ubuntu.com/styleguide/en/#other-considerations
