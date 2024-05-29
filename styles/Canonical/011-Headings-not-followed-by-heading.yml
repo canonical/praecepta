@@ -1,0 +1,10 @@
+extends: existence
+message: "Avoid stacked headings. There should be content for each heading."
+nonword: true
+scope: raw
+level: error
+tokens:
+  # Regex for Markdown.
+  - '(?m)^#{1,5}\s[^\n]*\n(\s*\n\s*)*^#{1,5}\s[^\n]*$'
+  # Regex for reStructuredText.
+  - '(?m)^[^\n]+(\n[-=~^.]+)\n(\s*\n\s*)*^[^\n]+(\n[-=~^.]+)$'
