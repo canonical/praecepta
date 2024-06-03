@@ -1,7 +1,7 @@
 Some test
 =========
 
-This test is expected to prodice two failures for this rule.
+This test is expected to produce two failures for this rule.
 
 Quick code-block
 ----------------
