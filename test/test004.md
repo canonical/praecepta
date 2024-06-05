@@ -6,7 +6,7 @@ product name mistakes
 It's Anbox Cloud, not Anbox cloud or AnBox.
 We say Charmed Kubeflow not Charmed kubeflow.
 The Canonical Observability Stack is called COS and is not
-a Canononical observability stack.
+a Canonical observability stack.
 Juju, never JuJu, nor juju when not referring to the command.
 Landscape and Launchpad, not LandScape or LaunchPad.
 If you say lxd it should be in backticks `lxd`.
@@ -20,5 +20,5 @@ Multipass, like in that film, not MultiPass.
 Snapcraft, not SnapCraft or snapcraft.
 snapd not snapD or SnapD or Snapd.
 Ubuntu Pro, not Ubuntu pro.
-Ubuntu Server, though i guess people may talk about *an*
-Ubuntu server, but that should prompt a query.                         |
+Ubuntu Server, though I guess people may talk about *an*
+Ubuntu server, but that should prompt a query.                         
