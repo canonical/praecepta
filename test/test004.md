@@ -7,7 +7,7 @@ It's Anbox Cloud, not Anbox cloud or AnBox.
 We say Charmed Kubeflow not Charmed kubeflow.
 The Canonical Observability Stack is called COS and is not
 a Canonical observability stack.
-Juju, never JuJu, nor juju when not referring to the command.
+Juju, never JuJu, nor juju when not referring to the command `juju`.
 Landscape and Launchpad, not LandScape or LaunchPad.
 If you say lxd it should be in backticks `lxd`.
 For the love of all that is holy, MAAS, not Maas or MaaS.
