@@ -83,6 +83,7 @@ Some examples of correct usage:
 - **Ubuntu 22.10**
 - **Ubuntu 23.04 (Lunar Lobster)** _(note case!)_
 - **Ubuntu 23.10 (Mantic)**
+- **Ubuntu 24.04 LTS (Noble Numbat)**
 
 This also follows on to more specific products, e.g.
 
