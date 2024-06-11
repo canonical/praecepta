@@ -1,8 +1,9 @@
 # Testing Vale rule 14
 
 ## Numbers greater than nine should be in numeric form
+<!--This test will produce 38 warnings-->
 
-Testing the following numbers:
+### Test heading to test the following sixteen numbers
 
 Ten
 Eleven
@@ -21,7 +22,20 @@ Sixty billion forty million thirty thousand and nineteen
 Five
 Nine
 
+### Test scope for tables
+
+| billion | ninety | fifty|
+|---------|---------|------|
+| hundred |thousand |twenty|
+
+### Test scope for list
+
+- Hundred
+- Twenty
+- Five
+
 ## Numbers greater than 999 should have comma separators
+<!--This test will produce 6 warnings-->
 
 1000
 23400
@@ -29,3 +43,6 @@ Nine
 90283737
 347874838
 1000000000
+3
+46
+345

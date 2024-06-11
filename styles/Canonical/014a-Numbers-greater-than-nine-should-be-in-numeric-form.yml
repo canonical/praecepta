@@ -1,7 +1,12 @@
 extends: existence
 message: Write numbers greater than nine in numeric form - (%s)
 link: https://docs.ubuntu.com/styleguide/en#numbers
-scope: raw
+scope:
+  - heading
+  - list
+  - sentence
+  - table.header
+  - table.cell
 ignorecase: true
 level: warning
 tokens:
