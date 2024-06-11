@@ -6,7 +6,10 @@ message: |
 link: https://docs.ubuntu.com/styleguide/en/#ubuntu
 nonword: true
 ignorecase: true
-scope: raw
+scope: 
+  - sentence
+  - heading
+  - table 
 level: suggestion
 tokens:
   # LTS releases should be followed by "LTS" suffix.
@@ -27,3 +30,5 @@ tokens:
   - 'Ubuntu 19\.04 \((?!(Disco|Disco Dingo)\))'
   - 'Ubuntu 18\.10 \((?!(Cosmic|Cosmic Cuttlefish)\))'
   - 'Ubuntu 18\.04 LTS \((?!(Bionic|Bionic Beaver)\))'  
+
+  
