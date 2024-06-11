@@ -10,4 +10,4 @@ scope:
 ignorecase: true
 level: warning
 tokens:
-  - ([\d]{4,})
+  - ([\d]{5,})

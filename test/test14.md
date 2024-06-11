@@ -34,8 +34,8 @@ Nine
 - Twenty
 - Five
 
-## Numbers greater than 999 should have comma separators
-<!--This test will produce 6 warnings-->
+## Numbers greater than 9999 should have comma separators
+<!--This test will produce 5 warnings-->
 
 1000
 23400
