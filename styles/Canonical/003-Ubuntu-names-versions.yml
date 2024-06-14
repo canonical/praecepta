@@ -16,7 +16,9 @@ tokens:
   - 'Ubuntu (24|22|20|18|16|14|12|10|8)\.04(?! LTS)'
   - 'Ubuntu 6\.06(?! LTS)'
   # Non-LTS releases should not be followed by "LTS" suffix.
-  - 'Ubuntu (23\.10|23\.04|22\.10|21\.10|21\.04|20\.10|19\.10|19\.04|18\.10|17\.10|17\.04) LTS'
+  - 'Ubuntu (23|22|21|20|19|18|17|16|15|14|13|12|11|10|9|8|7|6\5\4)\.10 LTS'
+  - 'Ubuntu (23|21|19|17|15|13|11|10|9|8|7|5)\.04 LTS'
+  - 'Ubuntu 6\.06 LTS'
   # All releases should match the code name.
   - 'Ubuntu 24\.10 \((?!(Oracular|Oracular Oriole)\))'
   - 'Ubuntu 24\.04 LTS \((?!(Noble|Noble Numbat)\))'
