@@ -526,25 +526,28 @@ For example:
 
 ## Hyperlinks
 
-### General usage
-Avoid excessive links in the same paragraph or instruction. There is a tradeoff between useful redirects and the readibility of the content.
+Here are some pointers about the general usage of hyperlinks and how to format them correctly.
 
-If you find yourself introducing several links in your content, consider collecting them in a separate section called "Related topics", "Additional resources", or similar.
+### General usage
+Avoid excessive links in the same paragraph or instruction. If you find yourself introducing several links in your content, consider listing them in a separate section called "Related topics", "Additional resources", or similar.
 
 When possible, avoid external links. They can easily become outdated, making the document harder to maintain.
 
 When linking to versioned files or specific lines of code, copy the **permalink** instead of the URL. This will ensure the link is bound to the current revision of the file, so it will direct to the same content even if the file changes.
 
 ### Formatting
-Make the link text match the exact title or heading that you are referencing. 
+Make the link text match the exact title or heading that you are referencing. Avoid phrases like "this document", "this article", "click here".
 
-- Use: `["Icon" vs. "Button"](#icon-vs-button)` for a section called "Icon" vs. "Button"
-- Don't use: `[Icons and buttons](#icon-vs-button)`
+If linking to a section called "Formatting":
 
-When using the link in a full sentence, introduce it with "For more information, see ..." or similar. Avoid phrases like "this document", "this article", "click here".
+- Use: `[Formatting](#formatting)` 
+- Don't use: `[Guidelines to format hyperlinks](#formatting)`
+- Don't use: `[this section](#formatting)`
 
-- Use: `For more information about UI terminology, see ["Icon" vs. "Button"](#icon-vs-button)`
-- Don't use:`For more information about UI terminology, see [this section](#icon-vs-button)`
+In a full sentence, introduce the link with "For more information, see ..." or similar. 
+
+- Use: `For more information about formatting hyperlinks, see [Formatting](#formatting)`
+- Don't use: `See [Formatting](#formatting).`
 
 Avoid using a URL as the linked text.
 - Use: `[Page title](https://page-url.com)`
@@ -552,15 +555,14 @@ Avoid using a URL as the linked text.
 
 For external links, inform the user the link is external to the docs by specifying the source. This can either be done as part of the sentence, or with a delimiter.
 
-- Use: `For more information, see the Juju guide [How to manage clouds](https://juju.is/docs/juju/manage-clouds).`
-- Use: `- Juju | [How to manage clouds](https://juju.is/docs/juju/manage-clouds)`
-- Don't use: `For more information, see [How to manage clouds](https://juju.is/docs/juju/manage-clouds).`
+- Use: `For more information, see the ExternalStyleGuide page [How to format hyperlinks](www.external-style-guide.com/hyperlinks).`
+- Use: `- ExternalStyleGuide | How to format hyperlinks](www.external-style-guide.com/hyperlinks)`
+- Don't use: `For more information, see [How to format hyperlinks](www.external-style-guide.com/hyperlinks)`
 
 If the link performs an action, like downloading a file, link the entire action in the sentence. 
 
 - Use: `First, [download the file](file.zip)`
 - Don't use: `First, download the [file](file.zip)`
-
 
 ## FAQs
 There are some grammatical issues that can cause confusion. Here are some of the main offenders.
