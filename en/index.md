@@ -526,17 +526,26 @@ For example:
 
 ## Hyperlinks
 
-Here are some pointers about the general use of hyperlinks and how to format them correctly.
+Here are some pointers about the general use of hyperlinks and how to format
+them correctly.
 
 ### General use
 
-Avoid excessive links in the same paragraph or instruction. If you find yourself introducing several links in your content, consider listing them in a separate section called "Related topics", "Additional resources", or similar.
+Avoid excessive links in the same paragraph or instruction. If you find
+yourself introducing several links in your content, consider listing them in a
+separate section called "Related topics", "Additional resources", or similar.
 
-When linking to versioned files or specific lines of code, copy the **permalink** instead of the URL if available. This will ensure the link is bound to the current revision of the file, so it will direct to the same content even if the file changes.
+When linking to versioned files or specific lines of code, copy the
+**permalink** instead of the URL if available. This will ensure the link is
+bound to the current revision of the file, so it will direct to the same
+content even if the file changes.
 
 ### Formatting
 
-Try to make the link text match the title or heading that you are referencing. Make sure either the link text itself or the surrounding sentence provides enough context about the contents of the linked section. Avoid phrases like "this document", "this article", or "click here" as the link text.
+Try to make the link text match the title or heading that you are referencing.
+Make sure either the link text itself or the surrounding sentence provides
+enough context about the contents of the linked section. Avoid phrases like
+"this document", "this article", or "click here" as the link text.
 
 For example, when referring to a section called "Formatting":
 
@@ -550,17 +559,21 @@ Avoid using a URL as the linked text.
 - Use: `[Page title](https://page-url.com)`
 - Don't use: `[https://page-url.com](https://page-url.com)`
 
-When possible, avoid external links. They can easily become outdated, making the document harder to maintain. Otherwise, make sure to inform the user the link is external to the current doc set by specifying the source. 
+When possible, avoid external links. They can easily become outdated, making
+the document harder to maintain. Otherwise, make sure to inform the user the
+link is external to the current doc set by specifying the source. 
 
 - Use: `For more information, see the ExternalStyleGuide page [How to format hyperlinks](www.external-style-guide.com/hyperlinks).`
 - Don't use: `For more information, see [How to format hyperlinks](www.external-style-guide.com/hyperlinks)`
 
-If clicking the link performs an action, like downloading a file, link the entire action in the sentence. 
+If clicking the link performs an action, like downloading a file, link the
+entire action in the sentence. 
 
 - Use: `First, [download `file.zip`](file.zip)`
 - Don't use: `First, download the [file](file.zip)`
 
 ## FAQs
+
 There are some grammatical issues that can cause confusion. Here are some of the main offenders.
 
 ### What is the difference between fewer and less?
