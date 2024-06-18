@@ -524,7 +524,60 @@ For example:
 
 - **Don’t use:** Click the ![pencil](https://assets.ubuntu.com/v1/633aab2b-pencil.png) pencil icon to edit the post.
 
+## Hyperlinks
+
+Here are some pointers about the general use of hyperlinks and how to format
+them correctly.
+
+### General use
+
+Avoid excessive links in the same paragraph or instruction. If you find
+yourself introducing several links in your content, consider listing them in a
+separate section called "Related topics", "Additional resources", or similar.
+
+When linking to versioned files or specific lines of code, copy the
+**permalink** instead of the URL if available. This will ensure the link is
+bound to the current revision of the file, so it will direct to the same
+content even if the file changes.
+
+### Formatting
+
+Try to make the link text match the title or heading that you are referencing.
+Make sure either the link text itself or the surrounding sentence provides
+enough context about the contents of the linked section. 
+
+Avoid phrases like "this document", "this article", or "click here" as the link
+text.
+
+For example, when referring to a section called "Formatting":
+
+- Use: `See the [formatting guidelines](#formatting) for hyperlinks.`
+- Use: `See the [Formatting section](#formatting) for guidelines about hyperlink formatting.` 
+- Avoid: `See [Formatting](#formatting).`
+- Avoid: `See [this section](#formatting).`
+
+Avoid using a URL as the linked text.
+
+- Use: `[Page title](https://page-url.com)`
+- Avoid: `[https://page-url.com](https://page-url.com)`
+
+Avoid superfluous links to external pages that could become outdated or
+deprecated. External links such as the documentation's upstream project or
+repository are fine.
+
+Inform the user the link is external to the current doc set by specifying the source. 
+
+- Use: `To submit an issue related to the code, see the [Contributing guide](www.github.com/org/repo/contributing.md) on GitHub.`
+- Avoid: `For more information, see [How to format hyperlinks](www.external-style-guide.com/hyperlinks)`
+
+If clicking the link performs an action, like downloading a file, link the
+entire action in the sentence.
+
+- Use: `First, [download `file.zip`](file.zip)`
+- Avoid: `First, download the [file](file.zip)`
+
 ## FAQs
+
 There are some grammatical issues that can cause confusion. Here are some of the main offenders.
 
 ### What is the difference between fewer and less?

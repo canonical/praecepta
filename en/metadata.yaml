@@ -36,5 +36,7 @@ navigation:
       location: '#words-and-phrases-to-avoid'
     - title: Interacting with UI elements
       location: '#interacting-with-ui-elements'
+    - title: Hyperlinks
+      location: '#hyperlinks'
     - title: FAQs
       location: '#faqs'
