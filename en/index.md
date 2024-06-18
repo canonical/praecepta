@@ -544,33 +544,37 @@ content even if the file changes.
 
 Try to make the link text match the title or heading that you are referencing.
 Make sure either the link text itself or the surrounding sentence provides
-enough context about the contents of the linked section. Avoid phrases like
-"this document", "this article", or "click here" as the link text.
+enough context about the contents of the linked section. 
+
+Avoid phrases like "this document", "this article", or "click here" as the link
+text.
 
 For example, when referring to a section called "Formatting":
 
 - Use: `See the [formatting guidelines](#formatting) for hyperlinks.`
-- Use: `See the [Formatting](#formatting) section for guidelines about hyperlink formatting.` 
+- Use: `See the [Formatting section](#formatting) for guidelines about hyperlink formatting.` 
 - Avoid: `See [Formatting](#formatting).`
 - Avoid: `See [this section](#formatting).`
 
 Avoid using a URL as the linked text.
 
 - Use: `[Page title](https://page-url.com)`
-- Don't use: `[https://page-url.com](https://page-url.com)`
+- Avoid: `[https://page-url.com](https://page-url.com)`
 
-When possible, avoid external links. They can easily become outdated, making
-the document harder to maintain. Otherwise, make sure to inform the user the
-link is external to the current doc set by specifying the source. 
+Avoid superfluous links to external pages that could become outdated or
+deprecated. External links such as the documentation's upstream project or
+repository are fine.
 
-- Use: `For more information, see the ExternalStyleGuide page [How to format hyperlinks](www.external-style-guide.com/hyperlinks).`
-- Don't use: `For more information, see [How to format hyperlinks](www.external-style-guide.com/hyperlinks)`
+Inform the user the link is external to the current doc set by specifying the source. 
+
+- Use: `To submit an issue related to the code, see the [Contributing guide](www.github.com/org/repo/contributing.md) on GitHub.`
+- Avoid: `For more information, see [How to format hyperlinks](www.external-style-guide.com/hyperlinks)`
 
 If clicking the link performs an action, like downloading a file, link the
-entire action in the sentence. 
+entire action in the sentence.
 
 - Use: `First, [download `file.zip`](file.zip)`
-- Don't use: `First, download the [file](file.zip)`
+- Avoid: `First, download the [file](file.zip)`
 
 ## FAQs
 
