@@ -16,6 +16,8 @@ navigation:
 
     children:
 
+    - title: Diátaxis
+      location: '#diataxis'
     - title: Spelling
       location: '#spelling'
     - title: Branding

@@ -7,6 +7,23 @@ for Canonical documentation projects. Topics are listed in the navigation
 to the left, and presented here as a single page to aid searching.
 
 
+## Diátaxis
+
+Use Diátaxis to structure product documentation. A documentation page should
+fit within one of the following categories:
+
+- Tutorial
+- How-to
+- Explanation
+- Reference
+
+The choice of category will have an influence on the style of writing.
+References should aim to be entirely factual, while explanations may include
+opinions and analogies. A good how-to will enable the completion of a task but
+a tutorial will also promote the acquisition of a skill.
+
+Refer to the [official Diátaxis website](https://diataxis.fr/) for more information.
+
 ## Spelling
 
 Canonical is a UK based company, and uses British English throughout. There
