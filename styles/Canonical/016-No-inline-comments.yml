@@ -1,0 +1,12 @@
+extends: existence
+message: "Avoid inline comments in code blocks."
+scope: raw
+nonword: true
+level: warning
+tokens:
+  - ^```.*(\n(?s:.)*#.*)+.*\n```
+  - ^```.*(\n(?s:.)*//.*)+.*\n```
+  - '\.\. code(-block)?:.*\n(\s+.*#.*\n)+'
+  - '\.\. code(-block)?:.*\n(\s+.*//.*\n)+'
+
+
