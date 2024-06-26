@@ -1,6 +1,6 @@
 # Testing vale rule 13
 
-The following text will produce two suggestions:
+<!--The following text will produce two warnings-->
 
 Nine is correct.
 2 is not correct.
