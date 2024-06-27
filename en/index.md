@@ -17,7 +17,7 @@ fit within one of the following categories:
 - Explanation
 - Reference
 
-Each category serves a different user need and is written in a specific style.
+Each category serves a different user need - it is useful to understand the needs being addressed as these may influence the documentation approach. 
 
 Refer to the [official Diátaxis website](https://diataxis.fr/) for more information.
 
