@@ -17,10 +17,7 @@ fit within one of the following categories:
 - Explanation
 - Reference
 
-The choice of category will have an influence on the style of writing.
-References should aim to be entirely factual, while explanations may include
-opinions and analogies. A good how-to will enable the completion of a task but
-a tutorial will also promote the acquisition of a skill.
+Each category serves a different user need and is written in a specific style.
 
 Refer to the [official Diátaxis website](https://diataxis.fr/) for more information.
 
