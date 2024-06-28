@@ -14,9 +14,9 @@ Diátaxis provides rules that help you identify the type of document that you ar
 Document types include:
 
 - Tutorial
-- How-to guides
-- Explanations
+- How-to guide
 - Reference
+- Explanation
 
 Each type serves a different user need — it is useful to understand the needs being addressed as these will influence the documentation approach. 
 
