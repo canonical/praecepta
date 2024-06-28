@@ -9,15 +9,16 @@ to the left, and presented here as a single page to aid searching.
 
 ## Diátaxis
 
-Use Diátaxis to structure product documentation. A documentation page should
-fit within one of the following categories:
+Use Diátaxis to structure product documentation.
+Diátaxis provides rules that help you identify the type of document that you are writing.
+Types of document include:
 
 - Tutorial
-- How-to
-- Explanation
+- How-to guides
+- Explanations
 - Reference
 
-Each category serves a different user need - it is useful to understand the needs being addressed as these may influence the documentation approach. 
+Each type serves a different user need — it is useful to understand the needs being addressed as these will influence the documentation approach. 
 
 Refer to the [official Diátaxis website](https://diataxis.fr/) for more information.
 
