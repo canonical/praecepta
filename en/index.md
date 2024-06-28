@@ -11,7 +11,7 @@ to the left, and presented here as a single page to aid searching.
 
 Use Diátaxis to structure product documentation.
 Diátaxis provides rules that help you identify the type of document that you are writing.
-Types of document include:
+Document types include:
 
 - Tutorial
 - How-to guides
