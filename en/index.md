@@ -7,6 +7,22 @@ for Canonical documentation projects. Topics are listed in the navigation
 to the left, and presented here as a single page to aid searching.
 
 
+## Diátaxis
+
+Use Diátaxis to structure product documentation.
+Diátaxis provides rules that help you identify the type of document that you are writing.
+Document types include:
+
+- Tutorial
+- How-to guide
+- Reference
+- Explanation
+
+Each type serves a different user need — it is useful to understand the needs being
+addressed as these will influence the documentation approach. 
+
+Refer to the [official Diátaxis website](https://diataxis.fr/) for more information.
+
 ## Spelling
 
 Canonical is a UK based company, and uses British English throughout. There
