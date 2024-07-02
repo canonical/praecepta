@@ -18,7 +18,8 @@ Document types include:
 - Reference
 - Explanation
 
-Each type serves a different user need — it is useful to understand the needs being addressed as these will influence the documentation approach. 
+Each type serves a different user need — it is useful to understand the needs being
+addressed as these will influence the documentation approach. 
 
 Refer to the [official Diátaxis website](https://diataxis.fr/) for more information.
 
