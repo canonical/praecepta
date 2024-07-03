@@ -1,7 +1,9 @@
 Anbox Cloud
 Charmed Kubeflow
+Charmhub
 COS
 Juju
+Kubernetes
 Landscape
 Launchpad
 LXD
@@ -13,12 +15,11 @@ MicroOVN
 MicroStack
 Mir
 Multipass
+NVIDIA
+OpenStack
+PostgreSQL
 Snapcraft
 snapd
 Ubuntu Core
 Ubuntu Pro
 Ubuntu Server
-NVIDIA
-OpenStack
-PostgreSQL
-Kubernetes
