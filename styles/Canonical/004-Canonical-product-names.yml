@@ -34,4 +34,20 @@ swap:
   'SnapD' : snapd
   'Ubuntu pro' : Ubuntu Pro
   'Ubuntu server' : Ubuntu Server
-  
+  'mattermost' : Mattermost
+  'MatterMost' : Mattermost
+  'MM' : Mattermost
+  'nota' : Nota
+  'grafana' : Grafana
+  'kafka' : Kafka
+  'zookeeper' : ZooKeeper
+  'Zookeeper' : ZooKeeper
+#  portUnification
+#  'Requirer' : requirer
+#  repo ?
+#  config\
+#  downtime
+  'multipass' : Multipass
+  'vms' : VMs
+  'Vms' : VMs
+  'charmhub' : Charmhub

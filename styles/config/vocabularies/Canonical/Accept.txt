@@ -23,3 +23,11 @@ snapd
 Ubuntu Core
 Ubuntu Pro
 Ubuntu Server
+Grafana
+Kafka
+squashfs
+APIs
+Mattermost
+ACLs
+truststore
+keystore
