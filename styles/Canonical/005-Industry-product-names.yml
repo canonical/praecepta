@@ -1,0 +1,18 @@
+extends: substitution
+message: "Use '%s' instead of '%s'"
+link: https://docs.ubuntu.com/styleguide/en/#other-commonly-referenced-products/projects
+ignorecase: false
+level: suggestion
+action:
+  name: replace
+swap:
+  nVidia : 'NVIDIA'
+  Openstack : 'OpenStack'
+  Postgresql : 'PostgreSQL'
+  Kuberentes : 'Kubernetes' 
+  Aws : 'AWS' 
+  Mysql : 'MySQL' 
+  docker : 'Docker' 
+  KubeFlow : 'Kubeflow' 
+  Google cloud : 'Google Cloud Platform'
+  Influxdb : 'InfluxDB' 
