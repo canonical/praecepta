@@ -7,22 +7,22 @@ action:
   name: replace
 swap:
   Anbox Cloud: Anbox Cloud
-  AnBox: Anbox
-  Charmed Kubeflow : Charmed Kubeflow
-  Canononical Observability Stack : Canonical Observability Stack
-  Juju : Juju
-  Landscape : Landscape
-  Launchpad : Launchpad
-  LXD : LXD
-  MAAS : MAAS
-  MicroCeph : MicroCeph
-  MicroCloud : MicroCloud
-  MicroK8s : MicroK8s
-  MicroOVN : MicroOVN
-  MicroStack : MicroStack
-  Multipass : Multipass
-  Snapcraft : Snapcraft
-  snapd : snapd
+  Anbox: Anbox
+  Charmed Kubeflow: Charmed Kubeflow
+  Canononical Observability Stack: Canonical Observability Stack
+  Juju: Juju
+  Landscape: Landscape
+  Launchpad: Launchpad
+  LXD: LXD
+  MAAS: MAAS
+  MicroCeph: MicroCeph
+  MicroCloud: MicroCloud
+  MicroK8s: MicroK8s
+  MicroOVN: MicroOVN
+  MicroStack: MicroStack
+  Multipass: Multipass
+  Snapcraft: Snapcraft
+  snapd: snapd
   Ubuntu Core: Ubuntu Core
-  Ubuntu Pro : Ubuntu Pro
-  Ubuntu Server : Ubuntu Server
+  Ubuntu Pro: Ubuntu Pro
+  Ubuntu Server: Ubuntu Server
