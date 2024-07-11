@@ -1,5 +1,6 @@
 extends: existence
 message: Use the '1 January 1970' format instead of '%s'
+link: https://docs.ubuntu.com/styleguide/en/#dates
 scope: raw
 ignorecase: true
 level: warning
