@@ -23,7 +23,7 @@ runs:
 
         if ! test -d ./styles/config/vocabularies/Canonical; then
         mkdir -p styles/config/vocabularies/Canonical
-        cp $ACTION_DIR/style/config/vocabularies/* styles//config/vocabularies/Canonical/
+        cp $ACTION_DIR/styles/config/vocabularies/Canonical/* styles/config/vocabularies/Canonical/
         echo "Vocab copied to working dir"
         tree styles
         fi
