@@ -26,20 +26,20 @@ swap:
   Ubuntu Core: Ubuntu Core
   Ubuntu Pro: Ubuntu Pro
   Ubuntu Server: Ubuntu Server
-  'mattermost' : Mattermost
-  'MatterMost' : Mattermost
-  'MM' : Mattermost
-  'nota' : Nota
-  'grafana' : Grafana
-  'kafka' : Kafka
-  'zookeeper' : ZooKeeper
-  'Zookeeper' : ZooKeeper
+  mattermost : Mattermost
+  MatterMost : Mattermost
+  MM : Mattermost
+  nota : Nota
+  grafana : Grafana
+  kafka : Kafka
+  zookeeper : ZooKeeper
+  Zookeeper : ZooKeeper
 #  portUnification
 #  'Requirer' : requirer
 #  repo ?
 #  config\
 #  downtime
-  'multipass' : Multipass
-  'vms' : VMs
-  'Vms' : VMs
-  'charmhub' : Charmhub
+  multipass : Multipass
+  vms : VMs
+  Vms : VMs
+  charmhub : Charmhub
