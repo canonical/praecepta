@@ -19,6 +19,12 @@ runs:
         mkdir -p styles/Canonical
         cp $ACTION_DIR/styles/Canonical/* styles/Canonical/
         echo "Styles copied to working dir"
+        fi
+
+        if ! test -d ./styles/config/vocabularies/Canonical; then
+        mkdir -p styles/config/vocabularies/Canonical
+        cp $ACTION_DIR/styles/config/vocabularies/Canonical/* styles/config/vocabularies/Canonical/
+        echo "Vocab copied to working dir"
         tree styles
         fi
 

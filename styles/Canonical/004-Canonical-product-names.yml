@@ -1,39 +1,31 @@
 extends: substitution
 message: "Use '%s' instead of '%s'"
 link: https://docs.ubuntu.com/styleguide/en/#other-canonical-products
-ignorecase: false
+ignorecase: true
 level: suggestion
 action:
   name: replace
 swap:
-  'Anbox cloud': Anbox Cloud
-  'AnBox': Anbox
-  'Charmed kubeflow' : Charmed Kubeflow
-  'Canononical observability stack' : Canonical Observability Stack
-  'juju' : Juju
-  'JuJu' : Juju
-  'LandScape' : Landscape
-  'LaunchPad' : Launchpad
-  'lxd' : LXD
-  'MaaS' : MAAS
-  'Maas' : MAAS
-  'maas' : MAAS
-  'Microceph' : MicroCeph
-  'Microcloud' : MicroCloud
-  'Microk8s' : MicroK8s
-  'Microovn' : MicroOVN
-  'MicroOvn' : MicroOVN
-  'Microstack' : MicroStack
-  'microstack': MicroStack
-  'MultiPass' : Multipass
-  'multipass' : Multipass
-  'SnapCraft' : Snapcraft
-  'snapcraft' : Snapcraft
-  'snapD' : snapd
-  'Snapd' : snapd
-  'SnapD' : snapd
-  'Ubuntu pro' : Ubuntu Pro
-  'Ubuntu server' : Ubuntu Server
+  Anbox Cloud: Anbox Cloud
+  Anbox: Anbox
+  Charmed Kubeflow: Charmed Kubeflow
+  Canononical Observability Stack: Canonical Observability Stack
+  Juju: Juju
+  Landscape: Landscape
+  Launchpad: Launchpad
+  LXD: LXD
+  MAAS: MAAS
+  MicroCeph: MicroCeph
+  MicroCloud: MicroCloud
+  MicroK8s: MicroK8s
+  MicroOVN: MicroOVN
+  MicroStack: MicroStack
+  Multipass: Multipass
+  Snapcraft: Snapcraft
+  snapd: snapd
+  Ubuntu Core: Ubuntu Core
+  Ubuntu Pro: Ubuntu Pro
+  Ubuntu Server: Ubuntu Server
   'mattermost' : Mattermost
   'MatterMost' : Mattermost
   'MM' : Mattermost
