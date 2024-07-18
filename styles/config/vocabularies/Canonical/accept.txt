@@ -1,5 +1,6 @@
 Anbox
 Anbox Cloud
+Charmed
 Charmed Kubeflow
 Charmhub
 COS
