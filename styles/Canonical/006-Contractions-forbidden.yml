@@ -6,14 +6,14 @@ link: https://docs.ubuntu.com/styleguide/en#don't-use-these!
 level: warning
 ignorecase: true
 swap:
-  ain't: isn't
-  how'd: how did
-  how'll: how will
-  I'd: one would
-  something's: something is
-  mayn't: may not
-  may've: may have
-  mightn't: might not
-  might've: might have
+  ain[`']t: isn't
+  how[`']d: how did
+  how[`']ll: how will
+  I[`']d: one would
+  something[`']s: something is
+  mayn[`']t: may not
+  may[`']ve: may have
+  mightn[`']t: might not
+  might[`']ve: might have
   gonna: going to
   gotta: got to
