@@ -34,3 +34,17 @@ Mattermost
 ACLs
 truststore
 keystore
+VMs
+Requirer
+ZooKeeper
+Nota
+config
+downtime
+sysctl
+rebalancing
+rebalance
+storage
+TLS
+Transport Layer Security
+K8s
+unencrypted
