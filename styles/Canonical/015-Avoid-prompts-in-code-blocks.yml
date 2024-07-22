@@ -1,8 +1,0 @@
-extends: existence
-message: "Do not use command line prompts $ or # in the code blocks."
-level: warning
-scope: raw
-nonword: true
-tokens:
-  - (?s)```[^`]*^\s*[\$#][^`]*```
-  - (?s)  [^`]*^\s*[\$#][^`]*
