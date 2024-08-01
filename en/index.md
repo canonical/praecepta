@@ -409,8 +409,8 @@ rather than plain English. Try to keep it simple.
 
 ## Admonitions
 
-Admonitions (also commonly referred to as "admonishments" or sometimes
-"callouts" or "Notifications") are a device used in documentation to draw attention to a
+Admonitions (also referred to as "admonishments", "callouts" or
+"notifications") are a device used in documentation to draw attention to a
 particular statement or paragraph of text. Typically their use is to highlight:
 
  - A consequence of performing a particular action
@@ -418,21 +418,12 @@ particular statement or paragraph of text. Typically their use is to highlight:
  - A helpful tip that will save effort/time
  - A reminder of some pre-requisite or restriction
 
- While this style guide usually concerns itself solely with the intent and
- structure of content rather than the published form of that content, there is
- a particular intersect here. The [Vanilla framework][], which is used to
- publish most of our documentation, only allows for a particular set of
- pre-defined admonitions (or "Notifications" as they are referred to in that
- framework): **Information** and **Warning**.
+The [Vanilla framework][], which is used to publish most of our documentation,
+only allows for a particular set of pre-defined admonitions (or "Notifications"
+as they are referred to in that framework): **Information** and **Warning**.
 
- Note that the style of these admonitions relates solely to the colours and
- icons used with the notes. It is entirely possible to create an Information
- admonition and use the label 'Useful tip' or to call a Warning 'Danger of
- imminent death'.
-
- Overuse of admonitions diminishes their impact and disrupts the reader's
- journey, so use them sparingly and try to avoid having several in quick
- succession.
+Although other systems may allow for more scope it is advised to **only use these 
+two types**, in the circumstances indicated below.
 
 ### Warning
 
@@ -451,6 +442,14 @@ additional source of information or a link to a related tutorial.
 
 ![An example warning notice](https://assets.ubuntu.com/v1/c952851c-Screenshot%20from%202024-07-10%2015-11-03.png)
 
+Note that the implementation of these admonitions relates solely to the colours and
+icons used with the notes. It is entirely possible to create an Information
+admonition and use the label 'Useful tip' or to call a Warning 'Danger of
+imminent death' to clarify the nature of the message.
+
+Overuse of admonitions diminishes their impact and disrupts the reader's
+journey, so use them sparingly and try to avoid having several in quick
+succession.
 
 ## Interacting with UI elements
 
