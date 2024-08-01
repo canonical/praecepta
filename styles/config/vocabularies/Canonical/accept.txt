@@ -28,7 +28,7 @@ Ubuntu Pro
 Ubuntu Server
 Grafana
 Kafka
-squashfs
+Squashfs
 APIs
 Mattermost
 ACLs
