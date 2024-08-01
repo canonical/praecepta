@@ -18,9 +18,10 @@ To manually check your documentation with Vale rules use the following steps:
 1. Install Vale.
 2. Clone this repository.
 3. Run Vale with the config from this repository for testing your documentation source files: 
-```shell
-vale --config ~/test/praecepta/vale.ini ~/test/karapace-operator/docs/
-```
+  
+    ```shell
+    vale --config ~/test/praecepta/vale.ini ~/test/karapace-operator/docs/
+    ```
 
 For automation, see the [Canonical Style GitHub action](#the-canonical-style-github-action).
 
