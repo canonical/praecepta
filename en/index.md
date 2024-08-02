@@ -440,7 +440,7 @@ The **Information** admonition should be used for general notices which don't
 form part of the main narrative of the document, such as a useful shortcut, an
 additional source of information or a link to a related tutorial.
 
-![An example warning notice](https://assets.ubuntu.com/v1/c952851c-Screenshot%20from%202024-07-10%2015-11-03.png)
+![An example information notice](https://assets.ubuntu.com/v1/c952851c-Screenshot%20from%202024-07-10%2015-11-03.png)
 
 Note that the implementation of these admonitions relates solely to the colours and
 icons used with the notes. It is entirely possible to create an Information
