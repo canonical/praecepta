@@ -36,6 +36,8 @@ navigation:
       location: '#images'
     - title: Words and phrases to avoid
       location: '#words-and-phrases-to-avoid'
+    - title: Admonitions
+      location: '#admonitions'
     - title: Interacting with UI elements
       location: '#interacting-with-ui-elements'
     - title: Hyperlinks

@@ -407,6 +407,50 @@ rather than plain English. Try to keep it simple.
 #21 No double space after a period/full stop
 -->
 
+## Admonitions
+
+Admonitions (also referred to as "admonishments", "callouts" or
+"notifications") are a device used in documentation to draw attention to a
+particular statement or paragraph of text. Typically their use is to highlight:
+
+ - A consequence of performing a particular action
+ - An additional source of information which is useful but not required
+ - A helpful tip that will save effort/time
+ - A reminder of some pre-requisite or restriction
+
+The [Vanilla framework][], which is used to publish most of our documentation,
+only allows for a particular set of pre-defined admonitions (or "Notifications"
+as they are referred to in that framework): **Information** and **Warning**.
+
+Although other systems may allow for more scope it is advised to **only use these 
+two types**, in the circumstances indicated below.
+
+### Warning
+
+The **Warning** style of admonition is appropriate where certain actions or
+lack of action could have negative consequences - for example the loss of data
+or a service interruption.
+
+![An example warning notice](https://assets.ubuntu.com/v1/3a5556d1-Screenshot%20from%202024-07-10%2015-13-18.png)
+
+
+### Information
+
+The **Information** admonition should be used for general notices which don't
+form part of the main narrative of the document, such as a useful shortcut, an
+additional source of information or a link to a related tutorial.
+
+![An example information notice](https://assets.ubuntu.com/v1/c952851c-Screenshot%20from%202024-07-10%2015-11-03.png)
+
+Note that the implementation of these admonitions relates solely to the colours and
+icons used with the notes. It is entirely possible to create an Information
+admonition and use the label 'Useful tip' or to call a Warning 'Danger of
+imminent death' to clarify the nature of the message.
+
+Overuse of admonitions diminishes their impact and disrupts the reader's
+journey, so use them sparingly and try to avoid having several in quick
+succession.
+
 ## Interacting with UI elements
 
 ### Screenshots
@@ -607,6 +651,7 @@ Also compare: “The fewer people know about this the better” and “The less 
 Note: The rule does not work if the number is counted as a quantity or as a unit. For example: “She paid less than ten pounds for it” or “His last jump was less than fifteen feet”.
 
 ### What is the difference between that and which?
+
 This can, and has, caused many arguments, so it's probably best not to get too worried about it. A useful guide is: that defines, which informs.
 
 This is not a cast-iron rule but it can help: “This is the house that Jack built, but I think the one next door, which Jack also built, is more attractive.”
@@ -614,8 +659,13 @@ This is not a cast-iron rule but it can help: “This is the house that Jack bui
 “Which” is often clausal, so is predominantly preceded by a comma - compare “The police stopped the second car that was driven by a woman.” and “The police stopped the second car, which was driven by a woman.”
 
 ### Is it OK to split an infinitive?
+
 There is no grammatical rule that says you can't split an infinitive. Sometimes, it is definitely better to split:
 
 _"Can dot.com companies ever hope to fully recover their share values?"_
 
 This sounds much better than moving “fully” in front of “to recover” or behind it. The key is not to write anything that is ambiguous or inelegant.
+
+
+<!-- LINKS -->
+[Vanilla framework]: https://vanillaframework.io/docs/patterns/notification
