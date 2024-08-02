@@ -429,7 +429,7 @@ two types**, in the circumstances indicated below.
 
 The **Warning** style of admonition is appropriate where certain actions or
 lack of action could have negative consequences - for example the loss of data
-or an interruption to a service.
+or a service interruption.
 
 ![An example warning notice](https://assets.ubuntu.com/v1/3a5556d1-Screenshot%20from%202024-07-10%2015-13-18.png)
 
