@@ -17,7 +17,7 @@ To manually check your documentation with Vale rules use the following steps:
 
 1. Install Vale.
 2. Clone this repository.
-3. Run Vale with the config from this repository for testing your documentation source files: 
+3. Run Vale with the configuration file `vale.ini` from this repository for testing your documentation source files: 
   
     ```shell
     vale --config ~/praecepta/vale.ini ~/product/docs/
