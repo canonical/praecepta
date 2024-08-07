@@ -11,6 +11,20 @@ It is published online at: [docs.ubuntu.com/en/styleguide](https://docs.ubuntu.c
 The Vale linter operates from a series of rules. These are defined in individual YAML files, grouped into 'Styles'.
 This repository contains the Canonical set of rules, or the Canonical Style. 
 
+### Manual check
+
+To manually check your documentation with Vale rules use the following steps:
+
+1. Install Vale.
+2. Clone this repository.
+3. Run Vale with the configuration file `vale.ini` from this repository for testing your documentation source files: 
+  
+    ```shell
+    vale --config ~/praecepta/vale.ini ~/product/docs/
+    ```
+
+For automation, see the [Canonical Style GitHub action](#the-canonical-style-github-action).
+
 ### Adding to the rules
 
 Anyone is welcome to submit a PR to add additional rules. However, no additions will be considered unless they are part of the Canonical Style Guide as found at the website above.
