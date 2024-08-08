@@ -372,6 +372,20 @@ An image should not be overly cropped - allow for context.
 **DO NOT LINK IMAGES FROM A GOOGLE DRIVE**
 This will work, until such a time as whoever owns the image closes their account (or leaves Canonical).
 
+## Video
+
+Video is rarely an effective replacement for text in product documentation.
+The use of videos in documentation is generally not recommended, as they are:
+
+- Challenging to do well
+- Difficult to maintain
+- Prone to accessibility issues
+
+When there is a legitimate need for video content within documentation, a tool like [asciinema](https://asciinema.org/) is preferred.
+This generates text-based videos that are easier to maintain, while the text itself can be copied/pasted by the person reading the documentation.
+
+Any videos which are included should meet the same standards of accuracy, clarity and quality expected of written documentation.
+
 <!-- RULE
 #20 Cliché words and phrases to avoid
 -->

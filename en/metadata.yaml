@@ -34,6 +34,8 @@ navigation:
       location: '#code-examples-in-documentation'
     - title: Images
       location: '#images'
+    - title: Video
+      location: '#video'
     - title: Words and phrases to avoid
       location: '#words-and-phrases-to-avoid'
     - title: Admonitions
