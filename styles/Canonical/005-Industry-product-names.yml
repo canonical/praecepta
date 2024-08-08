@@ -16,3 +16,5 @@ swap:
   KubeFlow : 'Kubeflow' 
   Google cloud : 'Google Cloud Platform'
   Influxdb : 'InfluxDB' 
+  MM : 'Mattermost'
+  

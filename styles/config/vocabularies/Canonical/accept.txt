@@ -26,3 +26,25 @@ snapd
 Ubuntu Core
 Ubuntu Pro
 Ubuntu Server
+Grafana
+Kafka
+Squashfs
+APIs
+Mattermost
+ACLs
+truststore
+keystore
+VMs
+Requirer
+ZooKeeper
+Nota
+config
+downtime
+sysctl
+rebalancing
+rebalance
+storage
+TLS
+Transport Layer Security
+K8s
+unencrypted
