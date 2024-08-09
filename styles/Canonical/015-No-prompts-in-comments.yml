@@ -1,0 +1,11 @@
+extends: existence
+message: "Avoid using prompts in code blocks."
+scope: raw
+nonword: true
+level: warning
+tokens:
+  - '(?s)```.*?\n(?:^(?!```)[^\n]*\n)*?^(#[\$%>].*)\n(?:^(?!```)[^\n]*\n)*?```'
+  # - ^```.*\n(([^\n`][^\n#]*\n|\n))*([^\n#]+#.*\n)+([^\n`]*\n)*```
+  # - ^```.*\n([^\n`][^\n]*\n|\n)*([^\n\/][^\n\/]+\/\/.*\n)+([^\n`]*\n)*```
+  # - '\.\. code(-block)?:.*\n(\s+.*#.*\n)+'
+  # - '\.\. code(-block)?:.*\n(\s+.*//.*\n)+'
