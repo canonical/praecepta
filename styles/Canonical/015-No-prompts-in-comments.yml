@@ -1,11 +1,7 @@
 extends: existence
-message: "Avoid using prompts in code blocks."
+message: "Avoid using prompts in code blocks: %s"
 scope: raw
 nonword: true
 level: warning
 tokens:
-  - '(?s)```.*?\n(?:^(?!```)[^\n]*\n)*?^(#[\$%>].*)\n(?:^(?!```)[^\n]*\n)*?```'
-  # - ^```.*\n(([^\n`][^\n#]*\n|\n))*([^\n#]+#.*\n)+([^\n`]*\n)*```
-  # - ^```.*\n([^\n`][^\n]*\n|\n)*([^\n\/][^\n\/]+\/\/.*\n)+([^\n`]*\n)*```
-  # - '\.\. code(-block)?:.*\n(\s+.*#.*\n)+'
-  # - '\.\. code(-block)?:.*\n(\s+.*//.*\n)+'
+  - '^[ \t]*[$%]'
