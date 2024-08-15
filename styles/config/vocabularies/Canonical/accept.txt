@@ -1,16 +1,22 @@
+ACLs
+APIs
 Anbox
 Anbox Cloud
+COS
 Charmed
 Charmed Kubeflow
 Charmhub
-COS
+Grafana
 Juju
+K8s
+Kafka
 Kubeflow
 Kubernetes
+LXD
 Landscape
 Launchpad
-LXD
 MAAS
+Mattermost
 MicroCeph
 MicroCloud
 MicroK8s
@@ -19,32 +25,28 @@ MicroStack
 Mir
 Multipass
 NVIDIA
+Nota
 OpenStack
 PostgreSQL
+Requirer
 Snapcraft
-snapd
+Squashfs
+TLS
+Traefik
+Transport Layer Security
 Ubuntu Core
 Ubuntu Pro
 Ubuntu Server
-Grafana
-Kafka
-Squashfs
-APIs
-Mattermost
-ACLs
-truststore
-keystore
 VMs
-Requirer
+VMware
 ZooKeeper
-Nota
 config
 downtime
-sysctl
-rebalancing
+keystore
 rebalance
+rebalancing
+snapd
 storage
-TLS
-Transport Layer Security
-K8s
+sysctl
+truststore
 unencrypted
