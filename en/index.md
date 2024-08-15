@@ -19,7 +19,7 @@ Document types include:
 - Explanation
 
 Each type serves a different user need — it is useful to understand the needs being
-addressed as these will influence the documentation approach. 
+addressed as these will influence the documentation approach.
 
 Refer to the [official Diátaxis website](https://diataxis.fr/) for more information.
 
@@ -361,6 +361,51 @@ state of each unit and service:
 ...
 ...
 ```
+
+### Placeholders in code blocks
+
+There are many times when it will be necessary for the user to supply terms or
+data to a command which cannot be known in advance, for example IP addresses or
+names. It is common to substitute such values with a placeholder, where the
+placeholder consists of delimiters that contain terms that suggest the
+necessary input. For example:
+
+```
+lxc delete <instance_name>/<snapshot_name>
+```
+
+Here, the reader is expected to substitute their values for the placeholders.
+To minimise the risk of errors, instruct the reader that such values need to be
+substituted, especially when the first placeholder is referenced.
+
+This approach is in common use and is effective for short commands, but is less
+suitable for a long block of code where the user then has to edit a multi-line
+command and search through to find the placeholders to replace. A useful
+approach in these circumstances is to adjust the code to define user-supplied
+data as environmental variables. For example:
+
+````
+Set the desired channel:
+
+```
+CHANNEL=1.30/stable
+```
+
+Then proceed to fetch the required charms:
+
+```
+juju download easyrsa --channel=$CHANNEL
+juju download kubernetes-worker --channel=$CHANNEL
+...
+```
+
+````
+
+This has the following advantages:
+
+ - Separates user-supplied data from commands, making it easier to reference and explain
+ - Enables blocks of code to be copied without modification
+ - Reduces the chance of users making mistakes when editing the commands
 
 ## Images
 
