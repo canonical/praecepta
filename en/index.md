@@ -375,7 +375,9 @@ lxc delete <instance_name>/<snapshot_name>
 
 Here, the reader is expected to substitute their values for the placeholders.
 To minimise the risk of errors, instruct the reader that such values need to be
-substituted, especially when the first placeholder is referenced.
+substituted, especially when the first placeholder is referenced. There is no
+set style for the delimiter: the author should choose something unlikely to be
+confusing in the context, and use it consistently.
 
 However, in longer code blocks the placeholders become more difficult to manage
 and easier to overlook. Instead, consider defining the placeholders as
