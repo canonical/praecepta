@@ -364,9 +364,10 @@ state of each unit and service:
 
 ### Placeholders in code blocks
 
-There are many situations where it's necessary for users to provide their own information in a code block, such as IP addresses or
-names. It's common to substitute these values with a placeholder, where the
-placeholder represents the value that should be replaced. For example:
+There are many situations where it's necessary for users to provide their own
+information in a code block, such as IP addresses or names. It's common to
+substitute these values with a placeholder, consisting of terms within
+delimiters, representing the value to be replaced. For example:
 
 ```
 lxc delete <instance_name>/<snapshot_name>
@@ -376,14 +377,13 @@ Here, the reader is expected to substitute their values for the placeholders.
 To minimise the risk of errors, instruct the reader that such values need to be
 substituted, especially when the first placeholder is referenced.
 
-This approach is in common use and is effective for short commands, but is less
-suitable for a long block of code where the user then has to edit a multi-line
-command and search through to find the placeholders to replace. A useful
-approach in these circumstances is to adjust the code to define user-supplied
-data as environmental variables. For example:
+However, in longer code blocks the placeholders become more difficult to manage
+and easier to overlook. Instead, consider defining the placeholders as
+environmental variables. For example:
 
 ````
-Set the desired channel:
+Define the channel for the charms required. For example, to select the stable 
+release of 1.30:
 
 ```
 CHANNEL=1.30/stable
@@ -401,7 +401,8 @@ juju download kubernetes-worker --channel=$CHANNEL
 
 This approach has the following advantages:
 
- - Separates user-supplied data from commands, making it easier to reference and explain
+ - Separates user-supplied data from commands, making it easier to reference
+   and explain
  - Enables blocks of code to be copied without modification
  - Reduces the chance of users making mistakes when editing the commands
 
