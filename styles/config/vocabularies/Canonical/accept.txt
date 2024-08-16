@@ -30,6 +30,8 @@ OpenStack
 PostgreSQL
 Requirer
 Snapcraft
+Spark
+Spark History Server
 Squashfs
 TLS
 Traefik
