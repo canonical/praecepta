@@ -379,7 +379,7 @@ substituted, especially when the first placeholder is referenced. There is no
 set style for the delimiter: the author should choose something unlikely to be
 confusing in the context, and use it consistently.
 
-However, in longer code blocks the placeholders become more difficult to manage
+In longer code blocks the placeholders become more difficult to manage
 and easier to overlook. Instead, consider defining the placeholders as
 environmental variables. For example:
 
