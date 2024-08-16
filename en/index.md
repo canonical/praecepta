@@ -364,8 +364,7 @@ state of each unit and service:
 
 ### Placeholders in code blocks
 
-There are many times when it will be necessary for the user to supply terms or
-data to a command which cannot be known in advance, for example IP addresses or
+There are many situations where it's necessary for users to provide their own information in a code block, such as IP addresses or
 names. It is common to substitute such values with a placeholder, where the
 placeholder consists of delimiters that contain terms that suggest the
 necessary input. For example:
