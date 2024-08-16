@@ -401,7 +401,7 @@ juju download kubernetes-worker --channel=$CHANNEL
 
 ````
 
-This has the following advantages:
+This approach has the following advantages:
 
  - Separates user-supplied data from commands, making it easier to reference and explain
  - Enables blocks of code to be copied without modification
