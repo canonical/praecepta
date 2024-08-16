@@ -365,9 +365,8 @@ state of each unit and service:
 ### Placeholders in code blocks
 
 There are many situations where it's necessary for users to provide their own information in a code block, such as IP addresses or
-names. It is common to substitute such values with a placeholder, where the
-placeholder consists of delimiters that contain terms that suggest the
-necessary input. For example:
+names. It's common to substitute these values with a placeholder, where the
+placeholder represents the value that should be replaced. For example:
 
 ```
 lxc delete <instance_name>/<snapshot_name>
