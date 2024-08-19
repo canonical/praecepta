@@ -1,7 +1,10 @@
 ACLs
 APIs
+AWS EKS
 Anbox
 Anbox Cloud
+Canonical Observability Stack
+Ceph
 COS
 Charmed
 Charmed Kubeflow
@@ -10,8 +13,10 @@ Grafana
 Juju
 K8s
 Kafka
+Kratos
 Kubeflow
 Kubernetes
+Kyuubi
 LXD
 Landscape
 Launchpad
@@ -26,13 +31,20 @@ Mir
 Multipass
 NVIDIA
 Nota
+Oathkeeper
 OpenStack
 PostgreSQL
+Pushgateway
+Python
 Requirer
+S3
 Snapcraft
 Spark
 Spark History Server
+Spark Job
+Spark Submit
 Squashfs
+Terraform
 TLS
 Traefik
 Transport Layer Security
@@ -44,7 +56,10 @@ VMware
 ZooKeeper
 config
 downtime
+eksctl
 keystore
+(?i)namespace
+parallelization
 rebalance
 rebalancing
 snapd
@@ -52,3 +67,4 @@ storage
 sysctl
 truststore
 unencrypted
+upsert
