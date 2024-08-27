@@ -13,7 +13,7 @@ scope:
 level: suggestion
 tokens:
   # LTS releases should be followed by "LTS" suffix.
-  - 'Ubuntu (\d)?(0|2|4|6|8)\.04(?! LTS)'
+  - 'Ubuntu \d?[02468]\.04(?! LTS)'
   - 'Ubuntu 6\.06(?! LTS)'
   # Non-LTS releases should not be followed by "LTS" suffix.
   - 'Ubuntu \d?\d\.10 LTS'
