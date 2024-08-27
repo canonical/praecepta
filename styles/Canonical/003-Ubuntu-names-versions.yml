@@ -17,7 +17,7 @@ tokens:
   - 'Ubuntu 6\.06(?! LTS)'
   # Non-LTS releases should not be followed by "LTS" suffix.
   - 'Ubuntu [\d]{1,2}\.10 LTS'
-  - 'Ubuntu (\d)?(1|3|5|7|9)\.04 LTS'
+  - 'Ubuntu \d?[13579]\.04 LTS'
   - 'Ubuntu 6\.06 LTS'
   # All releases should match the code name.
   - 'Ubuntu 24\.10 \((?!(Oracular|Oracular Oriole)\))'
