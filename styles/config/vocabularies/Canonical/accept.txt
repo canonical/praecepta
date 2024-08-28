@@ -58,8 +58,8 @@ config
 downtime
 eksctl
 keystore
-(?i)namespace
-parallelization
+[Nn]amespace
+parallelisation
 rebalance
 rebalancing
 snapd
