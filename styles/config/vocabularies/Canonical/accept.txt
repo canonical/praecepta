@@ -9,6 +9,7 @@ COS
 Charmed
 Charmed Kubeflow
 Charmhub
+Data Integrator
 Grafana
 Juju
 K8s
