@@ -1,0 +1,19 @@
+# 021 - Latinisms that we strongly advise against
+# Since Vale substitutions can't ignore word boundaries, meaning they can't detect the punctuation in "i.e." and "&c", we merely check for them and then notify the user.
+
+extends: existence
+message: |
+  Instead of Latin abbreviations, consider using an English equivalent.
+  Try not to use '&c', 'e.g.', 'i.e.', or 'n.b.'.
+  For 'a.m.', 'AM', 'p.m.', and 'PM', use 24-hour time.
+link: https://docs.ubuntu.com/styleguide/en#latin-words-and-phrases
+level: suggestion
+scope: raw
+nonword: true
+tokens:
+  - '&c'
+  - 'e\.g\.'
+  - 'i\.e\.'
+  - 'n\.b\.'
+  - '(a\.m\.|[A]\.?[M]\.?)'
+  - '(p\.m\.|[P]\.?[M]\.?)'

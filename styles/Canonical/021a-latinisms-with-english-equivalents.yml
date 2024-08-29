@@ -1,0 +1,36 @@
+# 021 - Latinisms that have English equivalents
+
+extends: substitution
+message: "Prefer English over Latin. Instead of '%[2]s', use %[1]s."
+link: https://docs.ubuntu.com/styleguide/en#latin-words-and-phrases
+level: suggestion
+scope: raw
+ignorecase: true
+swap:
+  a priori: "'self-evident', 'presupposed', 'presumed', or 'assumed'"
+  ad hoc: "'unscheduled', 'unexpected', 'improvised', 'temporary', or 'bespoke'"
+  ad infinitum: "'and so on', 'to the fullest extent', or 'recursively'"
+  cf: "'refer to'"
+  caveat: "'warning' or 'provision'"
+  circa: "'around' or 'near'"
+  de facto: "'current', 'actual', or 'established'"
+  ergo: "'therefore' or 'hence'"
+  (?:et cetera|etc): "'and so on'"
+  (?:exempli gratia|eg): "'for example', 'as an example', or 'such as'"
+  gratis: "'free'"
+  (?:id est|ie): "'that is' or 'in other words'"
+  in situ: "'in place'"
+  (?:nota bene|nb): "'note', 'notice', 'observe', 'pay attention to', or 'keep your eye on'"
+  per: "'each' or 'every'"
+  per diem: "'every day'"
+  per capita: "'every/each person'"
+  per se: "'necessarily' or 'intrinsically'"
+  pro bono: "'freely given' or 'volunteered'"
+  proviso: "'condition' or 'provided that'"
+  stanza: "'division', 'block', or 'paragraph'" 
+  status quo: "'state' or 'state of things'"
+  verbatim: "'exact words', 'exactly'"
+  (?:versus|vs): "'compared to/with' or 'opposed to'"
+  via: "'through', 'with', or 'using'"
+  vice versa: "'the reverse' or 'the other way around'"
+  viz: "'specifically' or 'namely'"

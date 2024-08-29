@@ -468,6 +468,61 @@ It can be tempting to use flowery, official-sounding words
 rather than plain English. Try to keep it simple.
 
 <!-- RULE
+#21 Latinisms to avoid
+-->
+
+## Latin words and phrases
+
+Latinisms make documents less approachable to an international audience, and we can't assume our reader is familiar with them. They disregard the principle of plain English, and, worse, are often misunderstood or misused by both readers and writers.
+
+Instead of reaching for a Latin phrase, choose among several English equivalents:
+
+Instead of... | Use...
+--------------|-------
+a priori | self-evident<br>presupposed<br>presumed<br>assumed
+ad hoc | unscheduled<br>unexpected<br>improvised<br>temporary<br>bespoke
+ad infinitum | and so on<br>to the fullest extent<br>recursively
+cf. | refer to
+caveat | warning<br>provision
+circa | around<br>near
+de facto | current<br>actual<br>established
+ergo | therefore<br>hence
+et cetera<br>etc.<br>&c | and so on
+exempli gratia<br>e.g. | for example<br>as an example<br>such as
+gratis | free
+id est<br>i.e. | that is<br>in other words
+nota bene<br>n.b. | note<br>notice<br>observe<br>pay attention to<br>keep your eye on
+in situ | in-place
+per diem | every day
+per capita | every/each person
+per se | necessarily<br>intrinsically
+pro bono | freely given<br>volunteered
+proviso | condition<br>provided that
+stanza | division<br>block<br>paragraph<br>
+status quo | state<br>state of things
+verbatim | exact words<br>exactly
+versus<br>vs. | compared to/with<br>opposed to
+via | through<br>with<br>using
+vice versa | the reverse<br>the other way around
+viz. | specifically<br>namely
+
+The following Latin words and phrases are firmly embedded in everyday English, but you can still improve a document's readability by avoiding them:
+
+Instead of... | Consider...
+--------------|------------
+AM, PM<br>a.m., p.m. | Use 24-hour time.
+per | each<br> every
+
+Lastly, these Latin words and phrases are widespread in academia or research. Their meanings don't belong in documentation:
+
+- a postiori
+- et al
+- ibidum, ibid.
+- sic
+- stet
+
+
+<!-- RULE
 #21 No double space after a period/full stop
 -->
 
