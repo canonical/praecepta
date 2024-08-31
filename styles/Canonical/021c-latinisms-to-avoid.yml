@@ -4,13 +4,11 @@ extends: existence
 message: "Don't use academic Latin terms like 'a posteriori', 'et al', and 'stet'."
 link: https://docs.ubuntu.com/styleguide/en#latin-words-and-phrases
 level: warning
-scope: raw
-nonword: true
 ignorecase: true
 tokens:
-  - 'a postiori'
-  - 'et al'
-  - 'ibidum'
-  - 'ibid\.?'
+  - 'a\sposteriori'
+  - 'ad\snauseum'
+  - 'et\sal'
+  - 'ibid(um)?'
   - 'sic'
   - 'stet'
