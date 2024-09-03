@@ -1,4 +1,4 @@
-# 021 - Latinisms that have no place in documentation
+# 025 - Latinisms that have no place in documentation
 
 extends: existence
 message: "Don't use academic Latin terms like 'a posteriori', 'et al', and 'stet'."

@@ -1,4 +1,4 @@
-# 021 - Latinisms that we strongly advise against
+# 025 - Latinisms that we strongly advise against
 
 extends: existence
 message: Instead of 'a.m.', 'AM', 'p.m.', and 'PM', use 24-hour time.

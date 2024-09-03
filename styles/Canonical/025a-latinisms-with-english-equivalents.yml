@@ -1,4 +1,4 @@
-# 021 - Latinisms that have English equivalents
+# 025 - Latinisms that have English equivalents
 
 extends: substitution
 message: "Instead of '%[2]s', use %[1]s."

@@ -468,7 +468,7 @@ It can be tempting to use flowery, official-sounding words
 rather than plain English. Try to keep it simple.
 
 <!-- RULE
-#21 Latinisms to avoid
+#25 Latinisms to avoid
 -->
 
 ## Latin words and phrases
