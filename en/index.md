@@ -516,6 +516,7 @@ per | each<br> every
 Lastly, these Latin words and phrases are widespread in academia or research. Their meanings don't belong in documentation:
 
 - a postiori
+- ad nauseum
 - et al
 - ibidum, ibid.
 - sic
