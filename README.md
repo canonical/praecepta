@@ -79,3 +79,32 @@ There are three job steps:
   - it is surfaced directly where it will be noticed
 
 [Vale styles]: https://vale.sh/docs/topics/styles/
+
+## Running locally
+
+There are times when it is useful to be able to manually run Vale from a terminal locally. The recommended way to do this is to clone the repository and then set up environment variables. Initially, you will need to create a local copy of the rules:
+
+1. **Clone the repository**
+   ```
+   git clone https://github.com/canonical/praecepta.git
+   ```
+2. **Set environment variables**
+   ```
+   export VALE_CONFIG_PATH=~/praecepta/.vale.ini
+   export VALE_STYLES_PATH=~/praecepta/styles
+   ```
+   Note: this assumes you cloned the repo directly to your home directory - adjust these paths if necessary.
+3. **Confirm configuration**
+   You can use built-in commands to check the configuration has been located and see the current paths:
+   ```
+   vale ls-config
+   vale ls-vars
+   ```
+
+Now that Vale is installed you can check individual files or directories locally
+
+```
+vale docs
+vale docs/*.md
+vale docs/test.md
+```
