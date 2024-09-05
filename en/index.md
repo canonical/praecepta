@@ -513,7 +513,7 @@ Instead of... | Consider...
 AM, PM<br>a.m., p.m. | Use 24-hour time.
 per | each<br> every
 
-Lastly, these Latin words and phrases are widespread in academia or research. Their meanings don't belong in documentation:
+Lastly, these Latin words and phrases are widespread in academia and research. Their meanings don't belong in documentation:
 
 - a postiori
 - ad nauseum
