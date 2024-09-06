@@ -82,13 +82,13 @@ vice versa
 
 viz.
 
-AM
+5 AM
 
-PM
+5PM
 
-a.m.
+12 a.m.
 
-p.m.
+12p.m.
 
 
 a postiori
