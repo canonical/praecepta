@@ -1,6 +1,6 @@
 # Latinisms test
 
-This test should produce 44 suggestions and seven warnings for rule #21.
+This portion of the test should produce 59 suggestions and three happenstance warnings for rule #21.
 
 a priori
 
@@ -84,14 +84,45 @@ viz.
 
 5 AM
 
+5 PM
+
+5AM
+
 5PM
 
-12 a.m.
+5A.M.
 
-12p.m.
+5 a.m.
 
+5p.m.
 
-a postiori
+12:59 AM
+
+12:59 PM
+
+12:59AM
+
+12:59PM
+
+12:59A.M.
+
+12:59P.M.
+
+12:59 A.M.
+
+12:59 P.M.
+
+12:59a.m.
+
+12:59p.m.
+
+12:59 a.m.
+
+12:59 p.m.
+
+This portion should produce eight warnings for rule #21:
+
+a posteriori
 
 ad nauseum
 

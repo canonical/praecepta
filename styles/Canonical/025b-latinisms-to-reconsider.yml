@@ -6,4 +6,4 @@ link: https://docs.ubuntu.com/styleguide/en#latin-words-and-phrases
 level: suggestion
 nonword: true
 tokens:
-  - '\b[1|2]?\d\s?(?:[AaPp]\.?[Mm]\.?)(?!\w+\b|\.)'
+  - '\b[1|2]?:?\d?\d\s?(?:[AaPp]\.?[Mm]\.?)(?!\w+\b|\.)'
