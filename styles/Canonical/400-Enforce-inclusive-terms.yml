@@ -1,0 +1,23 @@
+extends: existence
+message: "Replace '%s' with an inclusive term"
+level: error
+ignorecase: true
+tokens:
+  - white(\-)?list(ed|ing)?
+  - black(\-)?list(ed|ing)?
+  - black( )?hats?
+  - white( )?hats?
+  - illegal characters?
+  - masters?
+  - slaves?
+  - chairman
+  - foreman
+  - dumm(y|ies)
+  - grandfather(ed)?
+  - guys?
+  - hangs?
+  - man hours?
+  - man( |-)in( |-)the( |-)middle
+  - manned
+  - middleman
+  - sanity check
