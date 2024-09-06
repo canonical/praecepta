@@ -1,0 +1,9 @@
+# 025 - Latinisms that we strongly advise against
+
+extends: existence
+message: Instead of 'a.m.', 'AM', 'p.m.', and 'PM', use 24-hour time.
+link: https://docs.ubuntu.com/styleguide/en#latin-words-and-phrases
+level: suggestion
+nonword: true
+tokens:
+  - '\b[1|2]?:?\d?\d\s?(?:[AaPp]\.?[Mm]\.?)(?!\w+\b|\.)'
