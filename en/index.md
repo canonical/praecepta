@@ -524,6 +524,20 @@ Lastly, these Latin words and phrases are widespread in academia and research. T
 
 
 <!-- RULE
+#26 Avoid orphan demonstrative pronouns
+-->
+
+## Lone "this", "these", "those", "that"
+
+Pronouns that refer to a subject previously discussed – "this", "these", "those", and "that" – are called _demonstrative pronouns_. When they don't sit near or next to the noun they refer to, the reader may confuse your meaning. If there's any room for ambiguity, put the target noun immediately after its demonstrative pronoun.
+
+For example:
+
+- **Use**: The `yaml` object is sourced from the `yamllib` library. This object is only available if...
+- **Don't use**: The `yaml` object is sourced from the `yamllib` library. This is only available if...
+
+
+<!-- RULE
 #21 No double space after a period/full stop
 -->
 
