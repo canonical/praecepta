@@ -546,6 +546,45 @@ In the improved sentence, inserting "object" after "this" makes it clear we're r
 
 
 <!-- RULE
+#27 Active voice
+-->
+
+## Active voice and agents
+
+In documentation, sentences are most often clearer when you include the agent and make it active.
+
+When describing processes, tasks, and flows, we provide statements about actions that take place. We describe machinery built by humans, so we write about known causes and effects. To exclude or displace the cause – the agent, the thing taking action – is to cast a fog over the facts and make the writing evasive and mystical. Documentation that doesn't positively identify the actors in the machinery reads like a series of loosely-connected descriptions of effects. The best tool to connect a cause with an effect is the agent.
+
+Include the agent in the sentence:
+
+- **Use**: The site stores all the files.
+- **Don't use**: All the files are stored.
+
+Make the agent active, or in other words, write with active verbs:
+
+- **Use**: The script checks the form for errors.
+- **Don't use**: The form is checked for errors by the script.
+
+If you're unsure about whether a sentence contains passive voice, look for these patterns:
+
+- is <em>verb</em>ed
+- are <em>verb</em>ed
+- were <em>verb</em>ed
+- was <em>verb</em>ed
+- been <em>verb</em>ed
+- being <em>verb</em>ed
+- by _agent_
+- with _agent_
+
+Documentation can still make productive use of passive voice to deliberately obscure the agent. There are two notable circumstances where we desire this:
+
+1. The agent is inconsequential, distracting, or meaningless. _The file is deleted._
+2. The agent is unknown or controversial. _The site was brought down by a coordinated attack._
+
+Be judicious and exacting in your use of passive voice.
+
+
+<!-- RULE
 #21 No double space after a period/full stop
 -->
 
