@@ -551,22 +551,22 @@ In the improved sentence, inserting "object" after "this" makes it clear we're r
 
 ## Active and passive voice
 
-Documentation contains a mix of active and passive voice, and you should use both with care and attention.
+Documentation contains a mix of active and passive voice. When to use each depends on the focus of the sentence.
 
 Active voice makes the agent – the thing taking action – the subject of the sentence. In "The server hosts all the files", _the server_ is the agent. 
 
-Passive voice occurs when you demote the agent. It either recasts the agent into an adjunct role, such as in "The files are hosted by the server", or omits the agent entirely, as in "The files are hosted".
+Passive voice occurs when we demote the agent. It either recasts the agent into an adjunct role, such as in "The files are hosted by the server", or omits the agent entirely, as in "The files are hosted".
 
-Whether to use active and passive voice depends on the focus of the sentence. When writing about software, we often describe user actions (_You can do X_) and causes and effects (_A leads to B_). Misusing passive voice tends to disengage the reader or make the software's workings seem inscrutable. Excessive passive voice, where the agent is rarely mentioned across large passages of text, makes for exhausting and tedious reading.
+Use each voice with care and attention. When writing about software, we often describe user actions (_You can do X_) and causes and effects (_A makes B happen_). Sometimes, only the effects matter (_A happens, B happens_). A common mistake in documentation is to _only_ describe effects, which risks disengaging the reader or obscuring the interactions between the software's components.
 
-Consider the sentence "In Ubuntu 23.10, apps **are now installed** with the App Center". This would be poor phrasing in a user guide, as the user isn't the focus. We ought to communicate that _they_ should take this action, not some unspecified entity. We can improve this sentence by adding the user in the agent role – "In Ubuntu 23.10, **you can now install** apps with the App Center".
+Consider the sentence "In Ubuntu, apps **are installed** with the App Center". This would be poor phrasing in a user guide, as the user isn't the focus. We ought to communicate that _they_ should take this action, not some unspecified entity. We can improve this sentence by adding the user as the agent – "In Ubuntu, **you can install** apps with the App Center".
 
-When you're describing a user action, or a cause and its effect, it's best to include the agent in the sentence:
+When describing a user action, or a cause and its effect, it's best to include the agent in the sentence:
 
 - **Use**: The `validate` library checks the form for errors.
 - **Use**: The script deletes the files.
 
-When the agent isn't the focus or is unknown, you can call on passive voice:
+When describing an effect, or when the agent isn't the focus or is unknown, you can call on passive voice:
 
 - **Use**: Before an upload, the form is checked for errors.
 - **Use**: Every time the script is called, the files are deleted.
