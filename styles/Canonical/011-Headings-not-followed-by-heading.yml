@@ -5,6 +5,6 @@ scope: raw
 level: error
 tokens:
   # Regex for Markdown.
-  - '(?m)^#{1,5}\s[^\n]*\n(\s*\n\s*)*^#{1,5}\s[^\n]*$'
+  - '(?m)^#{1,5}\s[^\n]*\n(\s*\n\s*)*^#{2,5}\s[^\n]*$'
   # Regex for reStructuredText.
-  - '(?m)^[^\n]+(\n[-=~^.]+)\n(\s*\n\s*)*^[^\n]+(\n[-=~^.]+)$'
+  - '(?m)^[^\n]+(\n([-=~^.])\2{3,})\n(\s*\n\s*)*^[^\n]+(\n([-=~^.])\5{3,})$'
