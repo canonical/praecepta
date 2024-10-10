@@ -4,7 +4,7 @@ This repository contains the documentation and the Vale rules for the documentat
 
 The style guide itself is written in Markdown and contained in the `en` directory.
 
-It is published online at: [docs.ubuntu.com/en/styleguide](https://docs.ubuntu.com/styleguide/en)
+It is published online at: [docs.ubuntu.com/styleguide/en](https://docs.ubuntu.com/styleguide/en)
 
 ## The Vale rules
 
@@ -15,7 +15,10 @@ This repository contains the Canonical set of rules, or the Canonical Style.
 
 To manually check your documentation with Vale rules use the following steps:
 
-1. Install Vale.
+1. Install Vale
+    ```shell
+    sudo snap install vale
+    ```
 2. Clone this repository.
 3. Run Vale with the configuration file `vale.ini` from this repository for testing your documentation source files: 
   
