@@ -2,7 +2,7 @@ extends: substitution
 message: "Use '%s' instead of '%s'"
 link: https://docs.ubuntu.com/styleguide/en/#other-commonly-referenced-products/projects
 ignorecase: true
-level: suggestion
+level: error
 action:
   name: replace
 swap:

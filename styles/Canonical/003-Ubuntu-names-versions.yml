@@ -10,7 +10,7 @@ scope:
   - sentence
   - heading
   - table 
-level: suggestion
+level: error
 tokens:
   # LTS releases should be followed by "LTS" suffix.
   - 'Ubuntu (24|22|20|18|16|14|12|10|8)\.04(?! LTS)'
