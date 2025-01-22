@@ -1,7 +1,7 @@
 # 19 - No Google Drive links
 
 extends: existence
-message: "Don't use images from Google Drive."
+message: "Don't use images from Google Drive. Use the asset manager."
 scope: raw
 nonword: true
 level: warning
