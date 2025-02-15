@@ -1,0 +1,9 @@
+
+# Uses the built-in dictionary and filters.
+extends: spelling
+message: "The word '%s' seems to be misspelled."
+level: error
+dicpath: "config/dictionaries/"
+dictionaries:
+  - en_US
+  # - en_GB
