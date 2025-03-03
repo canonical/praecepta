@@ -3,7 +3,7 @@
 [Ee]ksctl
 [Kk]eystore
 [Nn]amespace
-[Pp]arallelisation
+[Pp]arallelization
 [Rr]ebalance
 [Rr]ebalancing
 [Ss]napd
