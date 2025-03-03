@@ -1,14 +1,28 @@
+[Cc]onfig
+[Dd]owntime
+[Ee]ksctl
+[Kk]eystore
+[Nn]amespace
+[Pp]arallelization
+[Rr]ebalance
+[Rr]ebalancing
+[Ss]napd
+[Ss]torage
+[Ss]ysctl
+[Tt]ruststore
+[Uu]nencrypted
+[Uu]psert
 ACLs
-APIs
-AWS EKS
 Anbox
 Anbox Cloud
+APIs
+AWS EKS
 Canonical Observability Stack
 Ceph
-COS
 Charmed
 Charmed Kubeflow
 Charmhub
+COS
 Data Integrator
 Grafana
 Juju
@@ -18,9 +32,9 @@ Kratos
 Kubeflow
 Kubernetes
 Kyuubi
-LXD
 Landscape
 Launchpad
+LXD
 MAAS
 Mattermost
 MicroCeph
@@ -30,8 +44,8 @@ MicroOVN
 MicroStack
 Mir
 Multipass
-NVIDIA
 Nota
+NVIDIA
 Oathkeeper
 OpenStack
 PostgreSQL
@@ -55,17 +69,3 @@ Ubuntu Server
 VMs
 VMware
 ZooKeeper
-[Cc]onfig
-[Dd]owntime
-[Ee]ksctl
-[Kk]eystore
-[Nn]amespace
-[Pp]arallelisation
-[Rr]ebalance
-[Rr]ebalancing
-[Ss]napd
-[Ss]torage
-[Ss]ysctl
-[Tt]ruststore
-[Uu]nencrypted
-[Uu]psert
