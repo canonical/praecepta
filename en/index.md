@@ -72,7 +72,7 @@ technology terms:
  - website
  - internet
  - systems management
- - virtualisation
+ - virtualization
  - space-separated, comma-delimited
  - load balancer (only upper case as part of proper name e.g. Elastic Load Balancer)
 
