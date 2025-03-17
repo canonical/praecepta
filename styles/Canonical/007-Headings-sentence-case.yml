@@ -41,3 +41,9 @@ exceptions:
   - "Anbox Cloud"
   - "Ubuntu Server"
   - Ubuntu
+  - LAN
+  - USB
+  - UART
+  - SATA
+  - NVMe
+  - SSH
