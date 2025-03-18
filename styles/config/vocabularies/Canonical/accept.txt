@@ -1,6 +1,5 @@
 [Cc]onfig
 [Dd]owntime
-[Ee]ksctl
 [Kk]eystore
 [Nn]amespace
 [Pp]arallelization
@@ -17,14 +16,23 @@ Anbox
 Anbox Cloud
 APIs
 AWS EKS
+Azure
 Canonical Observability Stack
 Ceph
 Charmed
 Charmed Kubeflow
 Charmhub
+CLI
+Cloud-init
 COS
+Cosmos
 Data Integrator
+Docker
+Dqlite
+eksctl
+Emmet
 Grafana
+gRPC
 Juju
 K8s
 Kafka
@@ -32,9 +40,12 @@ Kratos
 Kubeflow
 Kubernetes
 Kyuubi
+LAN
 Landscape
 Launchpad
+Linux
 LXD
+macOS
 MAAS
 Mattermost
 MicroCeph
@@ -43,29 +54,43 @@ MicroK8s
 MicroOVN
 MicroStack
 Mir
+MongoDB
 Multipass
+Netplan
 Nota
 NVIDIA
+NVMe
 Oathkeeper
 OpenStack
 PostgreSQL
 Pushgateway
 Python
+REPL
 Requirer
 S3
+SATA
 Snapcraft
+Snap Store Proxy
 Spark
 Spark History Server
 Spark Job
 Spark Submit
 Squashfs
+SSH
 Terraform
 TLS
 Traefik
 Transport Layer Security
+TypeScript
+UART
+Ubuntu
 Ubuntu Core
 Ubuntu Pro
 Ubuntu Server
+Ubuntu Studio
+URLs
+USB
 VMs
 VMware
+Windows
 ZooKeeper
