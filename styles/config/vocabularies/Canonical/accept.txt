@@ -87,6 +87,7 @@ Ubuntu
 Ubuntu Core
 Ubuntu Pro
 Ubuntu Server
+Ubuntu Studio
 URLs
 USB
 VMs
