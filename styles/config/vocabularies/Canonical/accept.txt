@@ -32,6 +32,7 @@ Kratos
 Kubeflow
 Kubernetes
 Kyuubi
+LAN
 Landscape
 Launchpad
 LXD
@@ -46,6 +47,7 @@ Mir
 Multipass
 Nota
 NVIDIA
+NVMe
 Oathkeeper
 OpenStack
 PostgreSQL
@@ -53,19 +55,24 @@ Pushgateway
 Python
 Requirer
 S3
+SATA
 Snapcraft
 Spark
 Spark History Server
 Spark Job
 Spark Submit
 Squashfs
+SSH
 Terraform
 TLS
 Traefik
 Transport Layer Security
+UART
+Ubuntu
 Ubuntu Core
 Ubuntu Pro
 Ubuntu Server
+USB
 VMs
 VMware
 ZooKeeper
