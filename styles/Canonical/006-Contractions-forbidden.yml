@@ -2,7 +2,7 @@
 
 extends: substitution
 message: "Consider using '%s' instead of '%s'"
-link: https://docs.ubuntu.com/styleguide/en#don't-use-these!
+link: https://docs.ubuntu.com/styleguide/en#contractions
 level: warning
 ignorecase: true
 swap:
