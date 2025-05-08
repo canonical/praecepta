@@ -4,6 +4,8 @@ extends: substitution
 message: "Instead of '%[2]s', use %[1]s."
 link: https://docs.ubuntu.com/styleguide/en#latin-words-and-phrases
 level: suggestion
+scope:
+  - summary
 nonword: true
 ignorecase: true
 swap:

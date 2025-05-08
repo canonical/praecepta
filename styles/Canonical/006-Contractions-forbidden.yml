@@ -4,6 +4,8 @@ extends: substitution
 message: "Consider using '%s' instead of '%s'"
 link: https://docs.ubuntu.com/styleguide/en#contractions
 level: warning
+scope:
+  - summary
 ignorecase: true
 swap:
   ain[`']t: isn't

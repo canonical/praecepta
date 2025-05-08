@@ -1,6 +1,8 @@
 extends: existence
 message: "Replace '%s' with an inclusive term"
 level: error
+scope:
+  - summary
 ignorecase: true
 tokens:
   - white(\-)?list(ed|ing)?
