@@ -4,6 +4,8 @@ extends: existence
 message: "Avoid the phrase '%s'"
 link: https://docs.ubuntu.com/styleguide/en#words-and-phrases-to-avoid
 level: warning
+scope:
+  - summary
 ignorecase: true
 tokens:
   - 'allow.*?'
