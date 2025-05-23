@@ -1,5 +1,9 @@
 extends: existence
 message: "Replace '%s' with an inclusive term"
+scope:
+  - sentence
+  - heading
+  - table
 level: error
 ignorecase: true
 tokens:
