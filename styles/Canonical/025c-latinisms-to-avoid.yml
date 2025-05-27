@@ -4,6 +4,11 @@ extends: existence
 message: "Don't use academic Latin terms like 'a posteriori', 'et al', and 'stet'."
 link: https://docs.ubuntu.com/styleguide/en#latin-words-and-phrases
 level: warning
+scope:
+  - summary
+  - heading
+  - table.header
+  - table.cell
 ignorecase: true
 tokens:
   - 'a\sposteriori'

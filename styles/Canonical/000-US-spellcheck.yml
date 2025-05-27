@@ -2,6 +2,10 @@
 extends: spelling
 message: "The word '%s' seems to be misspelled."
 level: error
+scope:
+  - summary
+  - table.header
+  - table.cell
 dicpath: "config/dictionaries/"
 dictionaries:
   - en_US

@@ -3,6 +3,11 @@ message: "Use '%s' instead of '%s'"
 link: https://docs.ubuntu.com/styleguide/en/#other-commonly-referenced-products/projects
 ignorecase: true
 level: error
+scope:
+  - summary
+  - heading
+  - table.header
+  - table.cell
 action:
   name: replace
 swap:

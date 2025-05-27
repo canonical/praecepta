@@ -1,6 +1,11 @@
 extends: existence
 message: "Replace '%s' with an inclusive term"
 level: error
+scope:
+  - summary
+  - heading
+  - table.header
+  - table.cell
 ignorecase: true
 tokens:
   - white(\-)?list(ed|ing)?
