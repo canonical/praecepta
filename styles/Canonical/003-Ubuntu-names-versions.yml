@@ -7,9 +7,10 @@ link: https://docs.ubuntu.com/styleguide/en/#ubuntu
 nonword: true
 ignorecase: true
 scope: 
-  - sentence
+  - summary
   - heading
-  - table 
+  - table.header
+  - table.cell
 level: error
 tokens:
   # LTS releases should be followed by "LTS" suffix.

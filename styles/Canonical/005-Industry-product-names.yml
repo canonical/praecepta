@@ -5,6 +5,9 @@ ignorecase: true
 level: error
 scope:
   - summary
+  - heading
+  - table.header
+  - table.cell
 action:
   name: replace
 swap:

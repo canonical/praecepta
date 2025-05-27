@@ -5,6 +5,8 @@ ignorecase: true
 level: suggestion
 scope:
   - summary
+  - table.header
+  - table.cell
 action:
   name: replace
 swap:

@@ -6,6 +6,9 @@ link: https://docs.ubuntu.com/styleguide/en#contractions
 level: warning
 scope:
   - summary
+  - heading
+  - table.header
+  - table.cell
 ignorecase: true
 swap:
   ain[`']t: isn't

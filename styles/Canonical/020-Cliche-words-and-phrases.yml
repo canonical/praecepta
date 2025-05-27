@@ -6,6 +6,9 @@ link: https://docs.ubuntu.com/styleguide/en#words-and-phrases-to-avoid
 level: warning
 scope:
   - summary
+  - heading
+  - table.header
+  - table.cell
 ignorecase: true
 tokens:
   - 'allow.*?'

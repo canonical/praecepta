@@ -3,6 +3,9 @@ message: "'%s' is repeated!"
 level: warning
 scope:
   - summary
+  - heading
+  - table.header
+  - table.cell
 alpha: true
 ignorecase: true
 tokens:

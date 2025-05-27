@@ -6,6 +6,9 @@ link: https://docs.ubuntu.com/styleguide/en#latin-words-and-phrases
 level: warning
 scope:
   - summary
+  - heading
+  - table.header
+  - table.cell
 ignorecase: true
 tokens:
   - 'a\sposteriori'

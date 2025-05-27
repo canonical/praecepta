@@ -6,6 +6,9 @@ link: https://docs.ubuntu.com/styleguide/en#latin-words-and-phrases
 level: suggestion
 scope:
   - summary
+  - heading
+  - table.header
+  - table.cell
 nonword: true
 ignorecase: true
 swap:
