@@ -131,6 +131,7 @@ HWE
 IC
 IHV
 Imagecraft
+Indico
 Infiniband
 Influxdb
 init
@@ -249,6 +250,7 @@ POSIX
 PostgreSQL
 PPA
 ppc
+Prometheus
 PS5
 Pushgateway
 PXE
@@ -262,6 +264,7 @@ Rasterization
 RBAC
 RDMA
 Rebase
+Redis
 RegEx
 REPL
 Requirer
@@ -274,6 +277,7 @@ RoSRM
 RoST
 RTOS
 S3
+SAML
 SATA
 Scrcpy
 SDK
@@ -284,6 +288,7 @@ SFDC
 SIP
 SKU
 SLA
+SMTP
 Snapcraft
 snapcrafting
 Snapd
@@ -300,6 +305,7 @@ Squashfs
 SR
 SRU
 SSH
+StatsD
 subcluster
 Subnet
 Superdistro
