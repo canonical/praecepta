@@ -4,7 +4,8 @@ link: https://docs.ubuntu.com/styleguide/en/#other-canonical-products
 ignorecase: true
 level: error
 scope:
-  - summary
+  - sentence
+  - list
   - heading
   - table.header
   - table.cell
