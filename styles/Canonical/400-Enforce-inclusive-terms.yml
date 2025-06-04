@@ -2,7 +2,8 @@ extends: existence
 message: "Replace '%s' with an inclusive term"
 level: error
 scope:
-  - summary
+  - sentence
+  - list
   - heading
   - table.header
   - table.cell

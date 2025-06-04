@@ -5,7 +5,8 @@ message: "Consider using '%s' instead of '%s'"
 link: https://docs.ubuntu.com/styleguide/en#contractions
 level: warning
 scope:
-  - summary
+  - sentence
+  - list
   - heading
   - table.header
   - table.cell

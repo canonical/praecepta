@@ -4,7 +4,8 @@ link: https://docs.ubuntu.com/styleguide/en/#spelling
 ignorecase: true
 level: suggestion
 scope:
-  - summary
+  - sentence
+  - list
   - table.header
   - table.cell
 action:

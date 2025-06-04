@@ -5,7 +5,8 @@ message: "'%s' should have one space."
 link: 
 level: warning
 scope:
-  - summary
+  - sentence
+  - list
 nonword: true
 tokens:
   - '[a-z][.?!] {2,}[A-Z]'

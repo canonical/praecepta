@@ -5,7 +5,8 @@ message: Instead of 'a.m.', 'AM', 'p.m.', and 'PM', use 24-hour time.
 link: https://docs.ubuntu.com/styleguide/en#latin-words-and-phrases
 level: suggestion
 scope:
-  - summary
+  - sentence
+  - list
   - heading
   - table.header
   - table.cell
