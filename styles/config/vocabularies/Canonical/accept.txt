@@ -1,7 +1,8 @@
+[Aa]rgs
 [Cc]onfig
 [Dd]owntime
-[Kk]eystore
 [Hh]ostname
+[Kk]eystore
 [Nn]amespace
 [Pp]arallelization
 [Rr]ebalance
@@ -32,7 +33,6 @@ APIs
 APK
 APM
 Appium
-Args
 armhf
 ARMv
 ARR
