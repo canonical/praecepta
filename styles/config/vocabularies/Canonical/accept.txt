@@ -1,12 +1,14 @@
 [Cc]onfig
 [Dd]owntime
 [Kk]eystore
+[Hh]ostname
 [Nn]amespace
 [Pp]arallelization
 [Rr]ebalance
 [Rr]ebalancing
 [Ss]napd
 [Ss]torage
+[Ss]ubcommand
 [Ss]ysctl
 [Tt]ruststore
 [Uu]nencrypted
@@ -30,6 +32,7 @@ APIs
 APK
 APM
 Appium
+Args
 armhf
 ARMv
 ARR
@@ -251,6 +254,7 @@ PostgreSQL
 PPA
 ppc
 Prometheus
+Promtail
 PS5
 Pushgateway
 PXE
@@ -285,6 +289,7 @@ SDR
 SDS
 SEG
 SFDC
+Sidekiq
 SIP
 SKU
 SLA
