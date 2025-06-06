@@ -147,7 +147,6 @@ ISV
 ITP
 JAAS
 jQuery
-juju
 Juju
 jujuc
 jujud
