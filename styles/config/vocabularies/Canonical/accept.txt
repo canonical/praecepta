@@ -183,6 +183,7 @@ LXD
 MAAS
 macOS
 Mattermost
+Maubot
 MDF
 MDL
 MEC
