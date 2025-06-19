@@ -126,6 +126,7 @@ HA
 HAcluster
 HAP
 HAProxy
+Hockeypuck
 HPC
 HWE
 IC
