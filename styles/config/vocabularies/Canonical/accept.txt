@@ -131,6 +131,8 @@ HAP
 HAProxy
 Hockeypuck
 HPC
+HTTP
+HTTPS
 HWE
 IC
 IHV
