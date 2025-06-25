@@ -1,4 +1,3 @@
-[Aa]rgs
 [Cc]onfig
 [Dd]owntime
 [Hh]ostname
