@@ -1,17 +1,8 @@
-[Cc]onfig
-[Dd]owntime
-[Hh]ostname
-[Kk]eystore
-[Nn]amespace
-[Pp]arallelization
-[Rr]ebalance
-[Rr]ebalancing
 [Ss]napd
 [Ss]torage
 [Ss]ubcommand
 [Ss]ysctl
 [Tt]ruststore
-[Uu]nencrypted
 [Uu]psert
 AAM
 AAR
