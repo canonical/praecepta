@@ -1,5 +1,6 @@
 [Cc]onfig
 [Dd]owntime
+[Hh]ostname
 [Kk]eystore
 [Nn]amespace
 [Pp]arallelization
@@ -7,6 +8,7 @@
 [Rr]ebalancing
 [Ss]napd
 [Ss]torage
+[Ss]ubcommand
 [Ss]ysctl
 [Tt]ruststore
 [Uu]nencrypted
@@ -252,6 +254,7 @@ PostgreSQL
 PPA
 ppc
 Prometheus
+Promtail
 PS5
 Pushgateway
 PXE
@@ -286,6 +289,7 @@ SDR
 SDS
 SEG
 SFDC
+Sidekiq
 SIP
 SKU
 SLA
