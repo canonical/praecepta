@@ -32,3 +32,7 @@ captured terms:
       - manned
       - middleman
       - sanity
+
+Not captured:
+
+- jenkins-slave
