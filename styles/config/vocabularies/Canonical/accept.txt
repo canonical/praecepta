@@ -76,6 +76,7 @@ CVE
 Data Integrator
 DBR
 DEP
+Debian
 Devel
 DHCP
 DKMS
@@ -345,6 +346,7 @@ VMware
 VNFD
 Vue
 WebRTC
+Wi-Fi
 Windows
 WoU
 WSL
