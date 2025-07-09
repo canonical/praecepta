@@ -23,3 +23,4 @@ The following list should not produce errors:
 
 1. This is a list item
 2. This is another list item
+3. Juju 3 should not be captured

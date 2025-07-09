@@ -15,7 +15,7 @@ tokens:
   - white( )?hats?
   - illegal characters?
   - masters?
-  - slaves?
+  - (?<!jenkins\-)slaves?
   - chairman
   - foreman
   - dumm(y|ies)
