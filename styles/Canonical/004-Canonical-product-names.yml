@@ -4,7 +4,7 @@ link: https://docs.ubuntu.com/styleguide/en/#other-canonical-products
 ignorecase: true
 level: error
 scope:
-  - summary
+  - summary & ~blockquote
   - list
   - heading
   - table.header
@@ -17,7 +17,7 @@ swap:
   Charmed Kubeflow: Charmed Kubeflow
   Canononical Observability Stack: Canonical Observability Stack
   Juju: Juju
-  Landscape: Landscape
+  Landscape(?! environment| layout): Landscape
   Launchpad: Launchpad
   LXD: LXD
   MAAS: MAAS
