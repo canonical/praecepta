@@ -6,7 +6,7 @@ The first thing to look at when thinking about adding a term to the dictionary, 
 * Command references and project-specific terms that are not used widely outside of a given context, should be added to a project's local custom wordlist.
 * Words that are currently flagged by the spelling check, but exist in a dictionary (or are accepted modern terminology) should be added to the dictionary in this repository.
 
-Let's consider adding the term `rebasing` to the dictionary. This term should be added to the dictionary, but where do we start?
+Let's consider adding the term `rebasing` to the dictionary. Where do we start?
 
 ## Dictionary overview
 
