@@ -1,36 +1,24 @@
 # Adding dictionary terms
 
-The first thing to look at when thinking about adding a term to the dictionary,
-is to consider what that word is and where it should go.
+The first thing to look at when thinking about adding a term to the dictionary, is to consider what that word is and where it should go.
 
-* Product names should not be added to the dictionary, they should be added to
-the vocabulary list in this repository.
-* Command references and project specific terms that are not used widely outside
-of a given context, should be added to a project's local custom wordlist.
-* Words that are currently flagged by the spelling check, but exist in a
-dictionary (or are accepted modern terminology) should be added to the dictionary
-in this repository.
+* Product names should not be added to the dictionary, they should be added to the vocabulary list in this repository.
+* Command references and project specific terms that are not used widely outside of a given context, should be added to a project's local custom wordlist.
+* Words that are currently flagged by the spelling check, but exist in a dictionary (or are accepted modern terminology) should be added to the dictionary in this repository.
 
 Let's consider adding the term `rebasing` to the dictionary. This term should be added to the dictioanry, but where do we start?
 
 ## Dictionary overview
 
-Vale relies on Hunspell dictionaries for spelling functionality. Hunspell
-dictionaries consist of two files, a `.dic` file containing a list of
-words, and a `.aff` file which essentially contains structures of prefixes and
-suffixes.
+Vale relies on Hunspell dictionaries for spelling functionality. Hunspell dictionaries consist of two files, a `.dic` file containing a list of words, and a `.aff` file which essentially contains structures of prefixes and suffixes.
 
-A word defined in the `en_US.dic` file can be appended with a structure to
-indicate accepted variants as declared in the `en_US.aff` file.
+A word defined in the `en_US.dic` file can be appended with a structure to indicate accepted variants as declared in the `en_US.aff` file.
 
-Knowing that the system uses core words and affixes, the term `rebase` can be
-split into `re` and `base`.
+Knowing that the system uses core words and affixes, the term `rebase` can be split into `re` and `base`.
 
 ## Affix file
 
-The `en_US.aff` file contains some structures that define how a prefix or suffix
-functions for given words. If we look for the affix we need, `re`, we find that
-in this block:
+The `en_US.aff` file contains some structures that define how a prefix or suffix functions for given words. If we look for the affix we need, `re`, we find that in this block:
 
 ```
 PFX A Y 1
@@ -78,8 +66,7 @@ We could just add `A`, to make `base/ACDRSLTG`, but that might make for some str
 
 ## Understanding existing terms
 
-Looking at how `base` is currently defined, we need to understand the terms
-currently provided by this structure, and what a modification would do.
+Looking at how `base` is currently defined, we need to understand the terms currently provided by this structure, and what a modification would do.
 
 ```
 base/CDRSLTG
