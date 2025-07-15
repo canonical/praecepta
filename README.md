@@ -23,7 +23,7 @@ To manually check your documentation with Vale rules use the following steps:
 3. Run Vale with the configuration file `vale.ini` from this repository for testing your documentation source files: 
   
     ```shell
-    vale --config ~/praecepta/vale.ini ~/product/docs/
+    vale --config ~/documentation-style-guide/vale.ini ~/product/docs/
     ```
 
 For automation, see the [Canonical Style GitHub action](#the-canonical-style-github-action).
@@ -34,7 +34,7 @@ Anyone is welcome to submit a PR to add additional rules. However, no additions 
 
 For a reference on rule syntax, see the Vale [documentation on Styles][Vale styles].
 
-If you are completely new to developing Vale rules, see this [introductory guide](https://github.com/canonical/praecepta/blob/8c7fee862b2258c692439ef430198e393bdc30c4/getting-started.md). 
+If you are completely new to developing Vale rules, see this [introductory guide](https://github.com/canonical/documentation-style-guide/blob/8c7fee862b2258c692439ef430198e393bdc30c4/getting-started.md). 
 
 ### Using the rules
 
@@ -63,7 +63,7 @@ jobs:
         - name: Checkout repo to runner
           uses: actions/checkout@v3
         - name: Install styles
-          uses: canonical/praecepta@main
+          uses: canonical/documentation-style-guide@main
         - name: Run Vale tests
           uses: errata-ai/vale-action@reviewdog
           with:
@@ -89,12 +89,12 @@ There are times when it is useful to be able to manually run Vale from a termina
 
 1. **Clone the repository**
    ```
-   git clone https://github.com/canonical/praecepta.git
+   git clone https://github.com/canonical/documentation-style-guide.git
    ```
 2. **Set environment variables**
    ```
-   export VALE_CONFIG_PATH=~/praecepta/.vale.ini
-   export VALE_STYLES_PATH=~/praecepta/styles
+   export VALE_CONFIG_PATH=~/documentation-style-guide/.vale.ini
+   export VALE_STYLES_PATH=~/documentation-style-guide/styles
    ```
    Note: this assumes you cloned the repo directly to your home directory - adjust these paths if necessary.
 3. **Confirm configuration**

@@ -38,7 +38,7 @@ To develop a rule, you don't have to worry about setting up a particular environ
 First, clone the repository if you haven't already.
 
 ```shell
-git clone git@github.com:canonical/praecepta.git
+git clone git@github.com:canonical/documentation-style-guide.git
 ```
 
 Each rule is one file in the `styles/Canonical` directory. To create a new rule, add a `.yml` file and name it according to the convention you see in the other files: `000-Subject-brief-description.yml`.
@@ -100,11 +100,11 @@ The single quotes indicate the beginning and end of the regex, and the `.*?` qua
 
 Create a file in the root directory of the repository and fill it with text that you expect your rule to catch. It can be in any text format (`.txt`, `.md`, `.rst`...)
 
-Besides the text file, the `vale` command needs a `vale.ini` config file. This file already exists in the root folder `praecepta/`. Vale will automatically find the `vale.ini` if you run the command in the same directory.
+Besides the text file, the `vale` command needs a `vale.ini` config file. This file already exists in the root folder `documentation-style-guide/`. Vale will automatically find the `vale.ini` if you run the command in the same directory.
 
 ### Test all rules
 
-To apply all the rules inside `styles/Canonical` at the same time, run `vale <file>` in the root directory `praecepta/`.
+To apply all the rules inside `styles/Canonical` at the same time, run `vale <file>` in the root directory `documentation-style-guide/`.
 
 For example:
 
@@ -127,7 +127,7 @@ This edit would look similar to the snippet below:
 Canonical.000-My-Rule = YES
 ```
 
-Once it is saved, you can run the command `vale <file>` in the root directory `praecepta/`.
+Once it is saved, you can run the command `vale <file>` in the root directory `documentation-style-guide/`.
 
 For example:
 
@@ -135,7 +135,7 @@ For example:
 vale test.md
 ```
 
-in the root directory `praecepta/`.
+in the root directory `documentation-style-guide/`.
 
 ### Resources
 
