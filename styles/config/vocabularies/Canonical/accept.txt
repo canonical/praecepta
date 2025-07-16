@@ -64,6 +64,7 @@ Coturn
 CPC
 CPQ
 CPT
+CPUs
 CR
 CRD
 CRI
@@ -122,10 +123,12 @@ HAcluster
 HAP
 HAProxy
 Hockeypuck
+hostname
 HPC
 HTTP
 HTTPS
 HWE
+IAM
 IC
 IHV
 Imagecraft
@@ -144,6 +147,7 @@ Istio
 ISV
 ITP
 JAAS
+Jenkins
 jQuery
 Juju
 jujuc
