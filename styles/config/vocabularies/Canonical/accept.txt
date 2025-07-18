@@ -349,6 +349,7 @@ VMs
 VMware
 VNFD
 Vue
+Wazuh
 WebRTC
 Wi-Fi
 Windows
