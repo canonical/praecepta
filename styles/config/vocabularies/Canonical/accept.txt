@@ -134,7 +134,7 @@ IHV
 Imagecraft
 Indico
 Infiniband
-Influxdb
+InfluxDB
 init
 IOV
 IPMI
