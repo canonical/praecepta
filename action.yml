@@ -14,11 +14,11 @@ runs:
           TEMP_DIR: ${{ runner.temp }}
           ACTION_DIR: ${{ github.action_path }}
       run: |
-        if ! test -d en; then
-        echo "No en directory found, creating it"
-        mkdir -p en
-        cp $ACTION_DIR/en/* en/
-        fi
+        # if ! test -d en; then
+        # echo "No en directory found, creating it"
+        # mkdir -p en
+        # cp $ACTION_DIR/en/* en/
+        # fi
 
         if ! test -d ./styles/Canonical; then
         mkdir -p styles/Canonical
@@ -26,9 +26,9 @@ runs:
         echo "Styles copied to working dir"
         fi
 
-        if ! test -d ./styles/config/vocabularies/Canonical; then
-        mkdir -p styles/config/vocabularies/Canonical
-        cp $ACTION_DIR/styles/config/vocabularies/Canonical/* styles/config/vocabularies/Canonical/
+        if ! test -d ./styles/config; then
+        mkdir -p styles/config
+        cp -r $ACTION_DIR/styles/config/* styles/config/
         echo "Vocab copied to working dir"
         tree styles
         fi
