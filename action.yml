@@ -14,6 +14,7 @@ runs:
           TEMP_DIR: ${{ runner.temp }}
           ACTION_DIR: ${{ github.action_path }}
       run: |
+      
         if ! test -d ./styles/Canonical; then
         mkdir -p styles/Canonical
         cp $ACTION_DIR/styles/Canonical/* styles/Canonical/
