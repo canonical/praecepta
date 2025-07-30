@@ -14,12 +14,12 @@ runs:
           TEMP_DIR: ${{ runner.temp }}
           ACTION_DIR: ${{ github.action_path }}
       run: |
-        if ! test -d .en; then
-        echo "No .en directory found, creating it"
-        mkdir -p .en
-        cp $ACTION_DIR/.en/* .en/
+        if ! test -d en; then
+        echo "No en directory found, creating it"
+        mkdir -p en
+        cp $ACTION_DIR/en/* en/
         fi
-        
+
         if ! test -d ./styles/Canonical; then
         mkdir -p styles/Canonical
         cp $ACTION_DIR/styles/Canonical/* styles/Canonical/
