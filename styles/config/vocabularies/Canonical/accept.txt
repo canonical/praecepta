@@ -355,6 +355,8 @@ Wi-Fi
 Windows
 WoU
 WSL
+Xenial
+Xerus
 ZFS
 ZooKeeper
 zSystems
