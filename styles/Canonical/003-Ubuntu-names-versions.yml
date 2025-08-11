@@ -22,6 +22,8 @@ tokens:
   - 'Ubuntu \d?[13579]\.04 LTS'
   - 'Ubuntu 6\.06 LTS'
   # All releases should match the code name.
+  - 'Ubuntu 25\.10 \((?!(Questing|Questing Quokka)\))'
+  - 'Ubuntu 25\.04 \((?!(Plucky|Plucky Puffin)\))'
   - 'Ubuntu 24\.10 \((?!(Oracular|Oracular Oriole)\))'
   - 'Ubuntu 24\.04 LTS \((?!(Noble|Noble Numbat)\))'
   - 'Ubuntu 23\.10 \((?!(Mantic|Mantic Minotaur)\))'
