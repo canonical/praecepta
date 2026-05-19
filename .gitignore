@@ -1,0 +1,8 @@
+node_modules
+coverage
+build/
+*.egg-info
+.venv
+.vscode
+.*_cache/
+tests/__pycache__/

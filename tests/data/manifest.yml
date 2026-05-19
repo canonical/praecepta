@@ -1,0 +1,3078 @@
+# Rules that are set for removal have not been included
+rules:
+  000-US-spellcheck:
+    cases:
+      - id: misspell
+        filetypes: [md, rst]
+        content: |
+          This Frist wrod has someting incorrect.
+        expect:
+          triggers:
+            - Frist
+            - wrod
+            - someting
+          severity: error
+      - id: ignore-rst
+        filetypes: [rst]
+        content: |
+          Ignore the :vale-ignore:`splelling` mistake.
+        expect:
+          triggers: []
+          severity: error
+      - id: ignore-md
+        filetypes: [md]
+        content: |
+          Ignore the {vale-ignore}`splelling` mistake.
+        expect:
+          triggers: []
+          severity: error
+  003-Ubuntu-names-versions:
+    cases:
+      - id: ubuntu-names-md
+        filetypes: [md]
+        content: |
+          Ubuntu 24.04 has been released
+          Ubuntu 23.10 LTS is codenamed Mantic Minotaur
+          Ubuntu 24.04 LTS (Numbat)
+          How to download Ubuntu 22.04
+          Installed version is Ubuntu 18.10 (Cuttlefish)
+
+          ## Ubuntu 21.10 LTS
+
+          | Cycle  | OS                          |
+          |--------|-----------------------------|
+          | 22.04  | Ubuntu 22.04 LTS (Jimmy)    |
+          | 22.04  | Ubuntu 22.04 (Kinetic Kudu) |
+        expect:
+          triggers:
+            - 'Ubuntu 18.10 (Cuttlefish)'
+            - 'Ubuntu 21.10 LTS'
+            - 'Ubuntu 22.04'
+            - 'Ubuntu 22.04 LTS (Jimmy)'
+            - 'Ubuntu 23.10 LTS'
+            - 'Ubuntu 24.04'
+            - 'Ubuntu 24.04 LTS (Numbat)'
+          severity: error
+      - id: valid-md
+        filetypes: [md]
+        content: |
+          Ubuntu 24.04 LTS
+          Ubuntu 24.04 LTS (Noble)
+          Ubuntu 24.04 LTS (Noble Numbat)
+          Ubuntu 24.04.4 LTS
+          Ubuntu 24.04.4 LTS (Noble Numbat)
+
+          ## Ubuntu 24.04 LTS
+
+          | Cycle  | OS                          |
+          |--------|-----------------------------|
+          | 22.04  | Ubuntu 22.04 LTS (Jammy)    |
+          | 22.10  | Ubuntu 22.10 (Kinetic Kudu) |
+        expect:
+          triggers: []
+          severity: error
+      - id: ubuntu-names-rst
+        filetypes: [rst]
+        content: |
+          Ubuntu 20.04 has been released.
+          Ubuntu 16.04 was a popular release.
+          Ubuntu 19.04 LTS was never a thing.
+          Ubuntu 15.04 LTS was never a thing.
+          Ubuntu 20.04 LTS (Badger) is wrong.
+          Ubuntu 18.04 LTS (Wrong Name) is bad.
+          Ubuntu 16.04 LTS (Wrong Xerus) is bad.
+          Ubuntu 14.04 LTS (Incorrect Tahr) is bad.
+          Ubuntu 12.04 LTS (NotPrecise) is bad.
+          Ubuntu 22.10 (Wrong Kudu) is bad.
+          Ubuntu 23.04 (Incorrect Lobster) is bad.
+          Ubuntu 21.10 (Bad Indri) is bad.
+          Ubuntu 20.10 (NotGroovy) is bad.
+          Ubuntu 19.10 (Bad Ermine) is bad.
+          Ubuntu 17.10 (NotArtful) is bad.
+          Ubuntu 17.04 (NotZesty) is bad.
+          Ubuntu 16.10 (NotYak) is bad.
+          Ubuntu 15.10 (NotWily) is bad.
+          Ubuntu 14.10 (NotUtopic) is bad.
+          Ubuntu 13.10 (NotSaucy) is bad.
+          Ubuntu 13.04 (NotRaring) is bad.
+          Ubuntu 12.10 (NotQuantal) is bad.
+          Ubuntu 11.10 (NotOneiric) is bad.
+          Ubuntu 11.04 (NotNatty) is bad.
+          Ubuntu 10.10 (NotMaverick) is bad.
+          Ubuntu 10.04 LTS (NotLucid) is bad.
+        expect:
+          triggers:
+            - 'Ubuntu 10.04 LTS (NotLucid)'
+            - 'Ubuntu 10.10 (NotMaverick)'
+            - 'Ubuntu 11.04 (NotNatty)'
+            - 'Ubuntu 11.10 (NotOneiric)'
+            - 'Ubuntu 12.10 (NotQuantal)'
+            - 'Ubuntu 13.04 (NotRaring)'
+            - 'Ubuntu 13.10 (NotSaucy)'
+            - 'Ubuntu 14.10 (NotUtopic)'
+            - 'Ubuntu 15.10 (NotWily)'
+            - 'Ubuntu 16.10 (NotYak)'
+            - 'Ubuntu 17.04 (NotZesty)'
+            - 'Ubuntu 17.10 (NotArtful)'
+            - 'Ubuntu 19.10 (Bad Ermine)'
+            - 'Ubuntu 20.10 (NotGroovy)'
+            - 'Ubuntu 21.10 (Bad Indri)'
+            - 'Ubuntu 22.10 (Wrong Kudu)'
+            - 'Ubuntu 23.04 (Incorrect Lobster)'
+            - 'Ubuntu 14.04 LTS (Incorrect Tahr)'
+            - 'Ubuntu 16.04 LTS (Wrong Xerus)'
+            - 'Ubuntu 18.04 LTS (Wrong Name)'
+            - 'Ubuntu 20.04 LTS (Badger)'
+            - 'Ubuntu 12.04 LTS (NotPrecise)'
+            - 'Ubuntu 15.04 LTS'
+            - 'Ubuntu 16.04'
+            - 'Ubuntu 19.04 LTS'
+            - 'Ubuntu 20.04'
+          severity: error
+      - id: valid-rst
+        filetypes: [rst]
+        content: |
+          Ubuntu 24.04 LTS
+          Ubuntu 24.04 LTS (Noble Numbat)
+          Ubuntu 22.04 LTS (Jammy Jellyfish)
+          Ubuntu 20.04 LTS (Focal Fossa)
+          Ubuntu 22.10 (Kinetic Kudu)
+          Ubuntu 23.10 (Mantic Minotaur)
+          Ubuntu 24.10 (Oracular Oriole)
+          Ubuntu 24.04 LTS (Noble)
+        expect:
+          triggers: []
+          severity: error
+  004-Canonical-product-names:
+    cases:
+      - id: canonical-product-names
+        filetypes: [md, rst]
+        content: |
+          It's Anbox Cloud, not Anbox cloud or AnBox.
+          We say Charmed Kubeflow not charmed kubeflow.
+          The Canonical Observability Stack is called COS and is not
+          a Canonical observability stack.
+          Juju, never JuJu, nor juju when not referring to the command `juju`.
+          Landscape and Launchpad, not LandScape or LaunchPad.
+          If you say lxd it should be in backticks `lxd`.
+          For the love of all that is holy, MAAS, not Maas or MaaS.
+          MicroCeph and MicroCloud, not Microceph or Microcloud.
+          MicroK8s, not Microk8s.
+          MicroOVN, not microOVN or MicroOvn.
+          MicroStack is the name, not microstack or Microstack.
+          Mir doesn't have a common misspelling.
+          Multipass, like in that film, not MultiPass.
+          Snapcraft, not SnapCraft or snapcraft.
+          snapd not snapD or SnapD or Snapd.
+          Ubuntu Pro, not Ubuntu pro.
+          Ubuntu Server, though I guess people may talk about *an*
+          Ubuntu server, but that should prompt a query. 
+        expect:
+          triggers:
+            - cloud
+            - AnBox
+            - charmed
+            - kubeflow
+            - observability stack
+            - JuJu
+            - juju
+            - LandScape
+            - LaunchPad
+            - lxd
+            - Maas
+            - MaaS
+            - Microceph
+            - Microcloud
+            - Microk8s
+            - microOVN
+            - MicroOvn
+            - microstack
+            - Microstack
+            - MultiPass
+            - SnapCraft
+            - snapcraft
+            - snapD
+            - SnapD
+            - pro
+          severity: error
+      - id: ubuntu-pro-not-flagged
+        filetypes: [md, rst]
+        content: |
+          The Ubuntu project is open source.
+          Ubuntu provides a range of tools.
+          Ubuntu proposed-migration is a process.
+          See the Ubuntu Pro page for subscription info.
+          Ubuntu pro is a product.
+        expect:
+          triggers:
+            - pro
+          severity: error
+      - id: clean
+        filetypes: [md, rst]
+        content: |
+          Anbox Cloud is a streaming platform.
+          Charmed Kubeflow provides ML workflows.
+          The Canonical Observability Stack is integrated.
+          Use Juju to deploy and manage applications.
+          Landscape environment monitoring is available.
+          The Landscape layout is configurable.
+          Launchpad hosts source code.
+          Use LXD for system containers.
+          MAAS provisions bare metal.
+          MicroCeph provides distributed storage.
+          MicroCloud simplifies deployment.
+          MicroK8s is lightweight Kubernetes.
+          MicroOVN manages networking.
+          MicroStack enables OpenStack.
+          Multipass runs Ubuntu VMs.
+          Snapcraft builds snap packages.
+          The snapd daemon manages snaps.
+          Ubuntu Core is for IoT devices.
+          Ubuntu Pro provides security updates.
+          Ubuntu Server is for data centres.
+          The Ubuntu project is open source.
+          Ubuntu provides a range of tools.
+          Lets try websites:
+          snapcraft.io is the Snapcraft website.
+          api.snapcraft.io is the Snapcraft API site.
+          https://api.snapcraft.io is using a protocol.
+          And :ref:`Snapcraft <snapcraft>` is a named reference.
+        expect:
+          triggers: []
+          severity: error
+  005-Industry-product-names:
+    cases:
+      - id: valid
+        filetypes: [md, rst]
+        content: |
+            nVidia should be 'NVIDIA'
+            Openstack should be 'OpenStack'
+            Postgresql should be 'PostgreSQL'
+            Kuberentes should be 'Kubernetes' 
+            Aws should be 'AWS' 
+            Mysql should be 'MySQL' 
+            docker should be 'Docker' 
+            KubeFlow should be 'Kubeflow'
+            Google cloud platform should be 'Google Cloud Platform'
+            Google cloud should be 'Google Cloud Platform'
+            Influxdb should be 'InfluxDB' 
+            mattermost should be 'Mattermost'
+        expect:
+          triggers:
+            - nVidia
+            - Openstack
+            - Postgresql
+            - Kuberentes
+            - Aws
+            - Mysql
+            - docker
+            - KubeFlow
+            - Google cloud platform
+            - Google cloud
+            - Influxdb
+            - mattermost
+          severity: warning
+      - id: clean
+        filetypes: [md, rst]
+        content: |
+          NVIDIA provides GPU acceleration.
+          Deploy OpenStack for cloud infrastructure.
+          Use PostgreSQL as the database backend.
+          Kubernetes orchestrates containers.
+          AWS provides cloud services.
+          MySQL is a relational database.
+          Docker packages applications in containers.
+          Kubeflow manages ML pipelines.
+          Google Cloud Platform offers computing resources.
+          InfluxDB stores time series data.
+          Mattermost enables team collaboration.
+        expect:
+          triggers: []
+          severity: warning
+  006-Contractions-forbidden:
+    cases:
+      - id: contractions-forbidden
+        filetypes: [md, rst]
+        content: |
+          This ain't a sentence that you want to read in documentation.
+          How'd you feel yesterday?
+          How'll you feel tomorrow?
+          I'd expect that this sentence will not pass quality checks.
+          Something's off with this sentence.
+          This sentence mayn't pass inspection.
+          Our checks may've backfired.
+          This sentence mightn't pass inspection.
+          Our checks might've backfired.
+          We're gonna have to change some sentences.
+          We gotta make changes to the documentation.
+          We will make the changes at 10 o'clock.
+        expect:
+          triggers:
+            - ain't
+            - How'd
+            - How'll
+            - I'd
+            - Something's
+            - mayn't
+            - may've
+            - mightn't
+            - might've
+            - gonna
+            - gotta
+            - o'clock
+          severity: warning
+      - id: clean
+        filetypes: [md, rst]
+        content: |
+          This isn't a forbidden contraction.
+          Don't you feel great?
+          Isn't that a great feeling?
+          It's expected that this will pass.
+          Something I've seen pass is this sentence.
+          This should've passed.
+          That's nice.
+          Can't we just let this pass?
+          Let's stop now.
+        expect:
+          triggers: []
+  007-Headings-sentence-case:
+    cases:
+      - id: title-case-md
+        filetypes: [md]
+        content: |
+          ## This Is a Title Case Heading
+          ### Getting Started With Ubuntu And Juju
+        expect:
+          triggers:
+            - 'This Is a Title Case Heading'
+            - 'Getting Started With Ubuntu And Juju'
+          severity: warning
+      - id: title-case-rst
+        filetypes: [rst]
+        content: |
+          This Is Title Case
+          ===================
+
+          Getting Started With Ubuntu
+          ***************************
+        expect:
+          triggers:
+            - 'This Is Title Case'
+            - 'Getting Started With Ubuntu'
+          severity: warning
+      - id: valid-sentence-case
+        filetypes: [md]
+        content: |
+          ## This is a correct heading
+          ## Overview
+          ## Installation
+          ## MAAS configuration guide
+          ## LXD clustering overview
+          ## Ubuntu deployment steps
+          ## Getting started with Ubuntu and Juju
+        expect:
+          triggers: []
+      - id: valid-sentence-case-rst
+        filetypes: [rst]
+        content: |
+          This is a correct heading
+          *************************
+
+          Overview
+          ********
+
+          Installation
+          ************
+
+          MAAS configuration guide
+          ************************
+
+          LXD clustering overview
+          ***********************
+
+          Ubuntu deployment steps
+          ***********************
+
+          Getting started with Ubuntu and Juju
+          ************************************
+
+        expect:
+          triggers: []
+  008-Headings-no-punctuation:
+    cases:
+      - id: MD-headings
+        filetypes: [md]
+        content: |
+          # This is a heading.
+          ## Another heading!
+          ### Yet another heading?
+          #### Heading without punctuation
+          ##### Last but not least,
+        expect:
+          triggers:
+            - '.'
+            - '!'
+            - '?'
+            - ','
+          severity: suggestion
+      - id: RST-headings
+        filetypes: [rst]
+        content: |
+          Some heading.
+          *************
+
+          Another heading!
+          ################
+
+          Yet another heading?
+          ********************
+
+          Heading without punctuation
+          ###########################
+
+          Last but not least,
+          ********************
+        expect:
+          triggers:
+            - '.'
+            - '!'
+            - '?'
+            - ','
+          severity: suggestion
+      - id: clean-md
+        filetypes: [md]
+        content: |
+          # A simple heading
+          ## Configure the foo.bar setting
+          ### Getting started
+        expect:
+          triggers: []
+      - id: clean-rst
+        filetypes: [rst]
+        content: |
+          A simple heading
+          ================
+
+          Getting started with foo.bar
+          ****************************
+        expect:
+          triggers: []
+  009-Headings-no-links:
+    cases:
+      - id: links-in-md-headings
+        filetypes: [md]
+        content: |
+          ## Visit [the guide](example.com)
+
+          A heading with link [here](example.com)
+          ========================================
+
+          ## See <https://example.com>
+
+          A heading with autolink <https://example.com>
+          ==============================================
+        expect:
+          triggers:
+            - |-
+              ## Visit [the guide](example.com)
+            - |
+              A heading with link [here](example.com)
+              ========================================
+            - |-
+              ## See <https://example.com>
+            - |
+              A heading with autolink <https://example.com>
+              ==============================================
+          severity: warning
+      - id: links-in-rst-headings
+        filetypes: [rst]
+        content: |
+          See `user guide <doc/guide>`_ for details
+          ********************************************
+
+          See <https://example.com> link
+          ###################################
+
+          See :ref:`some label` for help
+          *********************************
+
+          See :doc:`topic` for details
+          ******************************
+
+          See https://example.com for details
+          *************************************
+
+          See www.example.com for details
+          **********************************
+        expect:
+          triggers:
+            - |
+              See `user guide <doc/guide>`_ for details
+              ********************************************
+            - |
+              See <https://example.com> link
+              ###################################
+            - |
+              See :ref:`some label` for help
+              *********************************
+            - |
+              See :doc:`topic` for details
+              ******************************
+            - |
+              See https://example.com for details
+              *************************************
+            - |
+              See www.example.com for details
+              **********************************
+          severity: warning
+      - id: valid-headings-no-links
+        filetypes: [md, rst]
+        content: |
+          ## A normal heading
+
+          A plain heading
+          ================
+
+          ## Use the `foo.bar` command
+        expect:
+          triggers: []
+  010-Punctuation-double-spaces:
+    cases:
+      - id: valid
+        filetypes: [md, rst]
+        content: |
+          Two spaces after a sentence.  Is fine if it isn't EOL.
+          Two spaces after EOL is bad.  
+          This will be fine though.
+          How about this?  
+          This is also bad!  
+          And this is fine?
+        expect:
+          triggers:
+            - '.  '
+            - '?  '
+            - '!  '
+          severity: warning
+      - id: clean
+        filetypes: [md, rst]
+        content: |
+          Two spaces after a sentence. Is fine with one space.
+          This will be fine though.
+          And this is fine? Yes it is.
+          This is also fine! Great.
+        expect:
+          triggers: []
+  012-date-format:
+    cases:
+      - id: invalid-dates
+        filetypes: [md, rst]
+        content: |
+          The release date is 1 January 1970.
+          The release date is 1 Jan 1970.
+          The release date is Jan 1, 1970.
+          The release date is the 1st of January 1970.
+          The release date is January 1st, 1970.
+          The release date is Jan 1st, 1970.
+          Another date would be 31/01/2025.
+          Another date would be 01-31-2025.
+          Another date would be 2025.01.31.
+          Another date would be 2025/01/31.
+        expect:
+          triggers: [
+            '1 January 1970',
+            '1 Jan 1970',
+            'Jan 1, 1970',
+            '1st of January 1970',
+            'January 1st, 1970',
+            'Jan 1st, 1970',
+            '31/01/2025',
+            '01-31-2025',
+            '2025.01.31',
+            '2025/01/31'
+          ]
+          severity: warning
+      - id: valid-dates
+        filetypes: [md, rst]
+        content: |
+          The release date is January 1, 1970.
+        expect:
+          triggers: []
+  013-Spell-out-numbers-below-10:
+    cases:
+      - id: invalid
+        filetypes: [md, rst]
+        content: |
+          0 1 2 3 4 5 6 7 8 9
+        expect:
+          triggers:
+            - '0'
+            - '1'
+            - '2'
+            - '3'
+            - '4'
+            - '5'
+            - '6'
+            - '7'
+            - '8'
+            - '9'
+          severity: suggestion
+      - id: valid
+        filetypes: [md, rst]
+        # Skip testing `n*n`, because this rule checks rendered text, and multiple asterisks parse as emphasis
+        content: |
+          0-0 0+0 #0 0:0 0,0 0.0 0/0
+          1-1 1+1 #1 1:1 1,1 1.1 1/1 1 Jan
+          2-2 2+2 #2 2:2 2,2 2.2 2/2 2 Jan
+          3-3 3+3 #3 3:3 3,3 3.3 3/3 3 Jan
+          4-4 4-4 #4 4:4 4,4 4.4 4/4 4 Jan
+          5-5 5+5 #5 5:5 5,5 5.5 5/5 5 Jan
+          6-6 6+6 #6 6:6 6,6 6.6 6/6 6 Jan
+          7-7 7+7 #7 7:7 7,7 7.7 7/7 7 Jan
+          8-8 8+8 #8 8:8 8,8 8.8 8/8 8 Jan
+          9-9 9+9 #9 9:9 9,9 9.9 9/9 9 Jan
+        expect:
+          triggers: []
+          severity: suggestion
+  014a-Numbers-greater-than-nine-should-be-in-numeric-form:
+    cases:
+      - id: written-numbers-md
+        filetypes: [md]
+        content: |
+          There are ten servers running.
+          We deployed eleven containers.
+          A total of twelve nodes.
+          About thirteen users reported issues.
+          We need fourteen instances.
+          There are fifteen packages to update.
+          Install sixteen dependencies.
+          Allocate seventeen threads.
+          Reserve eighteen ports.
+          We saw nineteen connections.
+          There are twenty workers.
+          About thirty requests per second.
+        expect:
+          triggers:
+            - ten
+            - eleven
+            - twelve
+            - thirteen
+            - fourteen
+            - fifteen
+            - sixteen
+            - seventeen
+            - eighteen
+            - nineteen
+            - twenty
+            - thirty
+          severity: suggestion
+      - id: written-numbers-rst
+        filetypes: [rst]
+        content: |
+          There are forty nodes in the cluster.
+          About fifty users in the queue.
+          We measured sixty operations.
+          There are seventy entries.
+          About eighty records processed.
+          A total of ninety items remain.
+          Over one hundred tests passed.
+          About one thousand lines of configuration.
+          Over one million requests served.
+          About one billion records in total.
+          Over one trillion calculations completed.
+        expect:
+          triggers:
+            - forty
+            - fifty
+            - sixty
+            - seventy
+            - eighty
+            - ninety
+            - hundred
+            - thousand
+            - million
+            - billion
+            - trillion
+          severity: suggestion
+      - id: valid-numeric-form
+        filetypes: [md, rst]
+        content: |
+          There are 10 servers running.
+          We deployed 20 instances.
+          The total is 100 nodes.
+          The tenth item in the list is special.
+          Configure the fifteenth parameter.
+        expect:
+          triggers: []
+          severity: suggestion
+  014b-Numbers-with-five-or-more-digits-must-have-comma-separators:
+    cases:
+      - id: large-numbers-md
+        filetypes: [md]
+        content: |
+          The file is 10000 bytes.
+          Serving 99999 requests.
+          Population is 1000000 people.
+        expect:
+          triggers:
+            - '10000'
+            - '99999'
+            - '1000000'
+          severity: suggestion
+      - id: large-numbers-rst
+        filetypes: [rst]
+        content: |
+          The dataset has 50000 rows.
+          Port 65536 is invalid.
+        expect:
+          triggers:
+            - '50000'
+            - '65536'
+          severity: suggestion
+      - id: valid-comma-separated-rst
+        filetypes: [rst]
+        content: |
+          The file is 10,000 bytes.
+          Port 8080 is common.
+          Use 1234 as the identifier.
+          The value is 999 items.
+          The machine ID is ``12345``.
+          .. code::
+             Port 555555 is invalid.
+        expect:
+          triggers: []
+          severity: suggestion
+      - id: valid-comma-separated-md
+        filetypes: [md]
+        content: |
+          The file is 10,000 bytes.
+          Port 8080 is common.
+          Use 1234 as the identifier.
+          The value is 999 items.
+          The machine ID is `12345`.
+          ```
+          Port 555555 is invalid.
+          ```
+        expect:
+          triggers: []
+          severity: suggestion
+  015-No-prompts-in-comments:
+    cases:
+      - id: prompts-in-md-code
+        filetypes: [md]
+        content: |
+          Run the following commands:
+
+          ```bash
+          $ sudo apt update
+          % make install
+             $ snap install lxd
+          $ ./run-me.sh
+          ```
+        expect:
+          triggers:
+            - '$ sudo'
+            - '% make'
+            - '   $ snap'
+            - '$ ./run-me.sh'
+          severity: warning
+      - id: prompts-in-rst-code
+        filetypes: [rst]
+        content: |
+          Run the following commands:
+
+          .. code-block:: bash
+
+             $ snap install lxd
+             % make build
+             $ ./run-me.sh
+        expect:
+          triggers:
+            - '   $ snap'
+            - '   % make'
+            - '   $ ./run-me.sh'
+          severity: warning
+      - id: valid-no-prompts
+        filetypes: [md, rst]
+        content: |
+          ```
+          Reading package lists "${variable}"...
+          Building dependency 5 % 2 == 1
+          0 upgraded, 1 newly installed.
+          Setting up lxd (latest) ...
+          ```
+        expect:
+          triggers: []
+  016-No-inline-comments:
+    cases:
+      - id: md-hash-comments
+        filetypes: [md]
+        content: |
+          Here is some code with inline comments:
+
+          ```python
+          def calculate():
+              result = 42  # This is the answer
+              return result  # Return the value
+          ```
+        expect:
+          triggers:
+            - |-
+              ```python
+              def calculate():
+                  result = 42  # This is the answer
+                  return result  # Return the value
+              ```
+          severity: suggestion
+      - id: md-slash-comments
+        filetypes: [md]
+        content: |
+          Here is some JavaScript with inline comments:
+
+          ```javascript
+          function process() {
+              let value = 10;  // Initialize value
+              return value * 2;  // Double it
+          }
+          ```
+        expect:
+          triggers:
+            - |-
+              ```javascript
+              function process() {
+                  let value = 10;  // Initialize value
+                  return value * 2;  // Double it
+              }
+              ```
+          severity: suggestion
+      - id: rst-hash-comments
+        filetypes: [rst]
+        content: |
+          Here is some code with inline comments.
+
+          .. code-block:: python
+
+             def calculate():
+                 result = 42  # This is the answer
+                 return result  # Return the value
+        expect:
+          triggers:
+            - |
+                .. code-block:: python
+
+                   def calculate():
+                       result = 42  # This is the answer
+          severity: suggestion
+      - id: rst-slash-comments
+        filetypes: [rst]
+        content: |
+          Here is some JavaScript with inline comments.
+
+          .. code-block:: javascript
+
+             function process() {
+                 let value = 10;  // Initialize value
+                 return value * 2;  // Double it
+             }
+        expect:
+          triggers:
+            - |
+                .. code-block:: javascript
+
+                   function process() {
+                       let value = 10;  // Initialize value
+          severity: suggestion
+      - id: rst-code-hash-comments
+        filetypes: [rst]
+        content: |
+          Here is some code with inline comments.
+
+          .. code:: python
+
+             def calculate():
+                 result = 42  # This is the answer
+                 return result  # Return the value
+        expect:
+          triggers:
+            - |
+                .. code:: python
+
+                   def calculate():
+                       result = 42  # This is the answer
+          severity: suggestion
+      - id: rst-sourcecode-hash-comments
+        filetypes: [rst]
+        content: |
+          Here is some code with inline comments.
+
+          .. sourcecode:: python
+
+             def calculate():
+                 result = 42  # This is the answer
+                 return result  # Return the value
+        expect:
+          triggers:
+            - |
+                .. sourcecode:: python
+
+                   def calculate():
+                       result = 42  # This is the answer
+          severity: suggestion
+      - id: clean-md
+        filetypes: [md]
+        content: |
+          Here is some clean code:
+
+          ```python
+          def calculate():
+              result = 42
+              return result#s
+          see https://example.com for more info
+          ```
+        expect:
+          triggers: []
+      - id: clean-rst
+        filetypes: [rst]
+        content: |
+          Here is some clean code.
+
+          .. code-block:: python
+
+             def calculate():
+                 result = 42
+                 return result
+             see https://example.com for more info
+        expect:
+          triggers: []
+  # For 017, see the end of this file, as the content is long.
+  019-no-external-images:
+     cases:
+       - id: google-drive-md
+         filetypes: [md]
+         content: "![alt](https://drive.google.com/file/d/abc123)"
+         expect:
+           triggers: 
+             - "![alt](https://drive.google.com/file/d/abc123)"
+           severity: error
+       - id: google-drive-rst-image
+         filetypes: [rst]
+         content: ".. image:: https://drive.google.com/file/d/abc123"
+         expect:
+           triggers:
+             - ".. image:: https://drive.google.com/file/d/abc123"
+           severity: error
+       - id: google-drive-rst-figure
+         filetypes: [rst]
+         content: ".. figure:: https://drive.google.com/file/d/abc123"
+         expect:
+           triggers:
+             - ".. figure:: https://drive.google.com/file/d/abc123"
+           severity: error
+       - id: asset-manager-md
+         filetypes: [md]
+         content: "![alt](https://assets.ubuntu.com/v1/abc123)"
+         expect:
+           triggers:
+             - "![alt](https://assets.ubuntu.com/v1/abc123)"
+           severity: error
+       - id: asset-manager-rst-image
+         filetypes: [rst]
+         content: ".. image:: https://assets.ubuntu.com/v1/abc123"
+         expect:
+           triggers:
+             - ".. image:: https://assets.ubuntu.com/v1/abc123"
+           severity: error
+       - id: asset-manager-rst-figure
+         filetypes: [rst]
+         content: ".. figure:: https://assets.ubuntu.com/v1/abc123"
+         expect:
+           triggers:
+             - ".. figure:: https://assets.ubuntu.com/v1/abc123"
+           severity: error
+       - id: asset-manager-myst-backtick-image
+         filetypes: [md]
+         content: "```{image} https://assets.ubuntu.com/v1/abc123"
+         expect:
+           triggers:
+             - "{image} https://assets.ubuntu.com/v1/abc123"
+           severity: error
+       - id: asset-manager-myst-colon-image
+         filetypes: [md]
+         content: ":::{image} https://assets.ubuntu.com/v1/abc123"
+         expect:
+           triggers:
+             - "{image} https://assets.ubuntu.com/v1/abc123"
+           severity: error
+       - id: asset-manager-myst-backtick-figure
+         filetypes: [md]
+         content: "```{figure} https://assets.ubuntu.com/v1/abc123"
+         expect:
+           triggers:
+             - "{figure} https://assets.ubuntu.com/v1/abc123"
+           severity: error
+       - id: asset-manager-myst-colon-figure
+         filetypes: [md]
+         content: ":::{figure} https://assets.ubuntu.com/v1/abc123"
+         expect:
+           triggers:
+             - "{figure} https://assets.ubuntu.com/v1/abc123"
+           severity: error
+       - id: drive-usercontent-md
+         filetypes: [md]
+         content: "![alt](https://drive.usercontent.google.com/download?id=abc123)"
+         expect:
+           triggers:
+             - "![alt](https://drive.usercontent.google.com/download?id=abc123)"
+           severity: error
+       - id: drive-usercontent-rst-image
+         filetypes: [rst]
+         content: ".. image:: https://drive.usercontent.google.com/download?id=abc123"
+         expect:
+           triggers:
+             - ".. image:: https://drive.usercontent.google.com/download?id=abc123"
+           severity: error
+       - id: local-image-md
+         filetypes: [md]
+         content: "![alt](images/local-image.png)"
+         expect:
+           triggers: []
+       - id: local-image-rst
+         filetypes: [rst]
+         content: ".. image:: images/local-image.png"
+         expect:
+           triggers: []
+       - id: local-image-myst
+         filetypes: [md]
+         content: "```{image} images/local-image.png"
+         expect:
+           triggers: []
+      
+  025a-latinisms-with-english-equivalents:
+    cases:
+      - id: latin-terms-with-substitutions
+        filetypes: [md, rst]
+        content: |
+          This is a priori knowledge that we can use.
+          We created an ad hoc solution for the problem.
+          The loop continues ad infinitum until stopped.
+          Please refer to cf. the documentation.
+          There is a caveat to consider here.
+          The system was built circa 2020.
+          It became the de facto standard.
+          Ergo, we must take action.
+          You can use Python, Java, etc. in this course.
+          We support multiple languages, e.g. Python and Go.
+          The service is provided gratis to all users.
+          This is the core principle, i.e. the most important one.
+          The data remains in situ for processing.
+          Please note (n.b.) this important point.
+          The cost is $50 per diem.
+          The budget is $100 per capita.
+          This is not wrong per se, but could be improved.
+          She provides pro bono legal services.
+          We must add a proviso to the contract.
+          Each stanza in the configuration file defines a section.
+          We want to maintain the status quo.
+          Copy the text verbatim into the file.
+          This is Linux vs. Windows comparison.
+          The reverse is also true, vice versa.
+          We need three specific items, viz. CPU, RAM, and storage.
+        expect:
+          triggers:
+            - a priori
+            - ad hoc
+            - ad infinitum
+            - cf
+            - circa
+            - de facto
+            - etc
+            - Ergo
+            - e.g.
+            - gratis
+            - i.e.
+            - in situ
+            - n.b.
+            - per diem
+            - per capita
+            - per se
+            - pro bono
+            - proviso
+            - stanza
+            - status quo
+            - vs.
+            - vice versa
+            - viz.
+          severity: suggestion
+      - id: clean-text
+        filetypes: [md, rst]
+        content: |
+          This is self-evident and we can proceed.
+          We created a temporary solution for the problem.
+          For example, you can use Python or Go.
+          That is the most important principle.
+        expect:
+          triggers: []
+      - id: latin-alternation-branches
+        filetypes: [md, rst]
+        content: |
+          This list continues with et cetera more items.
+          Sometimes written as etcetera in prose.
+          Old texts may use &c for brevity.
+          The phrase exempli gratia means for example.
+          Shortened to eg in casual writing.
+          Or written as e.g without a trailing dot.
+          The phrase id est is commonly used.
+          Shortened to ie in some texts.
+          Or as i.e without the final dot.
+          Please nota bene these important details.
+          Shortened as nb in some references.
+          Or as n.b without the trailing dot.
+          This option versus the alternative is better.
+          Use viz without dot for specifically.
+        expect:
+          triggers:
+            - et cetera
+            - etcetera
+            - "&c"
+            - exempli gratia
+            - eg
+            - e.g
+            - id est
+            - ie
+            - i.e
+            - nota bene
+            - nb
+            - n.b
+            - versus
+            - viz
+          severity: suggestion
+  025b-latinisms-to-reconsider:
+    cases:
+      - id: time-format-ampm
+        filetypes: [md, rst]
+        content: |
+          The meeting is at 3:00 PM today.
+          We start at 9:30 AM tomorrow.
+          The server restarts at 2:00 am daily.
+          Please arrive by 11:45 pm.
+          The event runs from 10 AM to 4 PM.
+          Set your alarm for 6:30am.
+        expect:
+          triggers:
+            - 3:00 PM
+            - 9:30 AM
+            - 2:00 am
+            - 11:45 pm
+            - 10 AM
+            - 4 PM
+            - 6:30am
+          severity: suggestion
+      - id: clean-time-format
+        filetypes: [md, rst]
+        content: |
+          The meeting is at 15:00 today.
+          We start at 09:30 tomorrow.
+          The server restarts at 02:00 daily.
+          The event runs from 10:00 to 16:00.
+        expect:
+          triggers: []
+  025c-latinisms-to-avoid:
+    cases:
+      - id: academic-latin-terms
+        filetypes: [md, rst]
+        content: |
+          This is based on a posteriori reasoning.
+          The argument continues ad nauseum.
+          As shown by Smith et al. in their paper.
+          The same method was used (ibid).
+          The full form ibidum is also used sometimes.
+          The text contains an error [sic].
+          Let the correction stet as written.
+        expect:
+          triggers:
+            - a posteriori
+            - ad nauseum
+            - et al
+            - ibid
+            - ibidum
+            - sic
+            - stet
+          severity: suggestion
+      - id: clean-academic-text
+        filetypes: [md, rst]
+        content: |
+          This is based on empirical evidence.
+          The argument continues excessively.
+          As shown by Smith and colleagues in their paper.
+        expect:
+          triggers: []
+  026-hints-tips:
+    cases:
+      - id: valid
+        filetypes: [md, rst]
+        content: |
+          .. hint::
+              This is a reST hint.
+          .. tip::
+              This is a reST tip.
+          ```{hint}
+          This is a MyST hint.
+          ```
+          ```{tip}
+          This is a MyST tip.
+          ```
+          ````{hint}
+          This is a deeper MyST hint.
+          ````
+          ````{tip}
+          This is a deeper MyST tip.
+          ````
+          :::{hint}
+          This is a colon-fenced MyST hint.
+          :::
+          :::{tip}
+          This is a colon-fenced MyST tip.
+          :::
+          ::::{hint}
+          This is a deeper colon-fenced MyST hint.
+          ::::
+          ::::{tip}
+          This is a deeper colon-fenced MyST tip.
+          ::::
+        expect:
+          triggers:
+            - '.. hint::'
+            - '.. tip::'
+            - '```{hint}'
+            - '```{tip}'
+            - '````{hint}'
+            - '````{tip}'
+            - ':::{hint}'
+            - ':::{tip}'
+            - '::::{hint}'
+            - '::::{tip}'
+          severity: suggestion
+      - id: clean-admonitions
+        filetypes: [md, rst]
+        content: |
+          .. note::
+              This is an acceptable admonition.
+          .. warning::
+              This is also acceptable.
+          ```{note}
+          This is a MyST note.
+          ```
+          ```{warning}
+          This is a MyST warning.
+          ```
+        expect:
+          triggers: []
+  027-non-descriptive-link-text:
+    cases:
+      - id: bad-link-text-md
+        filetypes: [md]
+        content: |
+          See [here](https://example.com) for details.
+          Go to [click here](https://example.com) to learn.
+          Read [this](https://example.com/doc) for more.
+          Check [these](https://example.com/list) items.
+          For details, [read more](https://example.com).
+          To get started, [learn more](https://example.com).
+          See [more](https://example.com) about the topic.
+          Follow this [link](https://example.com).
+          Visit [this link](https://example.com) for help.
+          See [this page](https://example.com) for info.
+          Read [this document](https://example.com) now.
+          See [this article](https://example.com/blog) too.
+          See [more information](https://example.com) below.
+          See [more info](https://example.com/faq) here.
+          Try [clicking here](https://example.com/try) for setup.
+          See [the link to docs](https://example.com/docs) now.
+          See [see more details](https://example.com/info) below.
+          See {doc}`here <target>` for details.
+          See {ref}`this <label>` for setup.
+          See {any}`these <something>` for examples.
+          Get {download}`this <file.tar.gz>` archive.
+          See {ref}`try this <label>` for more.
+          See {external+sphinxcontrib-mermaid:doc}`this link <target>` for details.
+          See {external+sphinxcontrib-mermaid:py:class}`this link <target>` for details.
+          See {class}`this <mymodule.MyClass>` for class docs.
+          See {func}`here <mymodule.myfunc>` for function docs.
+        expect:
+          triggers:
+            - '[here](https://example.com)'
+            - '[click here](https://example.com)'
+            - '[this](https://example.com/doc)'
+            - '[these](https://example.com/list)'
+            - '[read more](https://example.com)'
+            - '[learn more](https://example.com)'
+            - '[more](https://example.com)'
+            - '[link](https://example.com)'
+            - '[this link](https://example.com)'
+            - '[this page](https://example.com)'
+            - '[this document](https://example.com)'
+            - '[this article](https://example.com/blog)'
+            - '[more information](https://example.com)'
+            - '[more info](https://example.com/faq)'
+            - '[clicking here](https://example.com/try)'
+            - '[the link to docs](https://example.com/docs)'
+            - '[see more details](https://example.com/info)'
+            - '{doc}`here <target>`'
+            - '{ref}`this <label>`'
+            - '{any}`these <something>`'
+            - '{download}`this <file.tar.gz>`'
+            - '{ref}`try this <label>`'
+            - '{external+sphinxcontrib-mermaid:doc}`this link <target>`'
+            - '{external+sphinxcontrib-mermaid:py:class}`this link <target>`'
+            - '{class}`this <mymodule.MyClass>`'
+            - '{func}`here <mymodule.myfunc>`'
+          severity: warning
+      - id: bad-link-text-rst
+        filetypes: [rst]
+        content: |
+          See `here <https://example.com>`_ for details.
+          Go to `click here <https://example.com>`_ to learn.
+          Read `this <https://example.com>`_ for more.
+          See `these <https://example.com>`_ items.
+          For more, `read more <https://example.com>`_.
+          See `learn more <https://example.com>`_ to begin.
+          See `more <https://example.com>`_ about it.
+          Follow this `link <https://example.com>`_.
+          See `this page <https://example.com>`_ for info.
+          Try `clicking here <https://example.com>`_ for setup.
+          See `the link to docs <https://example.com>`_ now.
+          See :doc:`here <target>` for the guide.
+          See :ref:`this <label>` for setup.
+          See :ref:`these <label>` for examples.
+          See :doc:`read more <target>` for details.
+          See :any:`learn more <target>` too.
+          Get :download:`this <file.tar.gz>` archive.
+          See :ref:`try this <label>` for more.
+          See :external+invname:ref:`this <some.address>`
+          See :external+invname:py:class:`this link <some.address>`
+          See :class:`this <mymodule.MyClass>` for class docs.
+          See :func:`here <mymodule.myfunc>` for function docs.
+        expect:
+          triggers:
+            - '`here <https://example.com>`_'
+            - '`click here <https://example.com>`_'
+            - '`this <https://example.com>`_'
+            - '`these <https://example.com>`_'
+            - '`read more <https://example.com>`_'
+            - '`learn more <https://example.com>`_'
+            - '`more <https://example.com>`_'
+            - '`link <https://example.com>`_'
+            - '`this page <https://example.com>`_'
+            - '`clicking here <https://example.com>`_'
+            - '`the link to docs <https://example.com>`_'
+            - ':doc:`here <target>`'
+            - ':ref:`this <label>`'
+            - ':ref:`these <label>`'
+            - ':doc:`read more <target>`'
+            - ':any:`learn more <target>`'
+            - ':download:`this <file.tar.gz>`'
+            - ':ref:`try this <label>`'
+            - ':external+invname:ref:`this <some.address>`'
+            - ':external+invname:py:class:`this link <some.address>`'
+            - ':class:`this <mymodule.MyClass>`'
+            - ':func:`here <mymodule.myfunc>`'
+          severity: warning
+      - id: clean-link-text
+        filetypes: [md, rst]
+        content: |
+          See [the installation guide](https://example.com/install) for details.
+          Read [Ubuntu documentation](https://example.com/docs) for more.
+          Follow the [getting started tutorial](https://example.com/start).
+          Download [the latest release](https://example.com/releases).
+          Visit `Ubuntu documentation <https://example.com>`_ for help.
+          See `the contributor guide <https://example.com>`_ for details.
+          See :doc:`security overview <security>` for details.
+          See :ref:`configuration options <config-opts>` for help.
+          See {ref}`configuration options <config-opts>` for help.
+          See {doc}`security overview <security>` for details.
+          You can find more information about this here in the prose.
+          Use this command to install these packages.
+          See [the linked resources](https://example.com/resources) page.
+          Visit `linked resources <https://example.com>`_ for help.
+          See :doc:`furthermore <target>` for details.
+          See {ref}`linking guide <label>` for help.
+        expect:
+          triggers: []
+          severity: warning
+  028-flag-todo-comments:
+    cases:
+      - id: bad-todo-md
+        filetypes: [md]
+        content: |
+          <!-- TODO: Update these links before release. -->
+          <!--   TODO   Update these links before release. -->
+          <!-- todo: Update these links before release. -->
+          <!--   todo   Update these links before release. -->
+          <!-- TODO: DOCPR-0001 Update these links before release. -->
+          <!-- TODO Issue #55 Update these links before release. -->
+          % TODO: Update these links before release.
+        expect:
+          triggers:
+            - "<!-- TODO: "
+            - "<!--   TODO   "
+            - "<!-- todo: "
+            - "<!--   todo   "
+            - "<!-- TODO: "
+            - "<!-- TODO "
+            - "% TODO: "
+          severity: suggestion
+      - id: bad-todo-rst
+        filetypes: [rst]
+        content: |
+          .. TODO: Update these links before release.
+          ..   TODO   Update these links before release.
+          ..
+              TODO Update these links before release.
+          .. todo: Update these links before release.
+          ..   todo   Update these links before release.
+          ..
+              todo Update these links before release.
+        expect:
+          triggers:
+            - ".. TODO: "
+            - "..   TODO   "
+            - "..\n    TODO "
+            - ".. todo: "
+            - "..   todo   "
+            - "..\n    todo "
+          severity: suggestion
+      - id: acceptable-todo-text
+        filetypes: [md, rst]
+        content: |
+          .. TODO [DOCPR-0001]: Update these links before release.
+          ..   TODO #1000  Update these links before release.
+          ..
+              TODO: [TST-2742] Update these links before release.
+          <!-- TODO: #55 Update these links before release. -->
+          <!--   TODO #55  Update these links before release. -->
+          % TODO [TST-0000]: Update these links before release.
+          % TODO: #55 Update these links before release.
+        expect:
+          triggers: []
+          severity: suggestion
+  400-Enforce-inclusive-terms:
+    cases:
+      - id: inclusive-terms-md
+        filetypes: [md]
+        content: |
+          Add the IP to the whitelist.
+          The blacklisted domains must be removed.
+          Remove the black hat from the system.
+          The white hats reported the vulnerability.
+          Detected an illegal character in the input.
+          The master node controls all replicas.
+          This is a dumb terminal.
+          Use a dummy value for testing.
+          Avoid creating dummies in production.
+          The rule was grandfathered in.
+          Hey guys, check this out.
+          Perform a sanity check before deploying.
+        expect:
+          triggers:
+            - whitelist
+            - blacklisted
+            - black hat
+            - white hats
+            - illegal character
+            - master
+            - dumb
+            - dummy
+            - dummies
+            - grandfathered
+            - guys
+            - sanity check
+          severity: error
+      - id: inclusive-terms-rst
+        filetypes: [rst]
+        content: |
+          The whitelisting process is outdated.
+          Use a black-list to block traffic.
+          Configure the slave node to follow the leader.
+          Multiple slaves can be configured for a master.
+          The chairman called the meeting.
+          The foreman supervised the build.
+          The process hangs if the socket is closed.
+          Estimate the man hours required.
+          Detect a man-in-the-middle attack.
+          The station is manned at all times.
+          Use a middleman service for the exchange.
+        expect:
+          triggers:
+            - whitelisting
+            - black-list
+            - slave
+            - slaves
+            - chairman
+            - foreman
+            - hangs
+            - man hours
+            - man-in-the-middle
+            - manned
+            - middleman
+            -  master
+          severity: error
+      - id: valid-inclusive-language
+        filetypes: [md, rst]
+        content: |
+          Add the IP to the allowlist.
+          The primary node controls all replicas.
+          Use a placeholder value for testing.
+          Perform a verification check before deploying.
+          The path /master/config is set correctly.
+          Configure the jenkins-slave agent.
+        expect:
+          triggers: []
+  500-Repeated-words:
+    cases:
+      - id: repeat
+        filetypes: [md, rst]
+        content: |
+          The the example shows repetition.
+        expect:
+          triggers:
+            - The the
+          severity: warning
+      - id: clean
+        filetypes: [md, rst]
+        content: |
+          If I show you this. This would show.
+        expect:
+          triggers: []
+
+  # Notes:
+  # - Add additional rules incrementally following the same schema.
+  # - Set VALE_ENFORCE_COVERAGE=1 to require every style rule appear here.
+
+  # 017 is out of sequence because the content is long.
+  017a-Suggest-code-over-25-lines:
+    cases:
+      - id: long-code-suggestion-md
+        filetypes: [md]
+        content: |
+          25 lines is acceptable:
+
+          ```
+          Line 01 of 25
+          Line 02
+          Line 03
+          Line 04
+          Line 05
+          Line 06
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          ```
+
+          But 26 lines is NOT acceptable:
+
+          ```
+          Line 01 of 26
+          Line 02
+
+          Line 04
+
+
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          ```
+
+          This text is outside the code block.
+        expect:
+          triggers:
+            - |-  # |- because we don't want the newline at the end.
+              ```
+              Line 01 of 26
+              Line 02
+
+              Line 04
+
+
+              Line 07
+              Line 08
+              Line 09
+              Line 10
+              Line 11
+              Line 12
+              Line 13
+              Line 14
+              Line 15
+              Line 16
+              Line 17
+              Line 18
+              Line 19
+              Line 20
+              Line 21
+              Line 22
+              Line 23
+              Line 24
+              Line 25
+              Line 26
+              ```
+          severity: suggestion
+      - id: long-code-suggestion-md-lang
+        filetypes: [md]
+        content: |
+          25 lines is acceptable:
+
+          ```text
+          Line 01 of 25
+          Line 02
+          Line 03
+          Line 04
+          Line 05
+          Line 06
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          ```
+
+          But 26 lines is NOT acceptable:
+
+          ```text
+          Line 01 of 26
+          Line 02
+
+          Line 04
+
+
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          ```
+
+          This text is outside the code block.
+        expect:
+          triggers:
+            - |-  # |- because we don't want the newline at the end.
+              ```text
+              Line 01 of 26
+              Line 02
+
+              Line 04
+
+
+              Line 07
+              Line 08
+              Line 09
+              Line 10
+              Line 11
+              Line 12
+              Line 13
+              Line 14
+              Line 15
+              Line 16
+              Line 17
+              Line 18
+              Line 19
+              Line 20
+              Line 21
+              Line 22
+              Line 23
+              Line 24
+              Line 25
+              Line 26
+              ```
+          severity: suggestion
+      - id: long-code-suggestion-myst
+        filetypes: [md]
+        content: |
+          25 lines is acceptable:
+
+          ```{code} text
+          :foo: bar
+
+          Line 01 of 25
+          Line 02
+          Line 03
+          Line 04
+          Line 05
+          Line 06
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          ```
+
+          But 26 lines is NOT acceptable:
+
+          ```{code} text
+          :foo: bar
+
+          Line 01 of 26
+          Line 02
+
+          Line 04
+
+
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          ```
+
+          This text is outside the code block.
+
+          A long unrelated directive is acceptable:
+
+          ````{tab-set}
+
+          ```{tab-item} Tab 1
+          Line 01 of 26
+          Line 02
+          Line 03
+          Line 04
+          Line 05
+          Line 06
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          ```
+
+          ````
+        expect:
+          triggers:
+            - |-  # |- because we don't want the newline at the end.
+              ```{code} text
+              :foo: bar
+
+              Line 01 of 26
+              Line 02
+
+              Line 04
+
+
+              Line 07
+              Line 08
+              Line 09
+              Line 10
+              Line 11
+              Line 12
+              Line 13
+              Line 14
+              Line 15
+              Line 16
+              Line 17
+              Line 18
+              Line 19
+              Line 20
+              Line 21
+              Line 22
+              Line 23
+              Line 24
+              Line 25
+              Line 26
+              ```
+          severity: suggestion
+      - id: long-code-suggestion-rst-colons
+        filetypes: [rst]
+        content: |
+          25 lines is acceptable::
+
+             Line 01 of 25
+             Line 02
+             Line 03
+             Line 04
+             Line 05
+             Line 06
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+
+          But 26 lines is NOT acceptable::
+
+             Line 01 of 26
+             Line 02
+
+             Line 04
+
+
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+             Line 26
+
+          This text is outside the code block.
+        expect:
+          triggers:
+            - |
+              ::
+
+                 Line 01 of 26
+                 Line 02
+
+                 Line 04
+
+
+                 Line 07
+                 Line 08
+                 Line 09
+                 Line 10
+                 Line 11
+                 Line 12
+                 Line 13
+                 Line 14
+                 Line 15
+                 Line 16
+                 Line 17
+                 Line 18
+                 Line 19
+                 Line 20
+                 Line 21
+                 Line 22
+                 Line 23
+                 Line 24
+                 Line 25
+                 Line 26
+          severity: suggestion
+      - id: long-code-suggestion-rst-lang
+        filetypes: [rst]
+        content: |
+          25 lines is acceptable.
+
+          .. code:: text
+
+             Line 01 of 25
+             Line 02
+             Line 03
+             Line 04
+             Line 05
+             Line 06
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+
+          But 26 lines is NOT acceptable.
+
+          .. code:: text
+
+             Line 01 of 26
+             Line 02
+
+             Line 04
+
+
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+             Line 26
+
+          This text is outside the code block.
+        expect:
+          triggers:
+            - |
+              .. code:: text
+
+                 Line 01 of 26
+                 Line 02
+
+                 Line 04
+
+
+                 Line 07
+                 Line 08
+                 Line 09
+                 Line 10
+                 Line 11
+                 Line 12
+                 Line 13
+                 Line 14
+                 Line 15
+                 Line 16
+                 Line 17
+                 Line 18
+                 Line 19
+                 Line 20
+                 Line 21
+                 Line 22
+                 Line 23
+                 Line 24
+                 Line 25
+                 Line 26
+          severity: suggestion
+      - id: long-code-suggestion-rst-option
+        filetypes: [rst]
+        content: |
+          25 lines is acceptable.
+
+          .. code::
+             :foo:
+
+             Line 01 of 25
+             Line 02
+             Line 03
+             Line 04
+             Line 05
+             Line 06
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+
+          But 26 lines is NOT acceptable.
+
+          .. code::
+             :foo:
+
+             Line 01 of 26
+             Line 02
+
+             Line 04
+
+
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+             Line 26
+
+          This text is outside the code block.
+        expect:
+          triggers:
+            - |
+              .. code::
+                 :foo:
+
+                 Line 01 of 26
+                 Line 02
+
+                 Line 04
+
+
+                 Line 07
+                 Line 08
+                 Line 09
+                 Line 10
+                 Line 11
+                 Line 12
+                 Line 13
+                 Line 14
+                 Line 15
+                 Line 16
+                 Line 17
+                 Line 18
+                 Line 19
+                 Line 20
+                 Line 21
+                 Line 22
+                 Line 23
+                 Line 24
+                 Line 25
+                 Line 26
+          severity: suggestion
+  017b-Warn-code-over-35-lines:
+    cases:
+      - id: long-code-warning-md
+        filetypes: [md]
+        content: |
+          35 lines is acceptable:
+
+          ```
+          Line 01 of 35
+          Line 02
+          Line 03
+          Line 04
+          Line 05
+          Line 06
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          Line 27
+          Line 28
+          Line 29
+          Line 30
+          Line 31
+          Line 32
+          Line 33
+          Line 34
+          Line 35
+          ```
+
+          But 36 lines is NOT acceptable:
+
+          ```
+          Line 01 of 36
+          Line 02
+
+          Line 04
+
+
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          Line 27
+          Line 28
+          Line 29
+          Line 30
+          Line 31
+          Line 32
+          Line 33
+          Line 34
+          Line 35
+          Line 36
+          ```
+
+          This text is outside the code block.
+        expect:
+          triggers:
+            - |-  # |- because we don't want the newline at the end.
+              ```
+              Line 01 of 36
+              Line 02
+
+              Line 04
+
+
+              Line 07
+              Line 08
+              Line 09
+              Line 10
+              Line 11
+              Line 12
+              Line 13
+              Line 14
+              Line 15
+              Line 16
+              Line 17
+              Line 18
+              Line 19
+              Line 20
+              Line 21
+              Line 22
+              Line 23
+              Line 24
+              Line 25
+              Line 26
+              Line 27
+              Line 28
+              Line 29
+              Line 30
+              Line 31
+              Line 32
+              Line 33
+              Line 34
+              Line 35
+              Line 36
+              ```
+          severity: warning
+      - id: long-code-warning-md-lang
+        filetypes: [md]
+        content: |
+          35 lines is acceptable:
+
+          ```text
+          Line 01 of 35
+          Line 02
+          Line 03
+          Line 04
+          Line 05
+          Line 06
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          Line 27
+          Line 28
+          Line 29
+          Line 30
+          Line 31
+          Line 32
+          Line 33
+          Line 34
+          Line 35
+          ```
+
+          But 36 lines is NOT acceptable:
+
+          ```text
+          Line 01 of 36
+          Line 02
+
+          Line 04
+
+
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          Line 27
+          Line 28
+          Line 29
+          Line 30
+          Line 31
+          Line 32
+          Line 33
+          Line 34
+          Line 35
+          Line 36
+          ```
+
+          This text is outside the code block.
+        expect:
+          triggers:
+            - |-  # |- because we don't want the newline at the end.
+              ```text
+              Line 01 of 36
+              Line 02
+
+              Line 04
+
+
+              Line 07
+              Line 08
+              Line 09
+              Line 10
+              Line 11
+              Line 12
+              Line 13
+              Line 14
+              Line 15
+              Line 16
+              Line 17
+              Line 18
+              Line 19
+              Line 20
+              Line 21
+              Line 22
+              Line 23
+              Line 24
+              Line 25
+              Line 26
+              Line 27
+              Line 28
+              Line 29
+              Line 30
+              Line 31
+              Line 32
+              Line 33
+              Line 34
+              Line 35
+              Line 36
+              ```
+          severity: warning
+      - id: long-code-warning-myst
+        filetypes: [md]
+        content: |
+          35 lines is acceptable:
+
+          ```{code} text
+          :foo: bar
+
+          Line 01 of 35
+          Line 02
+          Line 03
+          Line 04
+          Line 05
+          Line 06
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          Line 27
+          Line 28
+          Line 29
+          Line 30
+          Line 31
+          Line 32
+          Line 33
+          Line 34
+          Line 35
+          ```
+
+          But 36 lines is NOT acceptable:
+
+          ```{code} text
+          :foo: bar
+
+          Line 01 of 36
+          Line 02
+
+          Line 04
+
+
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          Line 27
+          Line 28
+          Line 29
+          Line 30
+          Line 31
+          Line 32
+          Line 33
+          Line 34
+          Line 35
+          Line 36
+          ```
+
+          This text is outside the code block.
+
+          A long unrelated directive is acceptable:
+
+          ````{tab-set}
+
+          ```{tab-item} Tab 1
+          Line 01 of 36
+          Line 02
+          Line 03
+          Line 04
+          Line 05
+          Line 06
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          Line 27
+          Line 28
+          Line 29
+          Line 30
+          Line 31
+          Line 32
+          Line 33
+          Line 34
+          Line 35
+          Line 36
+          ```
+
+          ````
+        expect:
+          triggers:
+            - |-  # |- because we don't want the newline at the end.
+              ```{code} text
+              :foo: bar
+
+              Line 01 of 36
+              Line 02
+
+              Line 04
+
+
+              Line 07
+              Line 08
+              Line 09
+              Line 10
+              Line 11
+              Line 12
+              Line 13
+              Line 14
+              Line 15
+              Line 16
+              Line 17
+              Line 18
+              Line 19
+              Line 20
+              Line 21
+              Line 22
+              Line 23
+              Line 24
+              Line 25
+              Line 26
+              Line 27
+              Line 28
+              Line 29
+              Line 30
+              Line 31
+              Line 32
+              Line 33
+              Line 34
+              Line 35
+              Line 36
+              ```
+          severity: warning
+      - id: long-code-warning-myst-no-nl-after-option
+        filetypes: [md]
+        content: |
+          No blank line after option:
+
+          ```{code} text
+          :foo: bar
+          Line 01 of 36
+          Line 02
+
+          Line 04
+
+
+          Line 07
+          Line 08
+          Line 09
+          Line 10
+          Line 11
+          Line 12
+          Line 13
+          Line 14
+          Line 15
+          Line 16
+          Line 17
+          Line 18
+          Line 19
+          Line 20
+          Line 21
+          Line 22
+          Line 23
+          Line 24
+          Line 25
+          Line 26
+          Line 27
+          Line 28
+          Line 29
+          Line 30
+          Line 31
+          Line 32
+          Line 33
+          Line 34
+          Line 35
+          Line 36
+          ```
+
+
+        expect:
+          triggers:
+            - |-  # |- because we don't want the newline at the end.
+              ```{code} text
+              :foo: bar
+              Line 01 of 36
+              Line 02
+
+              Line 04
+
+
+              Line 07
+              Line 08
+              Line 09
+              Line 10
+              Line 11
+              Line 12
+              Line 13
+              Line 14
+              Line 15
+              Line 16
+              Line 17
+              Line 18
+              Line 19
+              Line 20
+              Line 21
+              Line 22
+              Line 23
+              Line 24
+              Line 25
+              Line 26
+              Line 27
+              Line 28
+              Line 29
+              Line 30
+              Line 31
+              Line 32
+              Line 33
+              Line 34
+              Line 35
+              Line 36
+              ```
+          severity: warning
+      - id: long-code-warning-rst-colons
+        filetypes: [rst]
+        content: |
+          35 lines is acceptable::
+
+             Line 01 of 35
+             Line 02
+             Line 03
+             Line 04
+             Line 05
+             Line 06
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+             Line 26
+             Line 27
+             Line 28
+             Line 29
+             Line 30
+             Line 31
+             Line 32
+             Line 33
+             Line 34
+             Line 35
+
+          But 36 lines is NOT acceptable::
+
+             Line 01 of 36
+             Line 02
+
+             Line 04
+
+
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+             Line 26
+             Line 27
+             Line 28
+             Line 29
+             Line 30
+             Line 31
+             Line 32
+             Line 33
+             Line 34
+             Line 35
+             Line 36
+
+          This text is outside the code block.
+        expect:
+          triggers:
+            - |
+              ::
+
+                 Line 01 of 36
+                 Line 02
+
+                 Line 04
+
+
+                 Line 07
+                 Line 08
+                 Line 09
+                 Line 10
+                 Line 11
+                 Line 12
+                 Line 13
+                 Line 14
+                 Line 15
+                 Line 16
+                 Line 17
+                 Line 18
+                 Line 19
+                 Line 20
+                 Line 21
+                 Line 22
+                 Line 23
+                 Line 24
+                 Line 25
+                 Line 26
+                 Line 27
+                 Line 28
+                 Line 29
+                 Line 30
+                 Line 31
+                 Line 32
+                 Line 33
+                 Line 34
+                 Line 35
+                 Line 36
+          severity: warning
+      - id: long-code-warning-rst-lang
+        filetypes: [rst]
+        content: |
+          35 lines is acceptable.
+
+          .. code:: text
+
+             Line 01 of 35
+             Line 02
+             Line 03
+             Line 04
+             Line 05
+             Line 06
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+             Line 26
+             Line 27
+             Line 28
+             Line 29
+             Line 30
+             Line 31
+             Line 32
+             Line 33
+             Line 34
+             Line 35
+
+          But 36 lines is NOT acceptable.
+
+          .. code:: text
+
+             Line 01 of 36
+             Line 02
+
+             Line 04
+
+
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+             Line 26
+             Line 27
+             Line 28
+             Line 29
+             Line 30
+             Line 31
+             Line 32
+             Line 33
+             Line 34
+             Line 35
+             Line 36
+
+          This text is outside the code block.
+        expect:
+          triggers:
+            - |
+              .. code:: text
+
+                 Line 01 of 36
+                 Line 02
+
+                 Line 04
+
+
+                 Line 07
+                 Line 08
+                 Line 09
+                 Line 10
+                 Line 11
+                 Line 12
+                 Line 13
+                 Line 14
+                 Line 15
+                 Line 16
+                 Line 17
+                 Line 18
+                 Line 19
+                 Line 20
+                 Line 21
+                 Line 22
+                 Line 23
+                 Line 24
+                 Line 25
+                 Line 26
+                 Line 27
+                 Line 28
+                 Line 29
+                 Line 30
+                 Line 31
+                 Line 32
+                 Line 33
+                 Line 34
+                 Line 35
+                 Line 36
+          severity: warning
+      - id: long-code-warning-rst-option
+        filetypes: [rst]
+        content: |
+          35 lines is acceptable.
+
+          .. code::
+             :foo:
+
+             Line 01 of 35
+             Line 02
+             Line 03
+             Line 04
+             Line 05
+             Line 06
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+             Line 26
+             Line 27
+             Line 28
+             Line 29
+             Line 30
+             Line 31
+             Line 32
+             Line 33
+             Line 34
+             Line 35
+
+          But 36 lines is NOT acceptable.
+
+          .. code::
+             :foo:
+
+             Line 01 of 36
+             Line 02
+
+             Line 04
+
+
+             Line 07
+             Line 08
+             Line 09
+             Line 10
+             Line 11
+             Line 12
+             Line 13
+             Line 14
+             Line 15
+             Line 16
+             Line 17
+             Line 18
+             Line 19
+             Line 20
+             Line 21
+             Line 22
+             Line 23
+             Line 24
+             Line 25
+             Line 26
+             Line 27
+             Line 28
+             Line 29
+             Line 30
+             Line 31
+             Line 32
+             Line 33
+             Line 34
+             Line 35
+             Line 36
+
+          This text is outside the code block.
+        expect:
+          triggers:
+            - |
+              .. code::
+                 :foo:
+
+                 Line 01 of 36
+                 Line 02
+
+                 Line 04
+
+
+                 Line 07
+                 Line 08
+                 Line 09
+                 Line 10
+                 Line 11
+                 Line 12
+                 Line 13
+                 Line 14
+                 Line 15
+                 Line 16
+                 Line 17
+                 Line 18
+                 Line 19
+                 Line 20
+                 Line 21
+                 Line 22
+                 Line 23
+                 Line 24
+                 Line 25
+                 Line 26
+                 Line 27
+                 Line 28
+                 Line 29
+                 Line 30
+                 Line 31
+                 Line 32
+                 Line 33
+                 Line 34
+                 Line 35
+                 Line 36
+          severity: warning
+
