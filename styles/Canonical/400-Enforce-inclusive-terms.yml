@@ -15,7 +15,7 @@ tokens:
   - black( )?hats?
   - white( )?hats?
   - illegal characters?
-  - (?<!\/)masters?
+  - (?<!\/)\bmasters?\b(?!\s+boot\s+records?\b)
   - (?<!jenkins\-)slaves?
   - chairman
   - foreman
