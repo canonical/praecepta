@@ -289,3 +289,51 @@ def test_rst_role_intersphinx_links(test_raw):
         ),
         ".rst",
     )
+
+
+def test_md_target_labels(test_raw):
+    """Case with labels that contain:
+
+    - A misspelled product name.
+    - A spelling error.
+    - A digit instead of a spelled-out number below ten.
+    - Indentation before and after."""
+
+    test_raw(
+        textwrap.dedent(
+            """
+            (launchpad)=
+
+            (splelling)=
+
+            (test-1)=
+
+                (test)=  
+            """
+        ),
+        ".md",
+    )
+
+
+def test_rst_target_labels(test_raw):
+    """Case with labels that contain:
+
+    - A misspelled product name.
+    - A spelling error.
+    - A digit instead of a spelled-out number below ten.
+    - Indentation before and after."""
+
+    test_raw(
+        textwrap.dedent(
+            """
+            .. _launchpad:
+
+            .. _splelling:
+
+            .. _test-1:
+
+                .. _test:  
+            """
+        ),
+        ".rst",
+    )
